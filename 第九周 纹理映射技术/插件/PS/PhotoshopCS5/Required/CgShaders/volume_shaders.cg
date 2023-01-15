@@ -1,0 +1,131 @@
+struct a2v
+{
+float4 vPosition : POSITION;
+float4 vVolumePosition : TEXCOORD0;
+float4 vVolumeColor: COLOR;
+};
+struct vertex2frag
+{
+float4 HPosition : POSITION;
+float4 fVolumePosition : TEXCOORD0;
+float4 fVolumeColor: COLOR0;
+};
+struct frag2buffer
+{
+float4 color: COLOR0;
+float4 extra_target1: COLOR1;
+float4 extra_target2: COLOR2;
+float4 extra_target3: COLOR3;
+float  depth: DEPTH;
+};
+/**********************************************************************/
+float4 ShadeVolume(in float3 position, 
+				   in sampler3D voltexture, 
+				   in float4 modulatingColor, 
+				   in float4 gradientSamplingDistancesTexture, 
+				   in float4 gradientSamplingDistancesObject,
+				   in sampler1D transfer_function)
+{
+float value;
+float gradMagnitude = 1.0;
+float4 outcolor=float4(1, 1, 1, 1);
+float4 main_lookup = tex3D(voltexture, position);
+#ifdef USE_VOLUME_COLOR
+outcolor.a = main_lookup.a;
+outcolor.rgb = main_lookup.rgb;
+#else
+value = main_lookup.r;
+outcolor.a = value;
+#ifdef USE_VOLUME_1D_TRANSFER_FUNCTION
+	float4 tfTexLookup;
+	tfTexLookup = tex1D(transfer_function, value);
+	outcolor.rgb = tfTexLookup.rgb;
+	outcolor.a = tfTexLookup.a;
+#endif
+#ifdef USE_VOLUME_SHADING_GRADIENT
+	float3 dx = float3(1, 0, 0)*gradientSamplingDistancesTexture.xyz;
+	float3 dy = float3(0, 1, 0)*gradientSamplingDistancesTexture.xyz;
+	float3 dz = float3(0, 0, 1)*gradientSamplingDistancesTexture.xyz;
+	float3 gradient;
+	float v0, v1;
+	v0 = tex3D(voltexture, position-dx).r;
+	v1 = tex3D(voltexture, position+dx).r;
+	gradient.x = (v1-v0)*0.5/gradientSamplingDistancesObject.x;
+	v0 = tex3D(voltexture, position-dy).r;
+	v1 = tex3D(voltexture, position+dy).r;
+	gradient.y = (v1-v0)*0.5/gradientSamplingDistancesObject.y;
+	v0 = tex3D(voltexture, position-dz).r;
+	v1 = tex3D(voltexture, position+dz).r;
+	gradient.z = (v1-v0)*0.5/gradientSamplingDistancesObject.z;
+	gradMagnitude = length(gradient)*20;
+#endif
+#endif//(of #ifdef USE_VOLUME_COLOR)
+outcolor.a *= modulatingColor.a*gradMagnitude;
+outcolor.rgb *= outcolor.a*modulatingColor.rgb;
+return outcolor;
+}
+/**********************************************************************/
+vertex2frag vertVolume(in a2v app, uniform float4x4 modelViewProj)
+{
+vertex2frag vertOut;
+vertOut.HPosition = mul(modelViewProj, app.vPosition);
+vertOut.fVolumePosition.xyz = app.vVolumePosition.xyz;
+vertOut.fVolumeColor = app.vVolumeColor;
+return vertOut;
+}
+/**********************************************************************/
+frag2buffer fragUniversalVolumeShader(in vertex2frag interpolant,
+									  uniform sampler3D voltexture, 
+									  uniform float4 clippingPlaneColor,  
+									  uniform float4 gradientSamplingDistancesTexture, 
+									  uniform float4 gradientSamplingDistancesObject,
+									  uniform float use_transfer_function,
+									  uniform sampler1D transfer_function,
+									  uniform float2 volume_opacity_multiplier)
+{
+	frag2buffer fragOut;
+	float4 modulatingColor = float4(1, 1, 1, 1);
+	modulatingColor.a = interpolant.fVolumeColor.a;
+	modulatingColor.a *= volume_opacity_multiplier[0];
+	fragOut.color = ShadeVolume(interpolant.fVolumePosition.xyz,voltexture, modulatingColor, gradientSamplingDistancesTexture, gradientSamplingDistancesObject, transfer_function);
+	if (interpolant.fVolumeColor.r<0.5)
+	{
+		fragOut.color.a = 1.0 - pow (1.0-fragOut.color.a, 3);
+		fragOut.color.rgb = fragOut.color.rgb*3;
+	}
+	if (volume_opacity_multiplier[1]>0.5)
+		fragOut.color.a = 1.0 - fragOut.color.a;
+		//fragOut.color.rgba = float4(1, 0, 0, 1);
+	return  fragOut;
+}
+/**********************************************************************/
+frag2buffer fragUniversalVolumeClipPlaneShader(in vertex2frag interpolant,
+									  uniform sampler3D voltexture, 
+									  uniform float4 clippingPlaneColor,  
+									  uniform float3 clippingPlaneIntersectionColor, 
+									  uniform float4 gradientSamplingDistancesTexture, 
+									  uniform float4 gradientSamplingDistancesObject,
+									  uniform float use_transfer_function,
+									  uniform sampler1D transfer_function,
+									  uniform float volume_opacity_multiplier)
+{
+	frag2buffer fragOut;
+	float4 modulatingColor;
+	modulatingColor = float4(1, 1, 1, 1);
+	if (abs(interpolant.fVolumePosition.x - 0.5)>0.5 || abs(interpolant.fVolumePosition.y - 0.5)>0.5 || abs(interpolant.fVolumePosition.z - 0.5)>0.5)
+		discard;
+	float4 main_lookup = tex3D(voltexture, interpolant.fVolumePosition);
+	main_lookup.rgb = main_lookup.rgb*main_lookup.a;
+	if (length(main_lookup.rgb)==0.0)
+		discard;
+	fragOut.color = main_lookup;
+	return  fragOut;
+}
+/**********************************************************************/
+frag2buffer fragSimpleClipPlane(in vertex2frag interpolant, uniform float4 clippingPlaneColor)
+{
+frag2buffer fragOut;
+fragOut.color.rgb = clippingPlaneColor.rgb*clippingPlaneColor.a;
+fragOut.color.a = clippingPlaneColor.a;
+return  fragOut;
+}

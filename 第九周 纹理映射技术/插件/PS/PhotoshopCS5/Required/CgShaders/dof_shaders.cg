@@ -1,0 +1,58 @@
+struct a2v 
+{
+	float4 vPosition	: POSITION;
+	float4 vColor		: COLOR0;
+	float2 vTexCoord0	: TEXCOORD0;
+};
+
+struct vertex2frag
+{
+	float4 HPosition		: POSITION;
+	float4 fDiffuseColor	: COLOR0;
+	float2 fTexCoord0		: TEXCOORD0;
+};
+
+struct frag2buffer
+{
+	float4 color: COLOR;
+};
+
+vertex2frag vertexDOF(	a2v app,	
+						uniform float4x4 ModelViewProj)
+{
+	vertex2frag vertOut;			
+
+	vertOut.HPosition = mul(ModelViewProj, app.vPosition);
+
+	vertOut.fDiffuseColor = app.vColor;
+	
+	vertOut.fTexCoord0 = app.vTexCoord0;
+
+	return vertOut;
+
+}
+
+frag2buffer fragmentDOF(in vertex2frag interpolant,
+						uniform sampler2D dofTexture,
+						uniform sampler2D dofDepth,
+						uniform float focusDepth,
+						uniform float relativeApertureSize,
+						uniform float slope, 
+						uniform float reversedNear,				//reversedNear = 1/Near;
+						uniform float reversedFar,				//reversedFar = 1/Far - 1/Near;
+						uniform float halfImageHeight )
+{
+	frag2buffer fragOut;
+	
+	float4 depthBufferValue = tex2D(dofDepth, interpolant.fTexCoord0);
+	float  depth = depthBufferValue.r;
+	depth = reversedNear + depth*reversedFar;
+	depth = 1/depth;
+	float  cocRadius = abs(depth - focusDepth)*relativeApertureSize;
+	float  pixelRadius = cocRadius*slope*halfImageHeight/depth;
+	float  lod = log2(pixelRadius*0.5);
+	
+	fragOut.color = tex2Dlod( dofTexture, float4(interpolant.fTexCoord0, 0.0, lod) );
+	
+	return fragOut;
+}

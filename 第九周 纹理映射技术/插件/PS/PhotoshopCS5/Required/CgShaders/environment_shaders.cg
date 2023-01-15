@@ -1,0 +1,74 @@
+	struct a2v
+	{
+		float4 vPosition : POSITION;
+	};
+	struct vertex2frag
+	{
+		float4 HPosition : POSITION;
+		float4 fPosition : TEXCOORD0;
+	};
+	struct frag2buffer
+	{
+		float4 color: COLOR0;
+		float4 extra_target1: COLOR1;
+		float4 extra_target2: COLOR2;
+		float4 extra_target3: COLOR3;
+		float  depth: DEPTH;
+	};
+const float pi = 3.1415925;	
+
+/***********************************************************************/
+float2 uvSPHERE(in float3 iSphereVector)
+{
+	float2 uv;
+	uv.y = (acos(abs(iSphereVector.y))/pi);
+	if (iSphereVector.y<0.0) uv.y = 1.0-uv.y;
+	uv.x = (atan2(iSphereVector.x, iSphereVector.z)+pi)/(2.0*pi);
+	return uv;
+}
+/***********************************************************************/
+float4 texSPHERE(in sampler2D sphereTex, in float3 lookup_vector)
+	{
+	float2 index;
+	float3 reflectDir;
+	float4 sphereColor;
+	index = uvSPHERE(lookup_vector);
+	sphereColor = tex2D(sphereTex, index);
+	return sphereColor;
+	}
+/***********************************************************************/
+/**********************************************************************/
+	vertex2frag vertEnvironment(in a2v app, 
+		uniform float4x4 modelViewProj,
+		uniform float4x4 justModelView)
+	{
+		vertex2frag vertOut;
+		vertOut.HPosition = mul(modelViewProj, app.vPosition);
+		vertOut.fPosition.xyz = mul(justModelView,app.vPosition).xyz;
+		vertOut.fPosition.w = 0;
+		return vertOut;
+	}
+/**********************************************************************/
+	frag2buffer fragEnvironment(in vertex2frag interpolant
+								,uniform sampler2D environment_texture
+								,uniform sampler1D acos_texture
+								,uniform sampler2D atan2_texture
+								,uniform float4x4 reflectionTransformation
+								,uniform float4 environmentColor
+								)
+		{	
+		frag2buffer fragOut;
+		float4 envColor;
+		float4 texLookup;
+		float3 reflectionVector;
+		float4 eyeRay;
+		eyeRay.xyz = normalize(interpolant.fPosition.xyz);
+		eyeRay.w = 0;
+		reflectionVector = mul(reflectionTransformation, eyeRay).xyz;
+		texLookup = texSPHERE(environment_texture, reflectionVector);
+		envColor.rgb = lerp(environmentColor.rgb, texLookup.rgb, texLookup.a);
+		fragOut.color.rgb = envColor.rgb;
+		fragOut.color.a = 1.0;
+		return fragOut;
+		}
+/**********************************************************************/

@@ -1,0 +1,105 @@
+<html><head><title>Photoshop Toolbox examples :: Photoshop Toolbox examples</title>
+<!-- $Revision$  $Date$ -->
+
+<!-- HEADSTUFF -->
+<link rel=stylesheet href="docstyle1.css" type="text/css">
+</head>
+<body bgcolor=#ffffff>
+<!-- NAVBARTOP -->
+<table border=0 width="100%" cellpadding=0 cellspacing=0 ID="Table1"><tr>
+<td valign=baseline bgcolor="#e7ebf7"><b>Photoshop Toolbox examples</b></td>
+</tr>
+</table>
+
+<!-- H2 --><p><font size=+1 color="#990000"><b>Example -- Open and modify a document</b></font><br class="hdr">
+<p>The power of Photoshop is the ability to open many different file formats. 
+The PSD file format is in particular a difficult nut to crack. In this example 
+we will: open a PSD file (Native Photoshop file format), get the pixels into 
+MATLAB, run an average on each channel, and finally set the new pixels back to Photoshop.</p>
+<code>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>psopendoc('C:\Program Files\Adobe\Adobe Photoshop CS5\Samples\Vanishing Point.psd');<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p = psgetpixels();<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,1)=mean(mean(p(:,:,1)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,2)=mean(mean(p(:,:,2)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,3)=mean(mean(p(:,:,3)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>pssetpixels(p);<br>
+</code>
+<!-- H2 --><p><font size=+1 color="#990000"><b>Example -- Layered documents</b></font><br class="hdr">
+<p>I picked an easy PSD in the example above. The Vanishing Point file only contains 
+one layer. Run the same example above only use 'Fish.psd' for the file name.
+It appears that nothing happened because the file opens on a layer with not much
+data on it. The image looks the same. One option is to flatten the document. <code>psjavascript('activeDocument.flatten()');</code>
+Another, more interesting, option is to move to the layer with some interesting pixels.</p>
+<code>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>psopendoc('C:\Program Files\Adobe\Adobe Photoshop CS5\Samples\Fish.psd');<br>
+	<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>ln = pslayernames();<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>pssetactivelayer(ln{length(ln)});<br>
+	<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p = psgetpixels();<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,1)=mean(mean(p(:,:,1)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,2)=mean(mean(p(:,:,2)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,3)=mean(mean(p(:,:,3)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>pssetpixels(p);<br>
+</code>
+<!-- H2 --><p><font size=+1 color="#990000"><b>Example -- Transparency</b></font><br class="hdr">
+<p>The 'Fish.psd' example has a lot of layers with little information on them. 
+We will use that example to show how to deal with transparency. Run the above example 
+with one minor change. <code>pssetactivelayer(ln{length(ln)-1});</code> I will pick
+the layer above the background layer, 'PurpleFish'. </p>
+<code>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>psopendoc('C:\Program Files\Adobe\Adobe Photoshop CS5\Samples\Fish.psd');<br>
+	<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>ln = pslayernames();<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>pssetactivelayer(ln{length(ln)-1});<br>
+	<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p = psgetpixels();<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,1)=mean(mean(p(:,:,1)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,2)=mean(mean(p(:,:,2)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,3)=mean(mean(p(:,:,3)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>pssetpixels(p);<br>
+</code>
+<p>Running the code above gets us white fish! I was expecting an average purple 
+color of fish. What happened? The 'p' matrix we got back was for the width x height
+of the document. Most of the layer is transparent and the values we averaged are not
+actually visible. We need to only average the pixels that we see. We need the transparency channel. 
+<code>t = psgetpixels(16);</code> Read the documentation on how I got the magic '16' number. 
+Now we do it again but only average pixels that are not transparent.</p>
+<code>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>psopendoc('C:\Program Files\Adobe\Adobe Photoshop CS5\Samples\Fish.psd');<br>
+	<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>ln = pslayernames();<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>pssetactivelayer(ln{length(ln)-1});<br>
+	<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p = psgetpixels();<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>t = psgetpixels(16);<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>index=find(t(:)>0);<br>
+	<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>c=p(:,:,1);<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>c(index)=mean(mean(c(index)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,1)=c;<br>
+	<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>c=p(:,:,2);<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>c(index)=mean(mean(c(index)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,2)=c;<br>
+	<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>c=p(:,:,3);<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>c(index)=mean(mean(c(index)));<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>p(:,:,3)=c;<br>
+	<br>
+	<html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</html>pssetpixels(p);<br>
+</code>
+<p>Good! Nice boring purple fish.</p>
+<p>Also note the matrix we get back from <code>pssetpixels().</code> The return value changes depending
+on the document. For our first example it was <code>540x360x3 uint8</code> as the document has three
+channels and a bit depth of 8. For the second example it was <code>257x400x3 uint16</code> as the
+document was three channels and a bit depth of 16. CMYK and Grayscale images will return 4 and 1 for the
+third size respectively. The class will be <code>uint8, uint16, or double</code> depending on the image depth.</p>
+<p class="copy">&copy; 2010 Adobe Systems, Inc.</p>
+
+<br>
+<!-- Copyright (c) 2010 Adobe Systems, Inc. -->
+</body>
+</html>
+
+

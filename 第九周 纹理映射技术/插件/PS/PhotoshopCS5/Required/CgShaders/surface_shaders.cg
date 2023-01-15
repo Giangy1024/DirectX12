@@ -1,0 +1,524 @@
+//GL Engine Cg Shaders Be Here. -Nikolai
+#define ENABLE_IBL
+
+#ifndef CONDITIONAL_SHADER_COMPILATION
+#define ENABLE_AGFBumpMap
+#define ENABLE_AGFSphereEnvironmentMap
+#define ENABLE_AGFDiffuseMap
+#define ENABLE_ATTENUATION
+#define ENABLE_SPOTLIGHTS
+#define ENABLE_SPECULAR_HIGHLIGHTS
+#define ENABLE_LIGHTING
+#define ENABLE_FRAGMENT_LIGHTING
+#define NUMBER_OF_LIGHTS 8
+#define ENABLE_CLIPPING_PLANE
+#endif
+
+	struct a2v
+	{
+		float4 vPosition : POSITION;
+		float4 vColor: COLOR;
+		float4 vNormal : NORMAL;
+		float4 vTexCoord0 : TEXCOORD0;
+#ifdef ENABLE_AGFBumpMap
+		float4 vFaceNormal: TEXCOORD1;
+		float4 vFaceTangent: TEXCOORD2;
+		float4 vFaceBinormal: TEXCOORD3;
+#endif
+	};
+	struct vertex2frag
+	{
+		float4 HPosition : POSITION;
+		float4 fDiffuseColor : COLOR0;
+		float4 fSpecularColor : COLOR1;
+		float4 fTexCoord0 : TEXCOORD0;
+		float4 fClipPosition : TEXCOORD1;
+#ifdef ENABLE_AGFBumpMap
+		float3 _t: TEXCOORD2;
+		float3 _b: TEXCOORD3;
+		float3 _n: TEXCOORD4;
+#endif
+		float3 vNormal: TEXCOORD5;
+		float3 vEye: TEXCOORD6;
+		float3 vPosition: TEXCOORD7;
+	};
+	struct vertex2fragX
+	{
+		float4 HPosition : POSITION;
+		float4 fDiffuseColor : COLOR0;
+		float4 fSpecularColor : COLOR1;
+
+		float4 fBackDiffuseColor : BCOL0;
+		float4 fBackSpecularColor : BCOL1;
+		float4 fTexCoord0 : TEXCOORD0;
+		float4 fClipPosition : TEXCOORD1;
+#ifdef ENABLE_AGFBumpMap
+		float3 _t: TEXCOORD2;
+		float3 _b: TEXCOORD3;
+		float3 _n: TEXCOORD4;
+#endif
+		float3 vNormal: TEXCOORD5;
+		float3 vEye: TEXCOORD6;
+		float3 vPosition: TEXCOORD7;
+	};
+	struct frag2buffer
+	{
+		float4 color: COLOR0;
+//		float4 extra_target1: COLOR1;
+//		float4 extra_target2: COLOR2;
+//		float4 extra_target3: COLOR3;
+		float  depth: DEPTH;
+	};
+	struct Material 
+	{
+		float4	Ke;
+		float4	Ka;
+		float4	Kd;
+		float4	Ks;
+		float4	selfillum;
+		float	shininess;
+		float	reflectivity;
+		float	opacity;
+	};
+	struct Light 
+	{
+		float3 ambient;
+		float3 diffuse;
+		float3 specular;
+		float4 position;
+		float4 direction;
+		float2 angle_cos;
+		float4 attenuation;
+		float4 decay;
+	};
+//#define USE_TEXTURE_TRIG_FUNCTIONS
+const float pi = 3.1415925;	
+
+/***********************************************************************/
+float2 uvSPHERE(in float3 iSphereVector)
+{
+	float2 uv;
+	uv.y = (acos(abs(iSphereVector.y))/pi);
+	if (iSphereVector.y<0.0) uv.y = 1.0-uv.y;
+	uv.x = (atan2(iSphereVector.x, iSphereVector.z)+pi)/(2.0*pi);
+	return uv;
+}
+/***********************************************************************/
+float4 texSPHERE(in sampler2D sphereTex, in float3 lookup_vector)
+	{
+	float2 index;
+	float3 reflectDir;
+	float4 sphereColor;
+	index = uvSPHERE(lookup_vector);
+	sphereColor = tex2D(sphereTex, index);
+	return sphereColor;
+	}
+/***********************************************************************/
+	void UniversalDiffuse(	in float3 normal, 	
+		in float3 ecPosition3,
+		in Light lightSource,
+		inout float3 diffuse, 
+		inout float3 specular,
+		in float shininess) 
+	{
+		float nDotVP;
+		float3 light;
+		float3 light_infinite;
+		float3 light_point;
+		light_infinite = normalize(lightSource.position.xyz);
+		light_point =  normalize(lightSource.position.xyz + ecPosition3);
+		//light = light_point; 
+		light = lerp (light_infinite, light_point, lightSource.position.w);//Point+spot vs. infinite.
+		float3 diffuse_coeff, specular_coeff;
+		diffuse_coeff = lightSource.diffuse;
+		specular_coeff = lightSource.specular;
+		float brightness_factor=1.0;
+#ifdef ENABLE_ATTENUATION
+		float distance = length(lightSource.position.xyz + ecPosition3);
+		if (lightSource.attenuation[0]>0.5)
+			{
+			float attenuation_factor = 1-smoothstep(lightSource.attenuation[1], lightSource.attenuation[2], distance);
+			brightness_factor *= attenuation_factor;
+			}
+		/*if (lightSource.decay[0]>0.5) //Decay is unused, for now
+			{
+			float decay_factor = 1.0/(lightSource.decay[0]+lightSource.decay[1]*distance + lightSource.decay[2]*distance*distance);
+			brightness_factor *= decay_factor;
+			}*/
+#endif
+#ifdef ENABLE_SPOTLIGHTS
+		if (lightSource.angle_cos.r < 1.5)//This means spot light
+			{
+			float3 light_axis = -normalize(lightSource.direction.xyz - lightSource.position.xyz); //Should be already normalized in the app
+			float angle_dot = dot(light, light_axis);
+			float angular_brightness_value=smoothstep(lightSource.angle_cos.r, lightSource.angle_cos.g, angle_dot);
+			brightness_factor *= angular_brightness_value;
+			/*if ((angle_dot)<lightSource.angle_cos)
+				{
+				diffuse_coeff = float3(0.0, 0.0, 0.0);
+				specular_coeff = float3(0.0, 0.0, 0.0);
+				}*/
+			}
+#endif
+		diffuse_coeff *= brightness_factor;
+		specular_coeff *= brightness_factor;
+		nDotVP = max (0.0, (dot(normal, light)));
+		diffuse += diffuse_coeff * nDotVP;
+		//diffuse = (normal+float3(1, 1, 1))*float3(0.5, 0.5, 0.5); //- debug thing to test normals
+#ifdef ENABLE_SPECULAR_HIGHLIGHTS
+		{
+			float nDotHV, pf;
+			//float3 halfVect = normalize(light+float3(0.0, 0.0, 1.0)); //eye is always 0, 0, 1
+			float3 halfVect = normalize(light+normalize(ecPosition3));
+			nDotHV = max (0.0, dot(normal, halfVect));
+			pf = pow(nDotHV, shininess);
+			specular += specular_coeff * pf;
+		}
+#endif
+	}
+/***********************************************************************/
+	vertex2fragX vertMain(in a2v app, 
+		uniform float4x4 modelViewProj,
+		uniform float4x4 modelView,
+		uniform float4x4 modelViewIT,
+		uniform float4x4 modelViewCamera,
+		uniform float4x4 reflectionTransformationMatrix,
+		uniform float4x4 textureTransform,
+		uniform float3	 normalMultiplier,
+#ifdef ENABLE_LIGHTING
+		uniform Light    lights[NUMBER_OF_LIGHTS],
+#endif
+		uniform Material material)
+	{
+		vertex2fragX vertOut;
+		vertOut.HPosition = mul(modelViewProj, app.vPosition);
+
+#ifdef ENABLE_DEPTH_PEELING
+		vertOut.fClipPosition = mul(modelViewProj, app.vPosition);
+#endif
+		float3 ecPosition3 = (mul(modelView,app.vPosition).xyz);
+#if 1
+		float4 appNormal = app.vNormal;
+		appNormal.w = 0.0;
+		float3 normalVec = normalize(mul(modelViewIT,appNormal).xyz);
+		normalVec = normalVec * normalMultiplier; //This will be used to flip the normal if necessary
+#else
+		float4 v1 = app.vPosition+app.vNormal;
+		v1.w = 1.0;
+		float3 ecPosition3_1 = (mul(modelView,v1).xyz);
+		float3 normalVec = normalize(ecPosition3_1-ecPosition3);
+		normalVec = normalVec * normalMultiplier; //This will be used to flip the normal if necessary
+#endif		
+#ifdef ENABLE_LIGHTING
+#ifdef ENABLE_VERTEX_LIGHTING
+		float3 diff = float3(0.0, 0.0, 0.0);
+		float3 spec = float3(0.0, 0.0, 0.0);
+		int i;
+		for (i=0;i<NUMBER_OF_LIGHTS;i++)
+		{
+			lights[i].position = mul (modelViewCamera, lights[i].position);	
+			UniversalDiffuse(normalVec, -ecPosition3, lights[i], diff, spec, material.shininess);
+		}
+		vertOut.fDiffuseColor.rgb = diff;
+		vertOut.fSpecularColor.rgb = spec;
+		vertOut.fBackDiffuseColor.rgb = diff;
+		vertOut.fBackSpecularColor.rgb = spec;
+#endif
+#ifdef ENABLE_FRAGMENT_LIGHTING
+		vertOut.fDiffuseColor.rgb = float3(1, 0, 0);
+		vertOut.fBackDiffuseColor.rgb = float3(0, 0, 1);
+#endif
+#endif
+		vertOut.fTexCoord0.xy = app.vTexCoord0.xy;
+		vertOut.fTexCoord0.z = 0.0;
+
+		vertOut.fTexCoord0.w = 1.0;
+#ifdef ENABLE_AGFBumpMap
+		vertOut._n = normalVec;//((mul(modelViewIT,app.vFaceNormal).xyz));
+		vertOut._t = (mul(modelViewIT,app.vFaceTangent).xyz);
+		vertOut._b = (mul(modelViewIT,app.vFaceBinormal).xyz);
+#endif	
+		vertOut.vNormal = normalVec;
+		vertOut.vEye = ecPosition3;
+		vertOut.vPosition = mul(modelView,app.vPosition).xyz;
+		return vertOut;
+	}
+/***********************************************************************/
+
+float4 xformTex2D(in sampler2D texture, in float4 homogeneousUV, in float4x4 uvMatrix)
+{
+	float4 xformedUV;
+	xformedUV = mul(uvMatrix, homogeneousUV);
+	return tex2D(texture, xformedUV.xy);
+}
+/***********************************************************************/
+
+frag2buffer fragMain(in vertex2frag interpolant
+		,uniform sampler2D diffuse_texture
+		,uniform sampler2D bump_gradient_texture
+		,uniform sampler2D environment_texture
+		,uniform float4	   environmentColor
+		,uniform sampler2D reflectivity_texture
+		,uniform float4x4 modelViewCamera
+#ifdef ENABLE_LIGHTING
+		,uniform Light    lights[NUMBER_OF_LIGHTS]
+#endif
+		,uniform Material material
+		,uniform float4 bumpTextureNormalizer
+		,uniform float4x4 reflectionTransformationMatrix
+		,uniform float4x4 sphericalHarmonicsTransformationMatrix
+		,uniform sampler2D specular_intensity_texture
+		,uniform sampler2D specular_exponent_texture
+		,uniform sampler2D self_illumination_texture
+		,uniform sampler2D object_opacity_texture
+		,uniform sampler2D normal_map_texture
+		,uniform sampler2D IBLTexture
+		,uniform float4x4 diffuse_texture_matrix
+		,uniform float4x4 bump_gradient_texture_matrix
+		,uniform float4x4 reflectivity_texture_matrix
+		,uniform float4x4 specular_intensity_texture_matrix
+		,uniform float4x4 specular_exponent_texture_matrix
+		,uniform float4x4 self_illumination_texture_matrix
+		,uniform float4x4 object_opacity_texture_matrix
+		,uniform float4x4 normal_map_texture_matrix
+		,uniform float4 self_illumination_texture_range				
+#ifdef ENABLE_AGFSphereEnvironmentMap
+		,uniform sampler1D acos_texture
+		,uniform sampler2D atan2_texture
+#endif
+#ifdef	ENABLE_IBL
+		,uniform float4x4 sphericalHarmonicMatrixRed
+		,uniform float4x4 sphericalHarmonicMatrixGreen
+		,uniform float4x4 sphericalHarmonicMatrixBlue
+#endif
+		,uniform float4x4 modelViewIT
+		,uniform float bumpStrength
+		,uniform float4 clippingPlane
+		,uniform float4 textureSize
+		)
+	{
+		frag2buffer fragOut;
+		float4 diffuseColor = interpolant.fDiffuseColor;
+		float4 specularColor = interpolant.fSpecularColor;
+		float4 mainColor = float4(1.0, 1.0, 1.0, 1.0); //Set the opacity to 0, so if the diffuse texture is disabled, the material color will be used
+		float3 newNormal = normalize(interpolant.vNormal);
+		float3 materialSpecularColor;
+		float3 materialDiffuseColor;
+		float4 texLookup; //Temporary variable
+		float4 finalColor = float4(0.0, 0.0, 0.0, 0.0);
+		float4 UV = interpolant.fTexCoord0;
+//		if (UV.z>0.5) discard;
+//#if defined(SINGLE_PASS_SHADER) || defined(LIGHTING_PASS_SHADER)
+#ifdef ENABLE_AGFSpecularIntensityMap
+		//texLookup =  tex2D(specular_intensity_texture, interpolant.fTexCoord0.xy);
+		texLookup =  xformTex2D(specular_intensity_texture, UV, specular_intensity_texture_matrix);
+		materialSpecularColor = lerp(material.Ks.rgb, texLookup.rgb, texLookup.a);
+#else
+		materialSpecularColor =  material.Ks.rgb;
+#endif	
+#ifdef ENABLE_AGFDiffuseMap
+		//texLookup = tex2D(diffuse_texture, interpolant.fTexCoord0.xy);
+		texLookup = xformTex2D(diffuse_texture, UV, diffuse_texture_matrix);
+		materialDiffuseColor = lerp(material.Kd.rgb, texLookup.rgb, texLookup.a);
+#else
+		materialDiffuseColor.rgb = material.Kd.rgb;
+#endif
+#ifdef ENABLE_LIGHTING
+		//Modify Diffuse color by the material diffuse color. This will have effect on vertex-lighting mode only
+		//Ambient term should be added here, but since our ambient light component is always 0, we skip it
+		diffuseColor.rgb = (diffuseColor.rgb+material.Ke.rgb)*materialDiffuseColor;
+		//Modify Specular color by the material specular color. This will have effect on vertex-lighting mode only
+		specularColor.rgb = specularColor.rgb*materialSpecularColor;
+#else 
+		diffuseColor.rgb = materialDiffuseColor;
+		specularColor.rgb = float3(0, 0, 0);
+#endif
+#ifdef ENABLE_AGFNormalMap
+		//We will make sure that normal mapping and bump mapping cannot be enabled simultaneously
+		//float4 normalMapLookup = tex2D(normal_map_texture, interpolant.fTexCoord0.xy);
+		float4 normalMapLookup = xformTex2D(normal_map_texture, UV, normal_map_texture_matrix);
+		normalMapLookup.xyz = (normalMapLookup.xyz-float3(0.5, 0.5, 0.5))*2;
+		float normalMapAlpha = normalMapLookup.a;
+		normalMapLookup.a = 0.0;
+		if (dot(normalMapLookup.xyz, normalMapLookup.xyz)<2.5)//White color in normal maps disables it
+			{
+			newNormal = lerp(newNormal, normalize(mul(modelViewIT,normalMapLookup).xyz), normalMapAlpha);
+			//newNormal = lerp(newNormal, normalize(normalMapLookup.xyz), normalMapAlpha);
+			}
+#endif
+#ifdef ENABLE_AGFBumpMap
+		//float4 bumpLookup = tex2D(bump_gradient_texture, interpolant.fTexCoord0.xy);
+		float4 bumpLookup = xformTex2D(bump_gradient_texture, UV, bump_gradient_texture_matrix);
+		float3 bumpGradient;
+#ifdef GPU_BUMP_GRADIENT_CALCULATION
+		float x0,x1,y0,y1, xy0;
+		xy0=bumpLookup.r;
+#ifdef BUMP_CENTRAL_DIFFERENCE
+//x0 = tex2D(bump_gradient_texture, interpolant.fTexCoord0.xy-bumpTextureNormalizer*float2(1.0, 0.0)).r;
+//x1 = tex2D(bump_gradient_texture, interpolant.fTexCoord0.xy+bumpTextureNormalizer*float2(1.0, 0.0)).r;
+//y0 = tex2D(bump_gradient_texture, interpolant.fTexCoord0.xy-bumpTextureNormalizer*float2(0.0, 1.0)).r;
+//y1 = tex2D(bump_gradient_texture, interpolant.fTexCoord0.xy+bumpTextureNormalizer*float2(0.0, 1.0)).r;
+x0 = xformTex2D(bump_gradient_texture, UV-bumpTextureNormalizer*float4(1.0, 0.0, 0.0, 0.0), bump_gradient_texture_matrix).r;
+x1 = xformTex2D(bump_gradient_texture, UV+bumpTextureNormalizer*float4(1.0, 0.0, 0.0, 0.0), bump_gradient_texture_matrix).r;
+y0 = xformTex2D(bump_gradient_texture, UV-bumpTextureNormalizer*float4(0.0, 1.0, 0.0, 0.0), bump_gradient_texture_matrix).r;
+y1 = xformTex2D(bump_gradient_texture, UV+bumpTextureNormalizer*float4(0.0, 1.0, 0.0, 0.0), bump_gradient_texture_matrix).r;
+
+bumpGradient.xyz = float3(-(x1-x0), -(y1-y0), 0);
+#endif
+#else
+		bumpGradient = (bumpLookup.rgb - 0.5)*2.0; //In case of byte textures, stuff's shoved into [0, 1] range, we get it back to [-1, +1]
+#endif
+float3 normalDistortionTangentSpace = bumpGradient.xyz*2.0*bumpStrength*bumpLookup.a; //Alpha channel used to modulate bump strength
+float3 normalDistortionEyeSpace;
+float3 _t = normalize(interpolant._t);
+float3 _n = normalize(interpolant._n);
+float3 _b = normalize(cross(_n, _t));
+normalDistortionEyeSpace.x = _t.x * normalDistortionTangentSpace.x + _b.x * normalDistortionTangentSpace.y;//+ _n.x * normalDistortionTangentSpace.z;
+normalDistortionEyeSpace.y = _t.y * normalDistortionTangentSpace.x + _b.y * normalDistortionTangentSpace.y;// + _n.y * normalDistortionTangentSpace.z;
+normalDistortionEyeSpace.z = _t.z * normalDistortionTangentSpace.x + _b.z * normalDistortionTangentSpace.y;// + _n.z * normalDistortionTangentSpace.z;
+newNormal = normalize(newNormal + normalDistortionEyeSpace);
+		//Okay, we got newNormal- normal distorted by the bump map
+#endif	
+#ifdef ENABLE_LIGHTING
+#ifdef ENABLE_FRAGMENT_LIGHTING
+		//Determine if triangle is front/back facing
+		if (interpolant.fDiffuseColor.r > 0.5)//back-facing condition
+		   newNormal = -newNormal;
+		//Compute the lighting 
+		float3 diff = float3(0.0, 0.0, 0.0);
+		float3 spec = float3(0.0, 0.0, 0.0);
+		int i;
+		float shininess;
+#ifdef ENABLE_AGFSpecularExponentMap
+		//texLookup = tex2D(specular_exponent_texture, interpolant.fTexCoord0.xy);
+		texLookup = xformTex2D(specular_exponent_texture, UV, specular_exponent_texture_matrix);
+		shininess = lerp(material.shininess, (1.0+180.0*texLookup.r), texLookup.a);
+#else
+		shininess = material.shininess;
+#endif
+		for (i=0;i<NUMBER_OF_LIGHTS;i++)
+		{
+			lights[i].position = mul (modelViewCamera, lights[i].position);	
+			lights[i].direction = mul (modelViewCamera, lights[i].direction);	
+			UniversalDiffuse(newNormal, -(interpolant.vEye), lights[i], diff, spec, shininess);
+		}
+		//Ambient term should be added here, but since our ambient light component is always 0, we skip it
+		diffuseColor.rgb = (diff+material.Ke.rgb)*materialDiffuseColor;
+		specularColor.rgb = materialSpecularColor*spec;
+#endif
+#endif// of #ifdef ENABLE_LIGHTING 
+#ifdef ZERO_LIGHTS
+		//Special case for full-shaded mode with zero lights
+		diffuseColor.rgb = (material.Ke.rgb)*materialDiffuseColor;
+		specularColor.rgb = float3(0, 0, 0);
+#endif 
+		
+#ifdef ENABLE_IBL
+		//TODO: xinjul convert the normal in world coordinate
+		float4 normal1 = newNormal.xyzz;
+		normal1.w = 0.0;
+		float4 normalIBL = mul(sphericalHarmonicsTransformationMatrix, normal1);
+		normalIBL.w = 0.0;
+		normalize(normalIBL);
+		normalIBL.w = 1.0;
+		float3   diffuse_intensity =  materialDiffuseColor ;
+ 		float3 diffuseIBL = {  diffuse_intensity.r * dot(normalIBL, mul(sphericalHarmonicMatrixRed, normalIBL)),
+ 							  diffuse_intensity.g * dot(normalIBL, mul(sphericalHarmonicMatrixGreen, normalIBL)),		
+ 							  diffuse_intensity.b * dot(normalIBL, mul(sphericalHarmonicMatrixBlue, normalIBL))
+ 							};
+ 		//diffuseIBL = texSPHERE(IBLTexture, normalIBL.xyz).rgb; //For Debugging env. orientation only - use tex sample instead of spherical harmonic
+		diffuseColor.rgb += diffuseIBL;
+#endif
+		finalColor.rgb = diffuseColor.rgb+specularColor.rgb;
+//#endif // of #ifdef SINGLE_PASS_SHADER...
+		finalColor.a = material.opacity;
+//#if defined(SINGLE_PASS_SHADER) || defined(ENVIRONMENT_PASS_SHADER)
+#if defined(ENVIRONMENT_PASS_SHADER) || defined(OPACITY_SELF_ILLUM_PASS_SHADER)
+finalColor = float4(0, 0, 0, 1);
+#endif
+
+float4 reflColor = environmentColor;
+#ifdef ENABLE_AGFSphereEnvironmentMap
+		//Update the reflection vector
+		float4 t_reflect;
+		float3 reflectionVector;
+		t_reflect.xyz = reflect(normalize(interpolant.vPosition.xyz), newNormal);
+		t_reflect.w = 0;
+		reflectionVector = mul(reflectionTransformationMatrix, t_reflect).xyz;
+		texLookup = texSPHERE(environment_texture, reflectionVector);
+		reflColor.rgb = lerp(environmentColor.rgb, texLookup.rgb, texLookup.a);
+#endif		
+		reflColor.a = 0;
+		
+#ifdef ENABLE_AGFReflectivityMap
+		float3 reflectivity;
+		//texLookup = tex2D(reflectivity_texture, interpolant.fTexCoord0.xy);
+		texLookup = xformTex2D(reflectivity_texture, UV,reflectivity_texture_matrix);
+		reflectivity = lerp(material.reflectivity.rrr, texLookup.rgb, texLookup.a); //Default reflectivity is non-reflective, for now
+		reflColor.rgb = reflColor.rgb*reflectivity;
+#else
+		reflColor.rgb = reflColor.rgb*material.reflectivity.rrr;
+#endif
+
+		finalColor = finalColor+reflColor;
+		
+#ifdef ENABLE_AGFSelfIlluminationMap
+		float3 selfIlluminationColor;
+		selfIlluminationColor = xformTex2D(self_illumination_texture, UV, self_illumination_texture_matrix).rgb;
+		float3 rescaledSelfIlluminationColor;
+		rescaledSelfIlluminationColor.r = lerp(self_illumination_texture_range[0],self_illumination_texture_range[1], selfIlluminationColor.r);
+		rescaledSelfIlluminationColor.g = lerp(self_illumination_texture_range[0],self_illumination_texture_range[1], selfIlluminationColor.g);
+		rescaledSelfIlluminationColor.b = lerp(self_illumination_texture_range[0],self_illumination_texture_range[1], selfIlluminationColor.b);
+		finalColor.rgb = finalColor.rgb + rescaledSelfIlluminationColor.rgb;
+#else
+		finalColor.rgb = finalColor.rgb + material.selfillum.rgb;
+#endif
+		//float opacity = mainColor.a;
+
+/******* OPACITY MANAGEMENT *******/
+		
+		float opacity=1.0;
+#ifdef	ENABLE_AGFOpacityMap
+		//texLookup = tex2D(object_opacity_texture, interpolant.fTexCoord0.xy);
+		texLookup = xformTex2D(object_opacity_texture, UV, object_opacity_texture_matrix);		
+#ifdef USE_ALPHA_FOR_OPACITY_MAP
+		opacity = texLookup.a;
+#else
+		float3 perColorOpacity = lerp(material.opacity.rrr, texLookup.rgb, texLookup.a);
+		//We have got to choose _SINGLE_ opacity value for GL framebuffer
+		//We are choosing maximum of the 3
+		float rg_maxopacity = max (perColorOpacity.r, perColorOpacity.g);
+		opacity = max (rg_maxopacity, perColorOpacity.b); 
+#endif
+		finalColor.a = opacity;//*material.opacity;
+
+
+
+#ifdef 	DISABLED_ENABLE_ENVIRONMENT_MAPPING
+		float3 refractedRay;
+		float4 t_refract;
+		t_refract.xyz = refract(interpolant.vEye.xyz, newNormal, 1.0/1.45);
+		t_refract.w = 0;
+		refractedRay = mul(reflectionTransformationMatrix, t_refract).xyz;
+		float4 refractedColor;
+		refractedColor = texSPHERE(environment_texture, refractedRay);
+		finalColor.rgb = (1-opacity)*refractedColor.rgb+opacity*finalColor.rgb;
+		//finalColor.rgb = refractedColor.rgb;
+		//finalColor.rgb = (refractedRay.rgb+float3(1, 1, 1))*0.5;
+		opacity = 1.0;
+#endif
+#endif
+//#endif // of defined(SINGLE_PASS_SHADER) || defined(ENVIRONMENT_PASS_SHADER)
+#ifdef	ENABLE_CLIPPING_PLANE
+		float clipSign = dot(clippingPlane.xyz, interpolant.vPosition.xyz)+clippingPlane.w;
+		if (clipSign < 0) discard;
+#endif
+		if (finalColor.a == 0.0) discard;
+		fragOut.color = finalColor;
+#ifdef ENABLE_ALPHA_PREMULTIPLY
+		fragOut.color.rgb = fragOut.color.rgb*fragOut.color.a;
+#endif
+		fragOut.color = clamp(fragOut.color, float4(0, 0, 0, 0), float4(1, 1, 1, 1));
+//		fragOut.color.rgb=pow(fragOut.color.rgb, 1/2.2);
+		return fragOut;
+	}

@@ -1,0 +1,53 @@
+<html><head><title>Getting Started ::  (Getting Started)</title>
+<!-- $Revision$  $Date$ -->
+
+<!-- DOCNAME: Getting Started -->
+<!-- CHUNKNAME: Getting Started -->
+<!-- CHAPNAME:  -->
+<!-- HEADSTUFF -->
+<link rel=stylesheet href="docstyle1.css" type="text/css">
+</head>
+<body bgcolor=#ffffff>
+<!-- NAVBARTOP -->
+<table border=0 width="100%" cellpadding=0 cellspacing=0 ID="Table1"><tr>
+<td valign=baseline bgcolor="#e7ebf7"><b>Getting Started</b></td>
+</tr>
+</table>
+
+
+<a name="getting_started"></a><!-- TITLECOLLECTION --><a name="6673"></a><h1>Getting Started<a name="creating_plots"></a></h1>
+<hr>
+<a name="7246"></a>Photoshop integration enables communication between Photoshop and MATLAB, by letting you access images in Photoshop directly from the MATLAB command line. This is relevant for anyone wanting to run image processing routines in MATLAB and see results or combine with image processing functionality in Photoshop. Communication between Photoshop and MATLAB is enabled via the Photoshop JavaScript interface and the MATLAB library interface. Users will type commands into the MATLAB command line (i.e. Photoshop runs in the background) and the basic workflow is: (1) Get pixels from Photoshop (2) run MATLAB algorithms (3) place the pixels back in Photoshop to see the results visually (including ICC profiles).
+<hr>
+There are known issues when trying to launch Photoshop from MATLAB. I will list some work arounds and possible solutions here. If you have multiple versions of Photoshop installed,  the wrong version may launch. The solution is to launch Photoshop before running any MATLAB commands. On Windows, the pslaunch command will pick the last version of Photoshop that was running. Simply launch and quit the version you want and pslaunch will pick that version. If you get errors about a libtiff problem, you can remove the links to the libtiff libraries. This is a Macintosh only problem. The libraries can be found in your MATLAB installation /bin/mac folder. Place a '~' as the first character for libtiff.3.dylib, and libtiff.3.7.1.dylib, and their aliases. The numbers for your installation may be different but all files starting with libtiff need the '~' as the first character.
+<hr>
+The documentation found in your Photoshop install can be used to expand the Photoshop Toolbox to meet your needs. Please review the PDF files found in the "Scripting Guide" of your Photoshop install and the MATLAB files found in the "MATLAB" folder of your Photoshop install for more information.
+<hr>
+The integration requires a C compiler be present on your system. XCode for the Macintosh or Microsoft Visual C++ for Windows operating systems. On Windows, the 64 bit version of Photoshop must be used with the 64 bit version of MATLAB. Use MATLAB 7.9 (R2009b) for 64 bit support. Also, the 32 bit version of Photoshop must be used with the 32 bit version of MATLAB.
+<hr>
+<table width="100%" border="0" cellpadding="5" ID="Table2">
+<tr><td valign="top" width=300 class=topiclist><a name="7252"></a><a href="psexamples.html">Examples</a><br></td>
+<td valign="top" width=600><a name="7254"></a>Some quick and easy examples.<br></td>
+
+<tr><td valign="top" width=300 class=topiclist><a name="7266"></a><a href="psfunctionscat.html">Function list by category</a><br></td>
+<td valign="top" width=600><a name="7268"></a>A list of functions by category.<br></td>
+
+<tr><td valign="top" width=300 class=topiclist><a name="7273"></a><a href="psfunctionsalpha.html">Alphabetical function list</a><br></td>
+<td valign="top" width=600><a name="7275"></a>An alphabetical list of all the functions.<br></td>
+
+<tr><td valign="top" width=300 class=topiclist><a name="7297"></a><a href="http://www.adobe.com">Adobe Web page</a><br></td>
+<td valign="top" width=600><a name="7299"></a>Official Adobe web page.<br></td>
+
+</table> 
+<br>
+
+
+<p class="copy">&copy; 2010 Adobe Systems, Inc. </p>
+
+<br>
+<!-- Copyright 2010 Adobe Systems, Inc. -->
+<!-- Last updated: Wed Mar 08 11:14:28 2010 -->
+</body>
+</html>
+
+

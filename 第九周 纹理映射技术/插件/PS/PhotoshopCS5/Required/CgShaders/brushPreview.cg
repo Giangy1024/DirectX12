@@ -1,0 +1,347 @@
+ 
+struct a2v
+	{
+	float4 vPosition		: POSITION;
+	float4 vColor			: COLOR;
+	float4 vNormal			: NORMAL;
+	float4 vTexCoord0		: TEXCOORD0;
+	};
+struct vertex2frag
+	{
+	float4 HPosition		: POSITION;
+	float4 fDiffuseColor	: COLOR0;
+	float4 fTexCoord0		: TEXCOORD0;
+	float4 fFlowVector		: TEXCOORD1;
+	float3 vNormal			: TEXCOORD2;
+	float3 vEye				: TEXCOORD3;
+	float3 vPosition		: TEXCOORD4;
+	};
+struct frag2buffer
+	{
+	float4 color			: COLOR0;
+//	float  depth			: DEPTH;
+	};
+struct Light 
+	{
+		float3 ambient;
+		float3 diffuse;
+		float3 specular;
+		float3 direction;
+	};
+/***********************************************************************/
+void SimpleDiffuse(	in float3 iNormal, 	
+					in Light iLightSource,
+					in float iShininess,
+					inout float3 ioDiffuse, 
+					inout float3 ioSpecular) 
+	{
+		float nDotVP;
+		float3 light;
+		float3 diffuse_coeff, specular_coeff;
+		light = iLightSource.direction;
+		diffuse_coeff = iLightSource.diffuse;
+		specular_coeff = iLightSource.specular;
+		nDotVP = max (0.0, abs(dot(iNormal, light)));
+		ioDiffuse += diffuse_coeff * nDotVP;
+		{
+			float nDotHV, pf;
+			float3 halfVect = normalize(light+float3(0.0, 0.0, 1.0)); //eye is always 0, 0, 1\n\
+			nDotHV = max (0.0, abs(dot(iNormal, halfVect)));
+			pf = pow(nDotHV, iShininess);
+			ioSpecular += specular_coeff * pf;
+		}
+	}
+/***********************************************************************/
+float3 ShadeBrushHandle(float3 iNormal, float3 iBrushDiffuseColor)
+{
+	 float3 resultHandleColor;
+ 	 Light testLight;
+	 testLight.ambient = float3(0.2, 0.2, 0.2);
+	 testLight.diffuse = float3(0.8, 0.8, 0.8);
+	 testLight.specular = float3(0.5, 0.5, 0.6);
+	 testLight.direction = normalize(float3(1, 1, 1));
+	 float3 diff =  testLight.ambient;
+	 float3 spec = float3(0, 0, 0);
+ 	 SimpleDiffuse(-iNormal, testLight, 60, diff, spec);		
+	 resultHandleColor = iBrushDiffuseColor*diff+float3(0.7, 0.7, 0.7)*spec+testLight.ambient;
+	 return resultHandleColor;
+}
+/***********************************************************************/
+
+/***********************************************************************/
+vertex2frag standardVertex(	in		a2v			app,
+							uniform	float4x4	modelViewProj)
+	 {
+	 vertex2frag vertOut;
+	 vertOut.HPosition = mul(modelViewProj, app.vPosition);
+	 vertOut.vNormal =			app.vNormal.xyz;
+	 vertOut.fDiffuseColor =	app.vColor;
+	 vertOut.fTexCoord0 =		app.vTexCoord0;
+	 return vertOut;
+	 }
+ /***********************************************************************/
+frag2buffer passthroughFragment(in		vertex2frag interpolant,
+	 uniform sampler2D flowTex, 
+	 uniform sampler2D backgroundTex)
+	{
+	frag2buffer fragOut;
+	float2 uv = interpolant.fTexCoord0.xy;
+	float4 flowVector = tex2D(flowTex, uv);
+// 	fragOut.color = flowVector;
+// 	fragOut.color.rgb = lerp(float3(1,1,1), flowVector.rgb, flowVector.a);
+// 	fragOut.color.a = flowVector.a;
+// 	if (flowVector.a==0.5)
+// 		fragOut.color = float4(0.8, 0.5, 0, 1);//interpolant.fDiffuseColor;
+
+	fragOut.color = flowVector;
+	fragOut.color.a = flowVector.a;
+	return fragOut;
+	}
+ /***********************************************************************/
+ #define LIC_STEPS 10
+ frag2buffer licFragment(in		vertex2frag interpolant,
+ uniform sampler2D flowTex, 
+ uniform sampler2D backgroundTex)
+ {
+ frag2buffer fragOut;
+ float2 uv = interpolant.fTexCoord0.xy;
+ float4 flowVector = tex2D(flowTex, uv);
+ float2 normalizedFlow = normalize(flowVector.xy);
+ float stepLen = 0.1/LIC_STEPS;
+ int i;
+ float4 convolvedLicSample=float4(0, 0, 0, 0);
+ for (i=0;i<LIC_STEPS;i++)
+	 {
+	 float2 licSamplePoint = uv+((i-LIC_STEPS/2)*stepLen)*normalizedFlow;
+	 float4 licSample = tex2D(backgroundTex, licSamplePoint);
+	 licSample.a = 1.0;
+	 convolvedLicSample = convolvedLicSample+licSample;
+	 }
+ convolvedLicSample.rgb = convolvedLicSample.rgb/convolvedLicSample.a;
+ if (flowVector.a>1.0) flowVector.a=1.0; 
+ fragOut.color.rgb = lerp(float3(1,1,1), convolvedLicSample.rgb, flowVector.a);
+ fragOut.color.a = flowVector.a;
+ if (flowVector.a==0.5)
+	{
+	fragOut.color.rgb = ShadeBrushHandle(normalize(flowVector.rgb), float3(0.8, 0.5, 0));
+	fragOut.color.a = 1;
+	}
+ if (flowVector.a==-0.5)
+	{
+	fragOut.color.rgb = ShadeBrushHandle(normalize(flowVector.rgb), float3(0.3f, 0.3f, 0.3));
+	fragOut.color.a = 1;
+	}	
+ return fragOut;
+ }
+/***********************************************************************/
+vertex2frag flowSynthesisVertex(in		a2v			app,
+								uniform	float4x4	modelViewProj,
+								uniform	float4x4	modelView)
+	{
+	vertex2frag vertOut;
+	float4 firstVertex=app.vPosition;
+	firstVertex.w = 1.0f;
+	float4 secondVertex=app.vNormal;
+	secondVertex.w = 1.0f;
+	vertOut.HPosition = mul(modelViewProj, firstVertex);
+	float2 firstPositionProjected  = mul(modelViewProj, firstVertex).xy;
+	float2 secondPositionProjected  = mul(modelViewProj, secondVertex).xy;
+	float2 flowVector = (secondPositionProjected-firstPositionProjected)*app.vPosition.w;
+	vertOut.fFlowVector.rg =	normalize(flowVector);
+	vertOut.fFlowVector.b =	0;
+	vertOut.fFlowVector.a =	1;
+	return vertOut;
+	}
+ /***********************************************************************/
+ vertex2frag flowQuadGeneratingVertex(in		a2v			app,
+							 uniform	float4x4	modelViewProj,
+							 uniform	float4x4	modelView,
+							 uniform	float thickness)
+{
+	vertex2frag vertOut;
+	float4 firstVertex=app.vPosition;
+	firstVertex.w = 1.0f;
+	float4 secondVertex=app.vNormal;
+	secondVertex.w = 1.0f;
+	float4 thirdVertex = app.vTexCoord0;
+	thirdVertex.w = 1.0f;
+	float thicknessFactor = app.vTexCoord0.w;
+	float2 firstPositionProjected  = mul(modelViewProj, firstVertex).xy;
+	float2 secondPositionProjected  = mul(modelViewProj, secondVertex).xy;
+	float2 thirdPositionProjected  = mul(modelViewProj, thirdVertex).xy;
+	float2 flowVector = (secondPositionProjected-firstPositionProjected);
+	float2 quadThickness = 0.03*thickness;//Quad thickness, in normalized coordinates (viewport size is [-1, 1]x[-1,1])
+	float2 thicknessVector; //Thickness vector is a flow vector turned 90 degrees CCW
+	thicknessVector.x = -flowVector.y;
+	thicknessVector.y = +flowVector.x;
+	float2 thicknessVectorDir = normalize(thicknessVector);
+	thicknessVector = thicknessVectorDir*quadThickness*thicknessFactor;
+	
+	//Third position is needed because we need to adjust the end of the bristle segment
+	//to match the rotation of the next bristle segment, so the gap does not occur at the joint.
+	//In case the end of the bristle, thirdPosition == secondPosition, and the adjustment is identity.
+	float2 flowVector2 = (thirdPositionProjected-secondPositionProjected);
+	float C, S;
+	C = 1;
+	S = 0;
+	if (length(flowVector2)>0.00001 && length(flowVector)>0.00001)
+		{
+  		float2 fdir1 = normalize(flowVector);
+  		float2 fdir2 = normalize(flowVector2);
+  		C = dot(fdir1, fdir2);
+  		
+  		if (1-C*C>=0)
+  			S = sqrt(1-C*C);
+  		}
+	//If flowvector2 is turning clockwise relative to flowvector, flip the angle sign.
+	if (dot(thicknessVectorDir, flowVector2)<0) 
+		S = -S;
+	float2 rotatedThicknessVector;
+	//Simple 2D rotation
+	rotatedThicknessVector.x = C*thicknessVector.x-S*thicknessVector.y;
+	rotatedThicknessVector.y = S*thicknessVector.x+C*thicknessVector.y;
+	
+	float whichPoint = app.vPosition.w;
+	float4 vertexProjection;
+	float2 UVs=float2(0, 0);
+	if (whichPoint==0.0)
+		{
+		vertexProjection = mul(modelViewProj, firstVertex);
+		vertexProjection.xy=vertexProjection.xy-thicknessVector;
+		UVs=float2(0, 0);
+		}
+	if (whichPoint==1.0)
+		{
+		vertexProjection = mul(modelViewProj, firstVertex);
+		vertexProjection.xy=vertexProjection.xy+thicknessVector;
+		UVs=float2(0, 1);
+		}
+	if (whichPoint==2.0)
+		{
+		vertexProjection = mul(modelViewProj, secondVertex);
+		vertexProjection.xy=vertexProjection.xy+rotatedThicknessVector;
+		UVs=float2(1, 1);
+		}
+	if (whichPoint==3.0)
+		{
+		vertexProjection = mul(modelViewProj, secondVertex);
+		vertexProjection.xy=vertexProjection.xy-rotatedThicknessVector;
+		UVs=float2(1, 0);
+		}
+	vertOut.HPosition = vertexProjection;
+	vertOut.fFlowVector.rg = normalize(flowVector);
+	vertOut.fFlowVector.b =	0;
+	vertOut.fFlowVector.a =	1;
+	vertOut.fTexCoord0.xy = UVs;
+	vertOut.fTexCoord0.z = 0;
+	vertOut.fTexCoord0.w = 1;
+	return vertOut; 
+}
+/***********************************************************************/
+frag2buffer flowSynthesisFragment(in		vertex2frag interpolant)
+	 {
+	 frag2buffer fragOut;
+	 float hairTaperAlpha=1.0f;
+	 float normalizedThicknessT = abs(interpolant.fTexCoord0.y-0.5)*2.0;
+	 float stepParameter = (normalizedThicknessT-0.7)/0.3;
+	 hairTaperAlpha = smoothstep(1, 0,stepParameter);
+	 fragOut.color = interpolant.fFlowVector;
+	 fragOut.color.a = hairTaperAlpha;
+	 return fragOut;   
+	 }
+/***********************************************************************/
+frag2buffer hairShadingFragment(in vertex2frag interpolant)
+	 {
+	 frag2buffer fragOut;
+	 float3 normal;
+	 float3 sideVector=float3(0, 0, 0);
+	 sideVector.xy = interpolant.fFlowVector.yx*float2(-1, 1);
+	 float alpha = interpolant.fTexCoord0.y*3.1415925;
+	 normal = normalize(float3(sideVector.x*cos(alpha), sideVector.y*cos(alpha),sin(alpha)));
+	 Light testLight;
+	 testLight.ambient = float3(0.2, 0.2, 0.2);
+	 testLight.diffuse = float3(0.8, 0.8, 0.8);
+	 testLight.specular = float3(0.3, 0.3, 0.3);
+	 testLight.direction = normalize(float3(0, 0, 1));
+	 float3 diff = float3(0.2, 0.2, 0.2);
+	 float3 spec = float3(0, 0, 0);
+ 	 SimpleDiffuse(-normal, testLight, 70, diff, spec);		
+	 fragOut.color.rgb = float3(0.8, 0.5, 0)*diff+float3(0.7, 0.7, 0.7)*spec+testLight.ambient;//interpolant.fFlowVector;
+	 float hairTaperAlpha=1.0f;
+	 float normalizedThicknessT = abs(interpolant.fTexCoord0.y-0.5)*2.0;
+	 float thicknessThreshold = 0.1; //0.0 - 0.99, less means thinner
+	 float stepParameter = (normalizedThicknessT-thicknessThreshold)/(1-thicknessThreshold);
+	 hairTaperAlpha = smoothstep(1, 0,stepParameter);
+	 fragOut.color.a = hairTaperAlpha;
+	 return fragOut;
+	 }
+/***********************************************************************/
+frag2buffer sketchShadingFragment(in vertex2frag interpolant)
+	 {
+	 frag2buffer fragOut;
+// 	 float3 normal;
+// 	 float3 sideVector=float3(0, 0, 0);
+// 	 sideVector.xy = interpolant.fFlowVector.yx*float2(-1, 1);
+// 	 float alpha = interpolant.fTexCoord0.y*3.1415925;
+// 	 normal = normalize(float3(sideVector.x*cos(alpha), sideVector.y*cos(alpha),sin(alpha)));
+// 	 Light testLight;
+// 	 testLight.ambient = float3(0.2, 0.2, 0.2);
+// 	 testLight.diffuse = float3(0.8, 0.8, 0.8);
+// 	 testLight.specular = float3(0.3, 0.3, 0.3);
+// 	 testLight.direction = normalize(float3(0, 0, 1));
+// 	 float3 diff = float3(0.2, 0.2, 0.2);
+// 	 float3 spec = float3(0, 0, 0);
+//  	 SimpleDiffuse(-normal, testLight, 70, diff, spec);		
+//	 fragOut.color.rgb = float3(0.8, 0.5, 0)*diff+float3(0.7, 0.7, 0.7)*spec+testLight.ambient;//interpolant.fFlowVector;
+	 fragOut.color.rgb = float3(0.078, 0.078, 0.078);
+	 float hairTaperAlpha=1.0f;
+	 float normalizedThicknessT = abs(interpolant.fTexCoord0.y-0.5)*2.0;
+	 float thicknessThreshold = 0.1; //0.0 - 0.99, less means thinner
+	 float stepParameter = (normalizedThicknessT-thicknessThreshold)/(1-thicknessThreshold);
+	 hairTaperAlpha = smoothstep(1, 0,stepParameter);
+	 fragOut.color.a = hairTaperAlpha;
+	 return fragOut;
+	 } 
+/***********************************************************************/
+frag2buffer brushHandleFragment(in	vertex2frag interpolant, 
+								uniform float iOpacityCode)
+	 {
+	 frag2buffer fragOut;
+	 fragOut.color.rgb = interpolant.vNormal;
+	 fragOut.color.a = iOpacityCode;
+	 return fragOut;
+	 }
+/***********************************************************************/
+frag2buffer brushHandleShadedFragment(in	vertex2frag interpolant, 
+									  uniform float3 iBrushDiffuseColor)
+	 {
+	 frag2buffer fragOut;
+	 float3 normal = normalize(interpolant.vNormal);
+	 fragOut.color.rgb = ShadeBrushHandle(normal, iBrushDiffuseColor);
+	 fragOut.color.a = 1.0;
+	 return fragOut;
+	 }
+frag2buffer brushHandleSketchFragment(in vertex2frag interpolant, 
+									  uniform float3 iBrushDiffuseColor)
+	 {
+	 frag2buffer fragOut;
+	 float3 normal = normalize(interpolant.vNormal);
+// 	 float3 eye = float3(0, 0, -1);
+ 	 float opacitySilhouetteFactor;// = pow(1-abs(dot(normal, eye)), 4);
+	 opacitySilhouetteFactor = 1.0f;
+	 fragOut.color.rgb = lerp(float3(1, 1, 1), iBrushDiffuseColor, opacitySilhouetteFactor);	 
+	 fragOut.color.a = 1.0;
+	 return fragOut;
+	 }
+/***********************************************************************/
+vertex2frag brushHandleVertex(	in		a2v			app,
+								uniform	float4x4	modelViewProj, 
+								uniform float4x4    modelViewIT)
+	 {
+	 vertex2frag vertOut;
+	 vertOut.HPosition = mul(modelViewProj, app.vPosition);
+	 vertOut.vNormal =			mul(modelViewIT, app.vNormal).xyz;
+	 vertOut.fDiffuseColor =	app.vColor;
+	 vertOut.fTexCoord0 =		app.vTexCoord0;
+	 return vertOut;
+	 }

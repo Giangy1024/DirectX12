@@ -1,0 +1,1160 @@
+a3617ce7b85283f9e314128901062866 *AdobeLinguistic.dll
+91367d581c16ef94b4eaffed2461b943 *AdobeOwl.dll
+9b2dbec548b3c4e7bfe6424b8bb90165 *AdobeOwlCanvas.dll
+80d2802fa7e79c9e4a05b65238a49144 *AdobePDFL.dll
+92070fc943a7f7671d252995bd34c03c *AdobePIP.dll
+e61e9b1778e6105537480c9df4f8856c *AdobeXMP.dll
+ab32e7b2305287ec1edd07a66fa9924c *AdobeXMPFiles.dll
+fb2c0a6143ffac5c789be60d26b5e00a *AdobeXMPScript.dll
+96cbd58f442edbc5d27a0c0639e299a6 *AFlame.dll
+832d0a42526f9d2be482dd36700d60a2 *AFlamingo.dll
+a9a72fef5adaa1213cdfe2e67e1b686a *AGM.dll
+ef2ccf3eda2b6533fcf42b61ef2814b1 *ahclient.dll
+3569c6b93f3d1c3c49c349b96b86d7dc *aif_core.dll
+34c8a2f7b036a8e8c9daa731375bf5d3 *aif_ogl.dll
+de3177189f8ed4088151a98659d114a2 *AlignmentLib.dll
+e1282c945145a2367646287167a1a694 *amtlib.dll
+dd53ae9fccd4ce00126582a8d6d1fda6 *amtservices.dll
+b356bf5f0542cfdcbb9e311ece461e07 *ARE.dll
+f9f1ca4970201fec6d53c69b23c2ff1a *asneu.dll
+6cec0778d2ffaa248093a2f77ce05879 *AXE8SharedExpat.dll
+a4dfaccd7d7e798d0e4359fc1709c2c2 *AXEDOMCore.dll
+6b3a7f710902cc2fb15869905c0bb240 *Bib.dll
+086d8fddacbc46f600619f2df866855c *BIBUtils.dll
+c4b8253434552b75fdee0cc82d4cc514 *boost_threads.dll
+788b4834c70e660bdeb45c272b045e79 *cg.dll
+30020d75f178d877d913e03ff6778280 *cgGL.dll
+29d3e33f5b613d54f3a6da6ee66fb89e *CoolType.dll
+cbf2d9d44d462b1c742b78d087086477 *data_flow.dll
+e402b67b981a397e968affa70752e016 *dvaadameve.dll
+6d7cac0f456f94dacf32781810b95be9 *dvacore.dll
+dbf76e3645eec42fe18ae9b9c7ea7d69 *dvaui.dll
+2ddc34bb0620cf80127c57db01b62083 *ExtendScript.dll
+6c497a015e34f8a3a159a44d319b38fe *FileInfo.dll
+b8c61bfa5db67d53ea6e864bf38a7715 *icucnv36.dll
+7e527f3c0eac93206d7c90865fb1f7f3 *icudt36.dll
+25a3331e1fea7510389b59e76a737e4e *image_flow.dll
+a6c77241673ffebf4508aebeaf5ea7fa *image_runtime.dll
+d0f7bbe419963404a1c382bac64f5259 *JP2KLib.dll
+311c8da6329e072cd9e185a34f140680 *libcurl.dll
+995a420b93969b2237ca68035fb495a3 *libeay32.dll
+db8c7ed383deaf2466fd55c23e574c51 *libexpat.dll
+a705bcdea7a014352db92eabd93fbe8e *libifcoremd.dll
+24d52adf2166c504efedfba7924e24bd *libmmd.dll
+ad1c8b1a6ff6765b230859f7bbfc76a9 *LogSession.dll
+42fc2f695f8bf340de4a4624c8e2d73c *MPS.dll
+cae6861b19a2a7e5d42fefc4dfdf5ccf *msvcm80.dll
+7b37f8ec25c9ad853e8126c1d0992201 *msvcm90.dll
+561fa2abb31dfa8fab762145f81667c2 *msvcp71.dll
+4c8a880eabc0b4d462cc4b2472116ea1 *msvcp80.dll
+871f979d70414c900b35e56222932daf *msvcp90.dll
+86f1895ae8c5e8b17d99ece768a70732 *msvcr71.dll
+e4fece18310e23b1d8fee993e35e7a6f *msvcr80.dll
+4d03ca609e68f4c90cf66515218017f8 *msvcr90.dll
+28adb795a6a17fdfd3987111d7ca7fcd *pdfsettings.dll
+8095a4fac5ee4bb5602628b891b2c6ad *Photoshop.dll
+5636ca9e1f53e16504cb7a48858711dc *Plugin.dll
+9720a35595db9d897f749cff8f4e7c88 *PlugPlug.dll
+0553e8c135426eb6dbc356130f4ebcfc *PSArt.dll
+0f5f69a6c458061e60336be3597cac18 *PSViews.dll
+8c94f48bbc8468018b5e2f765d381ca6 *QuickTimeGlue.dll
+4b3575665bd60c19512eae2d6da86927 *SCCore.dll
+153241df0b44d47db2aa2ee755ea62c9 *shfolder.dll
+0e6c026a4f60ec591d15bd21b2ce01db *ssleay32.dll
+896fd9e67fa268540deb33495f717a54 *tbb.dll
+760ebcbee8977a88c783ae119705d1d3 *TfFontMgr.dll
+47b21e7915d2b6391fe34f3f1e490295 *TfKernel.dll
+d5039410cd79455dfe3a92859b534c71 *TFKGEOM.dll
+a354418cea43b9e31714e457ba941606 *TFUGEOM.dll
+798dc0e54c8992ef4901df177e3b220c *updaternotifications.dll
+595a3b5b0f8e63a27f8da45a4a8dd026 *WRServices.dll
+e95075603b4b80e829df542d2dcd21b8 *wu3d.dll
+e37e0f73242d44ce4ff9d485cf318254 *AMT\application.sif
+fbdc0d5f02c3e9181f28320f75bdcb3d *AMT\application.xml
+f1817a2d40547415a71859aff43c1c9f *AMT\ar_AE\AMT.zdct
+7f047a893f4696ab10af9400c3b1e87a *AMT\aul.xml
+3a1d415a71be096c9699caccdac49497 *AMT\Core key files\ConflictingProcesses
+3a1d415a71be096c9699caccdac49497 *AMT\Core key files\CreatePanelsDir
+3a1d415a71be096c9699caccdac49497 *AMT\Core key files\CreatePSPrefsDir
+3a1d415a71be096c9699caccdac49497 *AMT\Core key files\MergeModules
+3a1d415a71be096c9699caccdac49497 *AMT\Core key files\Registry
+6d288c9b9a228b4467113aa7fda9e634 *AMT\cs_CZ\AMT.zdct
+5ea099ba36f56e0b6c6ce12796303ca7 *AMT\da_DK\AMT.zdct
+d708780a377d1e71cd903d8f96caa97b *AMT\de_DE\AMT.zdct
+62d85efb96aaae12dc5f29e5b62586c5 *AMT\el_GR\AMT.zdct
+8053eaa892a468bdcb7511606c664d1e *AMT\en_GB\AMT.zdct
+ce2566396ffc1fa6a4ada2c51af599de *AMT\en_US\AMT.zdct
+4896ce38c5661689453617033ed4cc17 *AMT\en_xm\AMT.zdct
+7789dba36afd4cd80be21c186475c20e *AMT\es_ES\AMT.zdct
+dd9f126e83a035c2f6b2b5d2d5526286 *AMT\es_la\AMT.zdct
+dd9f126e83a035c2f6b2b5d2d5526286 *AMT\es_MX\AMT.zdct
+dd9f126e83a035c2f6b2b5d2d5526286 *AMT\es_na\AMT.zdct
+a1b71695c9927405b6eeb8abe0a9f810 *AMT\fi_FI\AMT.zdct
+10fcbeabdac9822bb4521bf11af729a9 *AMT\fr_CA\AMT.zdct
+e94f877a636204ff892f3382025cad17 *AMT\fr_FR\AMT.zdct
+e94f877a636204ff892f3382025cad17 *AMT\fr_xm\AMT.zdct
+548f55e391dfef037c20b620e23268b8 *AMT\he_IL\AMT.zdct
+b6e454c97fc07b403ff767ff7bb0294a *AMT\hu_HU\AMT.zdct
+b8ce0cfb00567a81395d0d33c17846ad *AMT\it_IT\AMT.zdct
+9de83aec7b013820694a9106fc59cbee *AMT\ja_JP\AMT.zdct
+1000b55b8f0ec1512caf69f34becec9b *AMT\ko_KR\AMT.zdct
+6de738752bb49e62e7e4e2f126a8aed4 *AMT\legal\ar_AE\license.html
+ba9a5091a893b2eb0d349f0bee59be3b *AMT\legal\bg_BG\license.html
+28cd1b713e395a252deb3abc412bb472 *AMT\legal\cs_CZ\license.html
+46144bc7337e4d0d0d2551803d116e0f *AMT\legal\da_DK\license.html
+466e21ffbf64e3453c6f6bf6435fd585 *AMT\legal\de_DE\license.html
+b42265308937ab389ba0b42c74429ac1 *AMT\legal\el_GR\license.html
+45c297d748db41932c7a01b72154c929 *AMT\legal\en_GB\license.html
+f6f980599b17e62c7b2a349140c4458a *AMT\legal\en_US\license.html
+68109375ac3d136ba7d5567682eaa424 *AMT\legal\es_ES\license.html
+3b765feede419f36376535fb77afc892 *AMT\legal\es_MX\license.html
+6379db212b7a9d0e8f19a2ac7aef248d *AMT\legal\et_EE\license.html
+972f73b70530b70fb74c82a9e616a75a *AMT\legal\fi_FI\license.html
+de3561c42b37e762c1efe3bebf2f1fc4 *AMT\legal\fr_CA\license.html
+110e0583b7dbbd1b179bdb20bd30afad *AMT\legal\fr_FR\license.html
+2bdd33c443edb113ee1cb1e00d753b91 *AMT\legal\he_IL\license.html
+ba3beb4ea56f387721feab15411a3984 *AMT\legal\hr_HR\license.html
+2b9b210c5c451541730b0c453ebe23ac *AMT\legal\hu_HU\license.html
+090a80e823cfb56deab41638539532dc *AMT\legal\it_IT\license.html
+8a772e57cd4a84b29d486b74cb684b6b *AMT\legal\ja_JP\license.html
+650244903f20338361cf75ebe012ddec *AMT\legal\ko_KR\license.html
+1b05dc79745f4489c39cd778513b1391 *AMT\legal\lt_LT\license.html
+ec6c818f5e774ef3010f68b4709a0978 *AMT\legal\lv_LV\license.html
+d763087e95791c3b0f1da7920d90b2c9 *AMT\legal\nb_NO\license.html
+5c681eaf920c9af4e43deb3393aba82c *AMT\legal\nl_NL\license.html
+dbef7005d46a24b9d1d490882ce5eea5 *AMT\legal\pl_PL\license.html
+bb8037cd0421733e3edd3155231e16b4 *AMT\legal\pt_BR\license.html
+b3da35a7414045de60e133f0b3c3f180 *AMT\legal\ro_RO\license.html
+4c8fe562313dcbc01273f06b0fa8c075 *AMT\legal\ru_RU\license.html
+d02f5a3ad8a5de32dbabdf7d5392bcbb *AMT\legal\sk_SK\license.html
+da6a703859ca3c478eaa7b2e2dd67c9e *AMT\legal\sl_SI\license.html
+cd65a8cf80ac7db87154fe2c70d40cd3 *AMT\legal\sv_SE\license.html
+ce809346c9e58a71120263a4b8c4d0ae *AMT\legal\tr_TR\license.html
+6211f35b4b5083cf78e7587fcdd59a37 *AMT\legal\uk_UA\license.html
+495ae5f2d516464ce852d33f554f3422 *AMT\legal\zh_CN\license.html
+c1e509110a795401f86792cb868a26c3 *AMT\legal\zh_TW\license.html
+be3849f7579bd722fe40b398d672fbf7 *AMT\LMResources\ps_ribs_bgd.png
+194593d3e9c6c3b4591464d831f546b0 *AMT\LMResources s\ps.png
+fcbeaa9ad4177666c5229a344160a695 *AMT\nb_NO\AMT.zdct
+8a3f6e0784bd5139ed03f4e95f8e8816 *AMT\nl_NL\AMT.zdct
+adaa7ecca10be627d3849b019e7c1026 *AMT\pl_PL\AMT.zdct
+5045832d3b82e9e3e82c6dbcb3e07f72 *AMT\pt_BR\AMT.zdct
+341961fe41812183d617285fb7acd68d *AMT\reg_custom_background.bmp
+b5d2130b5487464b273c0e297b36ad42 *AMT\ro_RO\AMT.zdct
+927bcf26a8bf4c7fa59d46368ee60661 *AMT\ru_RU\AMT.zdct
+6f0449b144f6180601232a7857771b60 *AMT\SLConfig.xml
+a2b8e1582f354759b9d97e0fc44cda8c *AMT\sv_SE\AMT.zdct
+a391bcf1df5678eeeea7487ed0f76e20 *AMT\tr_TR\AMT.zdct
+17a4396b8773db75a8d3c3f7c8aa4be2 *AMT\uk_UA\AMT.zdct
+af28ff21522ea00ca817e8f0114833fe *AMT\zh_CN\AMT.zdct
+ed7b39d777d9df343e3db6d61e444332 *AMT\zh_TW\AMT.zdct
+70c0e11ce5d705bf82285216662e41cb *Configuration\PS_exman_24px.png
+9fae47523ea69a52c33eb335cc764c18 *Configuration\XManConfig.xml
+57d1a360f8ff1f64e6026630f73b58ec *Legal\ar_AE\license.html
+8efcbbbbaf039291cebdad14bb635e0d *Legal\cs_CZ\license.html
+1504c64f23c175e45646cbb3124be9f5 *Legal\da_DK\license.html
+7dce1bd19452b5fd6321514777a1e7ca *Legal\de_DE\license.html
+d79aba688689df8e0c0eca19c3d6ad65 *Legal\el_GR\license.html
+55d42ea42e247fed3ed61c6ab5d180c7 *Legal\en_GB\license.html
+0d46ccc372674b2881851e3290f179a2 *Legal\en_US\license.html
+1ead830e0fe34474c373b9a6ae521e0b *Legal\es_ES\license.html
+2cb2241493a46225ae0e28374cc57a0d *Legal\es_MX\license.html
+bc3b25bf3dc65bebbfa139852a706ed7 *Legal\fi_FI\license.html
+374abe160f656a10fc656856e4ecc5ae *Legal\fr_CA\license.html
+b14896c73e1c258069bec7e49ee72494 *Legal\fr_FR\license.html
+93e03f0e4c36c54416b0b54f90bf996a *Legal\he_IL\license.html
+7b0152af3523495357e87a9f235b65d9 *Legal\hu_HU\license.html
+1078976542c81b27cbcd8047ada18ed4 *Legal\it_IT\license.html
+7b22884b780218f404e03c3e1d8f3f9d *Legal\ja_JP\license.html
+cdf9b5d4c79e70d16396e67219c39177 *Legal\ko_KR\license.html
+e2e0a395245f70af8a56232917d4dceb *Legal\nb_NO\license.html
+2cd93955d1104fece98b02568e8f7360 *Legal\nl_NL\license.html
+abb961d3e177c3b51c86e112fa72b049 *Legal\pl_PL\license.html
+96a5516c0d07a58bfcbb79a8d8319d0b *Legal\pt_BR\license.html
+6823ca126f33d79fad9f0d1c520a645f *Legal\ro_RO\license.html
+2b8e9845a22c7efb63496e3618841a5b *Legal\ru_RU\license.html
+d979c390e65187c9c2c670bf47e02d9c *Legal\sv_SE\license.html
+8a05372ef9dd8b6bfc812fd916a3878c *Legal\tr_TR\license.html
+aaa1e5372991eb13fe437fb16852f4ff *Legal\uk_UA\license.html
+bfebd87518e9a3cc0f302be132d3d3fa *Legal\zh_CN\license.html
+682b5586d343233448bcb578537d1981 *Legal\zh_TW\license.html
+29e6079495efb6598184367d3af78894 *Locales\en_US\Additional Presets\Win\Menu Customization\New in CS 5.mnu
+b9b35da735c9f4fa3e233ca3cd9b0e2e *Locales\en_US\Additional Presets\Win\Workspaces\1-Basic Workspaces\New in CS 5
+fd149baf8b1614671d5e51ec05b2951e *Locales\en_US\Additional Presets\Win\Workspaces\2-Task-based Workspaces\3D
+7b57ae387939d8c3fc25d9c042c4850b *Locales\en_US\Additional Presets\Win\Workspaces\2-Task-based Workspaces\Design
+9743319647f55ee45e31576dd9b38290 *Locales\en_US\Additional Presets\Win\Workspaces\2-Task-based Workspaces\Motion
+a93935772ad074ec74ac938a8392ded3 *Locales\en_US\Additional Presets\Win\Workspaces\2-Task-based Workspaces\Painting
+5d162e0a3dfd56f466c00b3ed42bba18 *Locales\en_US\Additional Presets\Win\Workspaces\2-Task-based Workspaces\Photography
+53d00b22babeea29fe7eb9fef81765aa *Locales\en_US\Support Files\Default New Doc Sizes.txt
+10944b95e6ce626c4cefc2e0c058329c *Locales\en_US\Support Files\Feature Help\featureSearch.xml
+8149a674015f6af9f4cefedfca2112d6 *Locales\en_US\Support Files\pack.inf
+08ba708854628b54a585f605246e275f *Locales\en_US\Support Files\Shortcuts\Win\Default Keyboard Shortcuts.kys
+303d07950ebdb1129ed20b56517eec03 *Locales\en_US\Support Files\Shortcuts\Win\OS Shortcuts.txt
+b6695214dc1a7e00e997721da16300d9 *MATLAB\MATLAB Photoshop Read Me.pdf
+2e4c9e5c11ab576cd06f0433f22ddaa0 *MATLAB\Required\Contents.m
+503d394f8fb48eb49a6c8abb6eb6c130 *MATLAB\Required\demos\c4blackchecker.psd
+6444e25e7b3e438c87049ebfe3eefc0a *MATLAB\Required\demos\c4gameboard.psd
+9bd84f42a3ea0936e70eee07062224c2 *MATLAB\Required\demos\c4redchecker.psd
+6a8690a4047de3fb4730ef202e29f6eb *MATLAB\Required\demos\psavitophotoshop.m
+61ec877dbf225a82b9d91f9d7fe56046 *MATLAB\Required\demos\psconnectfour.m
+e309173c0580e04f3143e56168449aa9 *MATLAB\Required\demos\psintrowalk.avi
+9a92f91ed0c14f5a8e5e27d4ea928bac *MATLAB\Required\demos\psplot.m
+0de721d35ffc7a58f933acefbb4e0c7d *MATLAB\Required\demos\pspreview.m
+5dc0945a6979f8f51437b16f1d529bf3 *MATLAB\Required\English\helptoc.xml
+4030826219159f240a661bd65261fc6c *MATLAB\Required\English\info.xml
+e360b3d2311a2264a78f58f09e658f70 *MATLAB\Required\English\psexamples.html
+63b624f7291eb93a24e7f08f379a3418 *MATLAB\Required\English\psfunctionsalpha.html
+8a9d714170bfad1629e8adb5cc092184 *MATLAB\Required\English\psfunctionscat.html
+fde6dcd9ad1381c676eaa95eb25c0cf0 *MATLAB\Required\English\psgetstarted.html
+02ae823b2f9e68ff8ede8d78e1a45792 *MATLAB\Required\English\pstoolbox.html
+ed014e197ed7f7d6bc4c2a48faecc5e8 *MATLAB\Required\psaddnoise.m
+f89f3df273b8a2ed85f56fdf267c2368 *MATLAB\Required\psaverage.m
+d2a2933566065dbd0967acb17573cd98 *MATLAB\Required\psblur.m
+3f811bdb2e26a43032e860ee70cffb05 *MATLAB\Required\psblurmore.m
+c9deab0a877d166bb473e2d55a151d67 *MATLAB\Required\psboxblur.m
+67b4eaf053af9869541be539612bdf80 *MATLAB\Required\pschannelnames.m
+385ebb9545046873343edb6d5ae916d2 *MATLAB\Required\psclosedoc.m
+df0e92f76f4a3f49e3f72555a9c9f889 *MATLAB\Required\pscolorprofile.m
+f2dae8ac9b9a608a2b4fdee85da9172e *MATLAB\Required\pscolorsettings.m
+4990777e9609e30133450a061a57d9bb *MATLAB\Required\psconfig.m
+394e99be736682b30bccfb6250e208d4 *MATLAB\Required\psconvertprofile.m
+e0fc5b8fa2b2fdbcb6927433dbb76db5 *MATLAB\Required\pscustom.m
+5462eea56f3f6eab0cbcb71a2c2e977a *MATLAB\Required\psdocinfo.m
+c92326d710ce2b37b83b73fd2b8ac9ee *MATLAB\Required\psdocnames.m
+4d9c46da47f2adfd414f3f1bc5f202bb *MATLAB\Required\psdustandscratches.m
+6d06b4f529673adb09839948aef68006 *MATLAB\Required\psgaussianblur.m
+e193dd8854c2e76ee9a07f029dba3c1c *MATLAB\Required\psgetpath.m
+a65e78835fd6c68e5b1fe79a3b61e189 *MATLAB\Required\psgetpixels.m
+d862b1063cb28ce6341c05a06b797983 *MATLAB\Required\pshighpass.m
+ba2e571f0d4a55c137a2e8773a1f4169 *MATLAB\Required\pshistogram.m
+019ae58d1d2efd147a459b5791ab013d *MATLAB\Required\psimread.m
+156ddfc9f6cfccc6863459395ade9b0d *MATLAB\Required\psjavascript.m
+8d90742a9dba028370c182fe20c804a3 *MATLAB\Required\psjavascriptu.m
+5f804e362d489642928531d3124b21d4 *MATLAB\Required\pslaunch.m
+4ab1e7ebc5be29b8146999e5ee08daff *MATLAB\Required\pslayernames.m
+a7a40db7702493f26e1ef87d5c030c9f *MATLAB\Required\pslensblur.m
+cc60962038345dddb9c1a220edfb804c *MATLAB\Required\psmatlab.dll
+9d44c0d3877e817db17345d621cccad6 *MATLAB\Required\psmatlab.h
+7e05e58ad760243502af827fef341836 *MATLAB\Required\psmaximum.m
+86ae191b049962330e0b4703347bfd2a *MATLAB\Required\psmedian.m
+3df6615993ed03b3390ca5a7f4bc4381 *MATLAB\Required\psminimum.m
+345bdb686e1a1b3dba8a9b1cef5f340a *MATLAB\Required\psmotionblur.m
+fd9393550b1cc4ca1ccbe90f7939f368 *MATLAB\Required\psnewdoc.m
+a71d51bae958b71e49dcdae76c19d153 *MATLAB\Required\psnewdocmatrix.m
+210e5a2b39c21613438bfbd8eb9b23fe *MATLAB\Required\psnewlayer.m
+c7b4668b28ce227cf86c1781c87727ce *MATLAB\Required\psnewlayermatrix.m
+6b9f6064652a12aa643368a9f1ccece7 *MATLAB\Required\psnewpath.m
+a249b37ce6191eb4fdcb2e02345e28d9 *MATLAB\Required\psnumchannels.m
+a703facce710c6a9178e890b732ae367 *MATLAB\Required\psnumdocs.m
+9b072518d56603307050469f51d37395 *MATLAB\Required\psnumlayers.m
+e180b4abcf57fdc96a4a5e253700c7c2 *MATLAB\Required\psnumpaths.m
+1d51373c5ae03d29592186fc55932c94 *MATLAB\Required\psoffset.m
+f2ddff9e9009fb18757070ef24f0ee2a *MATLAB\Required\psopendoc.m
+0673df05c0790547c4edd76a242c40cf *MATLAB\Required\pspathnames.m
+f186083eba41fb805544421cab21b2fb *MATLAB\Required\psproto.m
+ca70c06ff42ffd7a528a0992778e85af *MATLAB\Required\psquit.m
+f293a9196e4cb3cff26f578a90131881 *MATLAB\Required\psradialblur.m
+c56c92526a0631651fb7089feda0277a *MATLAB\Required\pssetactivechannels.m
+cff2448aa5ffd61848ab08f805cf1ecd *MATLAB\Required\pssetactivedoc.m
+6869f6915c085d7d45e5184b07f56d88 *MATLAB\Required\pssetactivelayer.m
+d3cdac6754d98f25ff4072f8cd945fa6 *MATLAB\Required\pssetpixels.m
+78a1b29d84bc4cc246e8594c75321bc0 *MATLAB\Required\psshapeblur.m
+8a98976d5a248792491b50a025693eee *MATLAB\Required\pssharpen.m
+702329ada665e7d750f079ec07524bcc *MATLAB\Required\pssharpenedges.m
+d54d6ee3e9cebc19d52b0ee7725c1a5b *MATLAB\Required\pssharpenmore.m
+2d24034f37d501d5ae40b6a9706db95b *MATLAB\Required\pssmartblur.m
+1edc49fa0181fd9577b585dda0100d88 *MATLAB\Required\pssurfaceblur.m
+4eaeb7da6484803ebacd080f6f6d6a3e *MATLAB\Required\psunsharpmask.m
+474a9ac8a4733c5fe0fe37abadc5b502 *MATLAB\Required\tests\pslogit.m
+3d8eb5fe9e662ee8c1829da003ee443c *MATLAB\Required\tests\test1.m
+3868fd0c3fa05d77fea4de5baeb152fd *MATLAB\Required\tests\test10.m
+3a7c6c8b5234a4b269db44e629c2c7a1 *MATLAB\Required\tests\test11.m
+93fbd361768121c869f737bcc01cc9ba *MATLAB\Required\tests\test12.m
+5a8ece9599f1409abb23af3c60179836 *MATLAB\Required\tests\test13.m
+041ede390a2850ddda91d7dbf1c3ef90 *MATLAB\Required\tests\test14.m
+90784bb2d3e19b4c01afce1135c67056 *MATLAB\Required\tests\test2.m
+cc1757766deecc31fec2e7f235c859be *MATLAB\Required\tests\test3.m
+ed2f199a01007722d391d44be4d5fd72 *MATLAB\Required\tests\test4.m
+58dc6bc306dc27e721350d11698e6af6 *MATLAB\Required\tests\test5.m
+bc79e75e0fae4734cbae76306eb94302 *MATLAB\Required\tests\test6.m
+5179196811f3a43d5012ebdad1520bb7 *MATLAB\Required\tests\test7.m
+429d32da10047ddc0210e0a5dde6b136 *MATLAB\Required\tests\test8.m
+28b9647bc2c17592d1ba0eb12163eba6 *MATLAB\Required\tests\test9.m
+b5b6c4af4c1b2a6a88a704767f6d0350 *MATLAB\Required\tests\testall.m
+d7c4d0d39e59c1b6db45781360ac7d2c *MATLAB\Required\tests\teststats.m
+e8d6ed9dfd168040856585c3e491920c *OBLRes\ar_AE\ConnectionFAQ.html
+c0e7bde62780c17aacc2dd7a364725e9 *OBLRes\ar_AE\LicenseFAQ.html
+045490ac8f0c33379dd442fb66ffbb3f *OBLRes\ar_AE\Main.zdct
+c7a1c7ad22f55945883f6088598ddad2 *OBLRes\bg_BG\ConnectionFAQ.html
+015be0e6ecb2135ba75e4904b9dc15da *OBLRes\bg_BG\LicenseFAQ.html
+c193a187b9f3fd1838a346f72cd78ca0 *OBLRes\bg_BG\Main.zdct
+09b4e586f1641ad6eb6f34665ef1f8f1 *OBLRes\bg_BG\oobe_launcher.zdct
+bc21a0d2dd6bf447543cf973992774c5 *OBLRes\cs_CZ\ConnectionFAQ.html
+874e53d2bd349b1f98b08367b6dc8c3b *OBLRes\cs_CZ\LicenseFAQ.html
+919352a5292500ebb6e499b48380dc1c *OBLRes\cs_CZ\Main.zdct
+aafae81d8c2fe0f7ca2c50e65d0ff410 *OBLRes\cs_CZ\oobe_launcher.zdct
+e5385a09f8b439becbeb8c4fe5b04092 *OBLRes\da_DK\ConnectionFAQ.html
+2470698e1ebe7b8966f420bdd23bad1b *OBLRes\da_DK\LicenseFAQ.html
+5e330c054b630127be01e42d6294a814 *OBLRes\da_DK\Main.zdct
+137d6ba899c44efdae3dca3270878cd9 *OBLRes\da_DK\oobe_launcher.zdct
+f5f4a59c696e5a77349fef6bb0400bbb *OBLRes\de_DE\ConnectionFAQ.html
+1eba6aeaec0e67abc3c9e6949a53c3ba *OBLRes\de_DE\LicenseFAQ.html
+070b22d458a0c4ba4b30dabe97c859b5 *OBLRes\de_DE\Main.zdct
+39dadb6b4b9c7208d0a35c8ec87d2b51 *OBLRes\de_DE\oobe_launcher.zdct
+4c13864f285824753e0613422191d29b *OBLRes\el_GR\ConnectionFAQ.html
+79c0e8623022b5f788df9d7d741c61e0 *OBLRes\el_GR\LicenseFAQ.html
+a204af0412729afe95c5067ac120aea7 *OBLRes\el_GR\Main.zdct
+5ebcacb7f0e1422f0c3fa20bfaa29c3c *OBLRes\en_GB\ConnectionFAQ.html
+665e1985893f9e0701f79dfb1f99a4d7 *OBLRes\en_GB\LicenseFAQ.html
+4390c02fc1846ea13f1119307845e7ab *OBLRes\en_GB\Main.zdct
+04f1d2793c0577ab3d83b192fb4c1367 *OBLRes\en_GB\oobe_launcher.zdct
+5ebcacb7f0e1422f0c3fa20bfaa29c3c *OBLRes\en_mx\ConnectionFAQ.html
+665e1985893f9e0701f79dfb1f99a4d7 *OBLRes\en_mx\LicenseFAQ.html
+5188a59973439763252c90d9973fcd78 *OBLRes\en_mx\Main.zdct
+09b4e586f1641ad6eb6f34665ef1f8f1 *OBLRes\en_mx\oobe_launcher.zdct
+5ebcacb7f0e1422f0c3fa20bfaa29c3c *OBLRes\en_US\ConnectionFAQ.html
+665e1985893f9e0701f79dfb1f99a4d7 *OBLRes\en_US\LicenseFAQ.html
+4390c02fc1846ea13f1119307845e7ab *OBLRes\en_US\Main.zdct
+04f1d2793c0577ab3d83b192fb4c1367 *OBLRes\en_US\oobe_launcher.zdct
+5ebcacb7f0e1422f0c3fa20bfaa29c3c *OBLRes\en_xm\ConnectionFAQ.html
+665e1985893f9e0701f79dfb1f99a4d7 *OBLRes\en_xm\LicenseFAQ.html
+4390c02fc1846ea13f1119307845e7ab *OBLRes\en_xm\Main.zdct
+ccf62d8dd8067bdfc8b8f9d1a81ff246 *OBLRes\en_xm\oobe_launcher.zdct
+28353436fc2a08ffd172e8e001c34dbc *OBLRes\es_ES\ConnectionFAQ.html
+cd2ee54ef1b354ebb594683dac1df721 *OBLRes\es_ES\LicenseFAQ.html
+87bbcf0ea575f31bc4c026b445c52dd5 *OBLRes\es_ES\Main.zdct
+80342dc1e0e15dd6c5d0eb0255ecbebd *OBLRes\es_ES\oobe_launcher.zdct
+b1de3ac480a4cc235839b2715c3159ff *OBLRes\es_la\oobe_launcher.zdct
+28353436fc2a08ffd172e8e001c34dbc *OBLRes\es_MX\ConnectionFAQ.html
+cd2ee54ef1b354ebb594683dac1df721 *OBLRes\es_MX\LicenseFAQ.html
+2da81646d1fd6d0d480f1e37fb6cd708 *OBLRes\es_MX\Main.zdct
+b1de3ac480a4cc235839b2715c3159ff *OBLRes\es_MX\oobe_launcher.zdct
+b1de3ac480a4cc235839b2715c3159ff *OBLRes\es_na\oobe_launcher.zdct
+90444962c73a0957c0b714160a68ef0c *OBLRes\et_EE\ConnectionFAQ.html
+d6ca6183cb0582c86169bd84d40bbeaf *OBLRes\et_EE\LicenseFAQ.html
+06a966b5be8c3d2858f9053d47ee5241 *OBLRes\et_EE\Main.zdct
+09b4e586f1641ad6eb6f34665ef1f8f1 *OBLRes\et_EE\oobe_launcher.zdct
+b667e13a527a46da3610a05d39950a7a *OBLRes\fi_FI\ConnectionFAQ.html
+a16d794dbcbc7fab6c3bce124d1aecf0 *OBLRes\fi_FI\LicenseFAQ.html
+9a5451f67aa40dc53ebf6ba0e748c8cf *OBLRes\fi_FI\Main.zdct
+0219a7e4827d8eca5bb2b119caf7b321 *OBLRes\fi_FI\oobe_launcher.zdct
+126b927df1ddfc80574fe0eb1f64fb32 *OBLRes\fr_CA\ConnectionFAQ.html
+fe2b2e1beb6dcc9bafafe08e09402dba *OBLRes\fr_CA\LicenseFAQ.html
+1a890b8bb04ef19681d7540dc273c0c6 *OBLRes\fr_CA\Main.zdct
+ced8f970acd0f0be568315edf2a98a32 *OBLRes\fr_CA\oobe_launcher.zdct
+126b927df1ddfc80574fe0eb1f64fb32 *OBLRes\fr_FR\ConnectionFAQ.html
+fe2b2e1beb6dcc9bafafe08e09402dba *OBLRes\fr_FR\LicenseFAQ.html
+6d81ce932d60e9d10cf21be986fdd78a *OBLRes\fr_FR\Main.zdct
+3764276b735c2d88101debc5ac9ec201 *OBLRes\fr_FR\oobe_launcher.zdct
+126b927df1ddfc80574fe0eb1f64fb32 *OBLRes\fr_mx\ConnectionFAQ.html
+fe2b2e1beb6dcc9bafafe08e09402dba *OBLRes\fr_mx\LicenseFAQ.html
+1a890b8bb04ef19681d7540dc273c0c6 *OBLRes\fr_mx\Main.zdct
+d2659b8b1f71c589947666d8e0953fba *OBLRes\fr_mx\oobe_launcher.zdct
+126b927df1ddfc80574fe0eb1f64fb32 *OBLRes\fr_xm\ConnectionFAQ.html
+fe2b2e1beb6dcc9bafafe08e09402dba *OBLRes\fr_xm\LicenseFAQ.html
+6d81ce932d60e9d10cf21be986fdd78a *OBLRes\fr_xm\Main.zdct
+3764276b735c2d88101debc5ac9ec201 *OBLRes\fr_xm\oobe_launcher.zdct
+3c07f4f478b0e8e0d2904b8eb9514d4e *OBLRes\he_IL\ConnectionFAQ.html
+6f3ca96ac9753ca20a517dac144b7fcc *OBLRes\he_IL\LicenseFAQ.html
+de68f40b7f6a0d3b1b6cfa25a3c8341d *OBLRes\he_IL\Main.zdct
+940dded14d40ee63d9884eb75ce9aaa8 *OBLRes\hr_HR\ConnectionFAQ.html
+22ce1ef18129918d464ea8847dda1343 *OBLRes\hr_HR\LicenseFAQ.html
+c9ddac21047484d4f04e8f9b1065bb3e *OBLRes\hr_HR\Main.zdct
+09b4e586f1641ad6eb6f34665ef1f8f1 *OBLRes\hr_HR\oobe_launcher.zdct
+8bb00c0444b907575fc0f951e703fa9f *OBLRes\hu_HU\ConnectionFAQ.html
+1d12fdc7aeb40e6f9b1478a645f7d791 *OBLRes\hu_HU\LicenseFAQ.html
+9729ff5053afc02ad7647dc8649500a9 *OBLRes\hu_HU\Main.zdct
+3f34b5543af49dbfe4764a2e5eb81e96 *OBLRes\hu_HU\oobe_launcher.zdct
+fc1836d3933acc4b6e9100a2d109d229 *OBLRes\it_IT\ConnectionFAQ.html
+e42d92bc44e149f957737a12f4eddbd4 *OBLRes\it_IT\LicenseFAQ.html
+7cbfa7e7bbf741b67816193f59b22dc9 *OBLRes\it_IT\Main.zdct
+3a24b9cfaa3278cf26c884f112cc1d11 *OBLRes\it_IT\oobe_launcher.zdct
+915889fb05c189e9322ab6b1912c2efe *OBLRes\ja_JP\ConnectionFAQ.html
+5672ca4f20b403ee1845a2511f946a84 *OBLRes\ja_JP\LicenseFAQ.html
+5bf1568b5cc1a75fa8e2207a85ad4cdb *OBLRes\ja_JP\Main.zdct
+18c0b5b1a0aa01128f74b681e32e812c *OBLRes\ja_JP\oobe_launcher.zdct
+93a79c3cc6d0442edb81c3fe8d0053b3 *OBLRes\ko_KR\ConnectionFAQ.html
+399f2d999cc5589b18d6546801701e1b *OBLRes\ko_KR\LicenseFAQ.html
+6eb72e5174632f6fb76515e5658a50c7 *OBLRes\ko_KR\Main.zdct
+2f2d13b86ffabd4e68263a697645e474 *OBLRes\ko_KR\oobe_launcher.zdct
+cdd3a8fabecf187f7946d128755bcffd *OBLRes\lt_LT\ConnectionFAQ.html
+4d43c9b8381d4ad96d3d01c7055bf819 *OBLRes\lt_LT\LicenseFAQ.html
+854aad3eabc37c906f839a08af885222 *OBLRes\lt_LT\Main.zdct
+09b4e586f1641ad6eb6f34665ef1f8f1 *OBLRes\lt_LT\oobe_launcher.zdct
+8c6123b5fdb96e1102c435809b80de93 *OBLRes\lv_LV\ConnectionFAQ.html
+eced45b77f778dab40b0b5f4a4e871e1 *OBLRes\lv_LV\LicenseFAQ.html
+9ff89ed016e263d3184d594c723c0801 *OBLRes\lv_LV\Main.zdct
+09b4e586f1641ad6eb6f34665ef1f8f1 *OBLRes\lv_LV\oobe_launcher.zdct
+ef145fcb367ca77f1c7022881de8939b *OBLRes\nb_NO\ConnectionFAQ.html
+5a4e7bf980fecdcf08ae666ea220022a *OBLRes\nb_NO\LicenseFAQ.html
+498b4c5bda85803e913e5336701362a9 *OBLRes\nb_NO\Main.zdct
+01a302cb743af53ab10f42ef2683e976 *OBLRes\nb_NO\oobe_launcher.zdct
+d3d443d5bc31b393c7783d0d6ec339d0 *OBLRes\nl_NL\ConnectionFAQ.html
+7bce0fbfbc1f2f0b6bfe6102872b666b *OBLRes\nl_NL\LicenseFAQ.html
+30321b8b7e9c807e53d4f13d43a51265 *OBLRes\nl_NL\Main.zdct
+b7ce071250716c018c945174ca528c33 *OBLRes\nl_NL\oobe_launcher.zdct
+da41e06fe286cc372dfa139d33dbe312 *OBLRes\pl_PL\ConnectionFAQ.html
+38839b4b6a55f9afb0016b6d7a77c65e *OBLRes\pl_PL\LicenseFAQ.html
+b3c780d6a06d71afc4367187b951c822 *OBLRes\pl_PL\Main.zdct
+ee43552ab8c1d86e4b01a7565a1b7793 *OBLRes\pl_PL\oobe_launcher.zdct
+673c26ad693378ddad7bb28c589e4346 *OBLRes\pt_BR\ConnectionFAQ.html
+ca26d9580cdd693b678073ec6ceaa805 *OBLRes\pt_BR\LicenseFAQ.html
+ae3699e79f2868fc6501bfbf94b4256a *OBLRes\pt_BR\Main.zdct
+a1fc1c301d478cff87bcecdd87b19804 *OBLRes\pt_BR\oobe_launcher.zdct
+26235f873952010dc67e9859e0ce8e61 *OBLRes\ro_RO\ConnectionFAQ.html
+7c33746b871d8d8b435d72c5d357cc6e *OBLRes\ro_RO\LicenseFAQ.html
+011bcecd4c28702fb40bd149025cf0fa *OBLRes\ro_RO\Main.zdct
+bb9a7e502ea8119856d188468507e78f *OBLRes\ro_RO\oobe_launcher.zdct
+cd1fc2b93dcacce724364856642f5dbd *OBLRes\ru_RU\ConnectionFAQ.html
+18f37b95232087ef8c493db890833741 *OBLRes\ru_RU\LicenseFAQ.html
+2ac8175f25b6c25d8ceb9024c5446d87 *OBLRes\ru_RU\Main.zdct
+914ad87b9cad3820a476115eea4925f4 *OBLRes\ru_RU\oobe_launcher.zdct
+431690d1164c2933eab308c28f2d59d0 *OBLRes\sk_SK\ConnectionFAQ.html
+f60036a731b0787cbc2ca1d57e0fd9e3 *OBLRes\sk_SK\LicenseFAQ.html
+c154ee9bace9e39879001491b1d0b4a6 *OBLRes\sk_SK\Main.zdct
+09b4e586f1641ad6eb6f34665ef1f8f1 *OBLRes\sk_SK\oobe_launcher.zdct
+c40b83453a22bb28bcfd50f02af5707a *OBLRes\sl_SI\ConnectionFAQ.html
+c4ee287898074a6ef01003bdc4a83480 *OBLRes\sl_SI\LicenseFAQ.html
+000e66b480a0aa25182676db197c7533 *OBLRes\sl_SI\Main.zdct
+09b4e586f1641ad6eb6f34665ef1f8f1 *OBLRes\sl_SI\oobe_launcher.zdct
+a25744a45c839944f15cde6b5a78eb27 *OBLRes\sv_SE\ConnectionFAQ.html
+2a35f75ba35605e5e7498beed3f522c1 *OBLRes\sv_SE\LicenseFAQ.html
+ae0e97099d5cece119ec741bad2b3728 *OBLRes\sv_SE\Main.zdct
+9c746d94bcccfc309d2493c4555c2099 *OBLRes\sv_SE\oobe_launcher.zdct
+6ce2480836f738d53762df31b44656a6 *OBLRes\tr_TR\ConnectionFAQ.html
+83286e3c30b67bc883669f59541dbbc8 *OBLRes\tr_TR\LicenseFAQ.html
+ea8d9e6d19b15cd3bcdfd7193fa74173 *OBLRes\tr_TR\Main.zdct
+05d6c754e437854a034478205af4ae30 *OBLRes\tr_TR\oobe_launcher.zdct
+ce5f0c53eb33f88713b247e8177a2cca *OBLRes\uk_UA\ConnectionFAQ.html
+36f5371c7c4380aaaa0f0d855269fe9d *OBLRes\uk_UA\LicenseFAQ.html
+632a670978290313d55f2985ea0baf44 *OBLRes\uk_UA\Main.zdct
+0d50e5f5065245c27e354e97011ea6c2 *OBLRes\uk_UA\oobe_launcher.zdct
+5c2740d52ee7cdc266065daa1ef0cf97 *OBLRes\zh_CN\ConnectionFAQ.html
+8f843d8ee8bf8d6bc72fef59ac2c5783 *OBLRes\zh_CN\LicenseFAQ.html
+658bcc1f0bb9e615bf83c2358f3bd71b *OBLRes\zh_CN\Main.zdct
+41081efd26a1e0c4acb313489480c10a *OBLRes\zh_CN\oobe_launcher.zdct
+988f358398bc118540499638ba979d62 *OBLRes\zh_TW\ConnectionFAQ.html
+522a9bd77691d5677fc3d41959404641 *OBLRes\zh_TW\LicenseFAQ.html
+f601e048fb8bf6dea6e2402c05bb5f60 *OBLRes\zh_TW\Main.zdct
+2d389e7689f4155502e5866919968b20 *OBLRes\zh_TW\oobe_launcher.zdct
+520c6818a167b71cccbd953ca1829ff5 *Plug-ins\3D Engines\Photoshop3DEngine.8BI
+8e96d9d143845a01a1d62a9fd7fb8ccc *Plug-ins\ADM\ADMPlugin.apl
+a8b0bcc6a4d9fbc51639988e7258b9eb *Plug-ins\Automate\CropPhotosAuto.8LI
+bf3fe77b3ebd313a89abf5a1b0bea731 *Plug-ins\Automate\HDRMergeUI.8BF
+29572b5ae307f760f00e8528c993c73f *Plug-ins\Automate\WIASupport.8LI
+2e795194e6226af7908c4828c7014a02 *Plug-ins\Digimarc\Win\Digiread\cs.lproj\Localizable.strings
+8320860dac24d359579b08edb40a66b9 *Plug-ins\Digimarc\Win\Digiread\da.lproj\Localizable.strings
+ae4ad95b12c6ce27df5602f56ea22e14 *Plug-ins\Digimarc\Win\Digiread\de.lproj\Localizable.strings
+7fa2554bffa45d4df62bd5723d9b01aa *Plug-ins\Digimarc\Win\Digiread\en_US.lproj\Localizable.strings
+64384e6eea92d998c7e9593e4873b566 *Plug-ins\Digimarc\Win\Digiread\es.lproj\Localizable.strings
+82880a656ec3ac73bc9b72d6ead07b48 *Plug-ins\Digimarc\Win\Digiread\fi.lproj\Localizable.strings
+64378714eda46c4821749144596e430c *Plug-ins\Digimarc\Win\Digiread\fr.lproj\Localizable.strings
+c0bc3cd12410fde13d5b9e6a2ffafa8c *Plug-ins\Digimarc\Win\Digiread\hu.lproj\Localizable.strings
+bdd52c74889297b2e8849760e226aa4a *Plug-ins\Digimarc\Win\Digiread\it.lproj\Localizable.strings
+9c46c45c39e4c5da7e94b12faa6830ec *Plug-ins\Digimarc\Win\Digiread\ja.lproj\Localizable.strings
+73953912bc1e244f0b23166f02d4560a *Plug-ins\Digimarc\Win\Digiread\ko.lproj\Localizable.strings
+1bec3bcd6c1fa9abd8d13caffa961242 *Plug-ins\Digimarc\Win\Digiread\nb.lproj\Localizable.strings
+ec0f64d2113598a066efcc14085951aa *Plug-ins\Digimarc\Win\Digiread\nl.lproj\Localizable.strings
+e8bcf4ec19a029bfa4671ebc9cb096ed *Plug-ins\Digimarc\Win\Digiread\pl.lproj\Localizable.strings
+c2402c6560b1956ccad91fcd4bca4cd8 *Plug-ins\Digimarc\Win\Digiread\pt_BR.lproj\Localizable.strings
+c0870f1ad31c06f8b590a172e7afe6fd *Plug-ins\Digimarc\Win\Digiread\ro.lproj\Localizable.strings
+e446cdf20e10bc047b85b7f7dabb9ecf *Plug-ins\Digimarc\Win\Digiread\ru.lproj\Localizable.strings
+fd1b279762a3137d4c3f9ea1723f0ec2 *Plug-ins\Digimarc\Win\Digiread\sv.lproj\Localizable.strings
+4278cd1f45f3b4a64f853b7507adc2bb *Plug-ins\Digimarc\Win\Digiread\tr.lproj\Localizable.strings
+d055b52d8363cb7e5d91d7fcb8cf1a61 *Plug-ins\Digimarc\Win\Digiread\uk.lproj\Localizable.strings
+0bfea6cb7e38b609d86721dfd8ac8d3a *Plug-ins\Digimarc\Win\Digiread\zh_CN.lproj\Localizable.strings
+ba6267d8999219297c0f0a2fa1c96cee *Plug-ins\Digimarc\Win\Digiread\zh_TW.lproj\Localizable.strings
+41298eca26a8a3ae6947c8ea802545ef *Plug-ins\Digimarc\Win\DigiRead.8bf
+0a75d42e978ca1db4c1cbb21c06dfdb4 *Plug-ins\Digimarc\Win\Digisign\cs.lproj\Localizable.strings
+dec5e665ae358b1a54780fab70c2a01b *Plug-ins\Digimarc\Win\Digisign\da.lproj\Localizable.strings
+60b4313ede1f87a83176092f94588c64 *Plug-ins\Digimarc\Win\Digisign\de.lproj\Localizable.strings
+25580f9fafbbb8e10aae53a3d9814277 *Plug-ins\Digimarc\Win\Digisign\en_US.lproj\Localizable.strings
+7a66d4d455372a2eb996ea01135c0e1f *Plug-ins\Digimarc\Win\Digisign\es.lproj\Localizable.strings
+9e9416e9f1067ae0d52755fd08bf4332 *Plug-ins\Digimarc\Win\Digisign\fi.lproj\Localizable.strings
+17aa67892a904192e0100719bbea3746 *Plug-ins\Digimarc\Win\Digisign\fr.lproj\Localizable.strings
+f39e300475850ddc1d450353b160089a *Plug-ins\Digimarc\Win\Digisign\hu.lproj\Localizable.strings
+f4ec4220a6fd992087bc5432585918cc *Plug-ins\Digimarc\Win\Digisign\it.lproj\Localizable.strings
+b332c3ec712afdd8a69ad7f32eeb2e2a *Plug-ins\Digimarc\Win\Digisign\ja.lproj\Localizable.strings
+388588201369f398541dff9311930b7c *Plug-ins\Digimarc\Win\Digisign\ko.lproj\Localizable.strings
+4c4c96746c9305e7d3324e36fe6da2fb *Plug-ins\Digimarc\Win\Digisign\nb.lproj\Localizable.strings
+2325534140d5f170d87e42c10079797f *Plug-ins\Digimarc\Win\Digisign\nl.lproj\Localizable.strings
+261ceaca547d1437beda52f188bb174e *Plug-ins\Digimarc\Win\Digisign\pl.lproj\Localizable.strings
+6adb5f6f5e5e133a5f5ccd8e4e094898 *Plug-ins\Digimarc\Win\Digisign\pt_BR.lproj\Localizable.strings
+95b974ac014927c6caa7745d54ef9d53 *Plug-ins\Digimarc\Win\Digisign\ro.lproj\Localizable.strings
+84f956e7e2b22fea0e181afb10e35a80 *Plug-ins\Digimarc\Win\Digisign\ru.lproj\Localizable.strings
+91291180f59f73ea916a3e3863884739 *Plug-ins\Digimarc\Win\Digisign\sv.lproj\Localizable.strings
+d9ad13f26739baae87f6ced560579b06 *Plug-ins\Digimarc\Win\Digisign\tr.lproj\Localizable.strings
+96de1ad77165b2d13b1a8aefd58d3001 *Plug-ins\Digimarc\Win\Digisign\uk.lproj\Localizable.strings
+f8672ea36dba0fab0f4b8a94a5ca78c1 *Plug-ins\Digimarc\Win\Digisign\zh_CN.lproj\Localizable.strings
+6bf6329710e3e7aa5beb4314518acca2 *Plug-ins\Digimarc\Win\Digisign\zh_TW.lproj\Localizable.strings
+98e23164e7f4c4ed8d0e3c090fd155b9 *Plug-ins\Digimarc\Win\DigiSign.8bf
+4000e3c89542e01adb970dc6863a7b4e *Plug-ins\Effects\Filter Gallery.8BF
+7154f6c739716153b6f4e55c6c95f4b5 *Plug-ins\Extensions\FastCore.8BX
+d77020aacde7671cb0b9cc541bfe81c6 *Plug-ins\Extensions\MMXCore.8BX
+155d52854b75162ae6d210d2ecb40d5f *Plug-ins\Extensions\MultiProcessor Support.8BX
+0222680b7d0a24d14c89a6c50ea2d1ec *Plug-ins\Extensions\ScriptingSupport.8li
+d2fb88df706761bab5da9b7825e15fd3 *Plug-ins\Extensions\ScriptUIFlexPhotoshop.swf
+305830d42f52d04a043e2604fe5da515 *Plug-ins\Extensions\ScriptUIFlexServer-app.xml
+ae50bdf99fa1c8fcb2441e2ccc960fdb *Plug-ins\Extensions\ScriptUIFlexServer.swf
+874adef9da80f663c0d18b5a7d1a87ab *Plug-ins\File Formats\Cineon.8BI
+6c6caa1000d86428880bee3b2877ff27 *Plug-ins\File Formats\Dicom.8BI
+7897d7820e04de095f4534f4838079de *Plug-ins\File Formats\JPEG2000.8BI
+c11373cad7b8c46716a6a99a7b117e92 *Plug-ins\File Formats\PBM.8BI
+5d00a7545ec09914521300588847845c *Plug-ins\File Formats\PCX.8BI
+d8a6058c3936f13da221f6af58bab4c9 *Plug-ins\File Formats\Pixar.8BI
+b4dac95cd3fed57e41f0f4c11e0e4db3 *Plug-ins\File Formats\Radiance.8BI
+a886396348043e2061fd28dde3934c1e *Plug-ins\File Formats\U3D.8BI
+d75d0918dee525bf787424724b0da977 *Plug-ins\File Formats\WBMP.8BI
+213ac898517fb349de873ea06098c45e *Plug-ins\Filters\Average.8BF
+7976d6fbacd315b69b4a612e2cd5830d *Plug-ins\Filters\ChannelPort.8BF
+290d80093db999cf8a302f4192b6eb8b *Plug-ins\Filters\Clouds.8BF
+2dae4b7b1a901c3f21672c9b0a0ff07a *Plug-ins\Filters\Lens Blur.8BF
+703215b869785285f5b4402d1bf219b2 *Plug-ins\Filters\Lens Correction.8BF
+da5f404f5a763d5eead5313e4f1b7fa9 *Plug-ins\Filters\Lighting Styles\2 O'clock Spotlight
+e061f9fef5324e217c3743a1632f1366 *Plug-ins\Filters\Lighting Styles\Blue Omni
+62973605527fc408336740bde7516d9f *Plug-ins\Filters\Lighting Styles\Circle of Light
+d798cbc5f84118b3967e0f9ade389a40 *Plug-ins\Filters\Lighting Styles\Crossing
+58ee3448d82b708be9bc7a040d223412 *Plug-ins\Filters\Lighting Styles\Crossing Down
+336e1c5f3276f329344fa29047cf9aba *Plug-ins\Filters\Lighting Styles\Default
+a02d89088241ec7b85c456c90e44bf9e *Plug-ins\Filters\Lighting Styles\Five Lights Down
+9466379e54ac1ea8860abc04182ba8b8 *Plug-ins\Filters\Lighting Styles\Five Lights Up
+43b35d9ab92e789e43c364acd752c02a *Plug-ins\Filters\Lighting Styles\Flashlight
+053c924c6d5b1b0bca233f33b30c5192 *Plug-ins\Filters\Lighting Styles\Flood Light
+a13366e643ea1bc3c7599636fe460759 *Plug-ins\Filters\Lighting Styles\Parallel Directional
+b322cc2c905ad723cf931264fadfcd59 *Plug-ins\Filters\Lighting Styles\RGB Lights
+12a1ae9d09676414ab1c6165c334bd91 *Plug-ins\Filters\Lighting Styles\Soft Direct Lights
+99ef8bce9689d5be5ed8b7f652853d99 *Plug-ins\Filters\Lighting Styles\Soft Omni
+c5303e8f1649f2f0e399c94ecead0ce9 *Plug-ins\Filters\Lighting Styles\Soft Spotlight
+eaeb72784bac3c2e4cf19e104db190fb *Plug-ins\Filters\Lighting Styles\Three Down
+f2ae9e85b593b1ec1172dfa61a63183e *Plug-ins\Filters\Lighting Styles\Triple Spotlight
+5dcb5a73447eb8d337c4d944cdab0f8a *Plug-ins\Filters\LightingEffects.8BF
+9dfaebf830c5d5c684ccd7e13683e663 *Plug-ins\Filters\Liquify.8BF
+8f99341d84656f3850155e6d6b770053 *Plug-ins\Filters\NTSC Colors.8BF
+00525bab29f37a6b554d66083c116745 *Plug-ins\Filters\Solarize.8BF
+ac05bcd1bdd51777dee62b2c99a078af *Plug-ins\Filters\Standard MultiPlugin.8BF
+050975d0b8735a8d0156c48adab09c54 *Plug-ins\Filters\VanishingPoint.8BF
+25ebf98472753a8d13de233f1f6937f5 *Plug-ins\Filters\Variations.8BF
+108d1e2eee167fd9544026dc052cb131 *Plug-ins\Image Stacks\statistics.8BA
+7ca3f5cc4f91992cdbeb8eb4025cf59d *Plug-ins\Import-Export\FireWire Export.8BE
+0d5a85ab4e2fb8e0004dfed71f79f050 *Plug-ins\Import-Export\FireWire.dll
+5956cc564d95040cb80ad33c32a5af3d *Plug-ins\Import-Export\Save for Web.8BE
+8f2e3fca619000a4cdec25a294f5f2ce *Plug-ins\Measurements\MeasurementCore.8ME
+2cb97f77f2ce7076d64723f987304d7f *Presets\Actions\Commands.atn
+044d4a0f170d79e160e00bfd3b003bfa *Presets\Actions\Frames.atn
+992ee791c1581d1b1dcec93c3c213fc3 *Presets\Actions\Image Effects.atn
+a055823fb3c341345476eec20924d064 *Presets\Actions\LAB - Black & White Technique.atn
+7dcb447d6f290bfa635b9deb905c176f *Presets\Actions\Production.atn
+84118ca63710eae36a72a2b424f1d80d *Presets\Actions\Stars Trails.atn
+8540fdd281f094d819f81d342100d4b0 *Presets\Actions\Text Effects.atn
+6868c380ecc7dae121ae2d13ad985b49 *Presets\Actions\Textures.atn
+0273a82dd66bacda074ec2914cab12af *Presets\Actions\Video Actions.atn
+db2c5fccd6b45bf55a58d845923f694f *Presets\Black and White\Blue Filter.blw
+c0614311afccbd9e7227bc466fd71fc6 *Presets\Black and White\Darker.blw
+8d519acd4127f02403d6a5c4ba485b8a *Presets\Black and White\Green Filter.blw
+db9923155feab542d8d328058a47b78a *Presets\Black and White\High Contrast Blue Filter.blw
+6168a3a9f114ef29d29af2925cbf2603 *Presets\Black and White\High Contrast Red Filter.blw
+a88bc946154b681932ac26fff2257fce *Presets\Black and White\Infrared.blw
+0380b9d7e99d09ff70f6f2e06ec0151a *Presets\Black and White\Lighter.blw
+7e504017e4133ab3d3a7508a60e2b03d *Presets\Black and White\Maximum Black.blw
+10a64e3f86a04ff0b08331cb1aecd666 *Presets\Black and White\Maximum White.blw
+0ba839568e9dafe69c4ff397d34cfa25 *Presets\Black and White\Neutral Density.blw
+23a037fd0bc9a37deaddc69682bc6358 *Presets\Black and White\Red Filter.blw
+4c1e99b288d36a845d6a24592571c82d *Presets\Black and White\Yellow Filter.blw
+14202ffdec129bde01bb9fc91e49b8c2 *Presets\Brushes\Assorted Brushes.abr
+9a9fb1ff9529b6f4564f8c5d0d185417 *Presets\Brushes\Basic Brushes.abr
+e3a468244cc8711978b0a72d86e7f325 *Presets\Brushes\Calligraphic Brushes.abr
+5bb2553642c5d6d69890fa8b87515b32 *Presets\Brushes\DP Brushes.abr
+6f13003052614e9227ff30718b15a16b *Presets\Brushes\Drop Shadow Brushes.abr
+0d0f703235607ad85099c73fadd44518 *Presets\Brushes\Dry Media Brushes.abr
+22b8510ad01d4f97f9cc3b2c1968b9fe *Presets\Brushes\Faux Finish Brushes.abr
+6858b0d88ebd61d96a75d7990f987161 *Presets\Brushes\M Brushes.abr
+00055077bfa87a9ffe2377621b46c19f *Presets\Brushes\Natural Brushes 2.abr
+ee21a0293f346f3208820b8dc6443f53 *Presets\Brushes\Natural Brushes.abr
+a6ae49402c80e1eb9f93d4a74decb10a *Presets\Brushes\Round Brushes with Size.abr
+8b7b359332f0292f88d52409fa8d7bde *Presets\Brushes\Special Effect Brushes.abr
+b1dbb93c7be19358ebb864675aa90d56 *Presets\Brushes\Square Brushes.abr
+f6e7be2a8041595d6486625f81a1120a *Presets\Brushes\Thick Heavy Brushes.abr
+05dcd40e8b94c0ca24c26b5d8e9b2acc *Presets\Brushes\Wet Media Brushes.abr
+891f6aa5ac0756c0edb3f61551e92f60 *Presets\Channel Mixer\Black & White Infrared (RGB).cha
+99f19186f54520bfb0785421f91030c8 *Presets\Channel Mixer\Black & White with Blue Filter (RGB).cha
+ceeebe13407dd099412717821379c1fb *Presets\Channel Mixer\Black & White with Green Filter (RGB).cha
+76b1538bd4bd27be39c2b18805daac67 *Presets\Channel Mixer\Black & White with Orange Filter (RGB).cha
+5625645177e110f58ac16605d8f37ece *Presets\Channel Mixer\Black & White with Red Filter (RGB).cha
+fd02916c5cf4cf4beb3851c61bb3ecff *Presets\Channel Mixer\Black & White with Yellow Filter (RGB).cha
+17d7cbb95e7d920b5a54e748a5fae380 *Presets\Color Books\ANPA Color.acb
+dfdbbaf992d179aa9b64691768402e5a *Presets\Color Books\DIC Color Guide.acb
+fe7f54b3af70cd5769062eb676c77ff6 *Presets\Color Books\FOCOLTONE.acb
+4ee9e45b1a0d65b9d08d6ac9a95c52c7 *Presets\Color Books\HKS E Process.acb
+0b274138f2d69d92509b556a9cee3592 *Presets\Color Books\HKS E.acb
+fd9b8dd910c8371400c2f27c70b34191 *Presets\Color Books\HKS K Process.acb
+4c8dab8a657509febc4ae2720acfc937 *Presets\Color Books\HKS K.acb
+e33287cb9e4b81e526dbdc08fa725f08 *Presets\Color Books\HKS N Process.acb
+92d3f4cf113e10458df1114360636c03 *Presets\Color Books\HKS N.acb
+a53c029c41430055554ca9d0ce43135c *Presets\Color Books\HKS Z Process.acb
+b43ffe5869da7955884cedba07abd9e9 *Presets\Color Books\HKS Z.acb
+e65cb9530212763a476faeed4dbe53fa *Presets\Color Books\PANTONE color bridge CMYK EC.acb
+758df14364c8c4445c11ff3027f38a00 *Presets\Color Books\PANTONE color bridge CMYK PC.acb
+94424fe4553cc2e565027d8e18abd498 *Presets\Color Books\PANTONE color bridge CMYK UP.acb
+cf3c19e352ab918782dc06867b4548d5 *Presets\Color Books\PANTONE metallic coated.acb
+24ba362446be40e83fdec1e6f0e18c6e *Presets\Color Books\PANTONE pastel coated.acb
+507efd8cdf9e6eafc734912fbffa7659 *Presets\Color Books\PANTONE pastel uncoated.acb
+da7545f908ad343705a7527e9034b8d6 *Presets\Color Books\PANTONE process coated.acb
+c2ddf45d9d6c93d879f0c9c54d5aeb2c *Presets\Color Books\PANTONE process uncoated.acb
+99935c339a5687b089906353a16c11fc *Presets\Color Books\PANTONE solid coated.acb
+b3c45d3c62be08f97cdcfb362da3bb71 *Presets\Color Books\PANTONE solid matte.acb
+ae88c81b84ae59588c303b427f292f45 *Presets\Color Books\PANTONE solid to process EURO.acb
+9399db346dac9e40e0e7f622e6916416 *Presets\Color Books\PANTONE solid to process.acb
+31378b8395cf34408577c1d5c054d703 *Presets\Color Books\PANTONE solid uncoated.acb
+b5e679677265c839330aa5a360b4e2bc *Presets\Color Books\TOYO 94 COLOR FINDER.acb
+0022909ffda2d60a4cac599d1d5dc878 *Presets\Color Books\TOYO COLOR FINDER.acb
+9495f6b9d54ca49313e0e2189d7eae0f *Presets\Color Books\TRUMATCH.acb
+c4ecf469fb714210c64aaff17a7a5f5a *Presets\Color Swatches\ANPA Colors.aco
+6261a382ec5f33153d945146f7678875 *Presets\Color Swatches\DIC Color Guide.aco
+d93ef87527d57035e3086b88ca853579 *Presets\Color Swatches\DIC Swatch ReadMe.pdf
+242b2534d8d1c8e6e0e1625b8151e6a5 *Presets\Color Swatches\FOCOLTONE Colors.aco
+73a95519161860ba02642bbb6e1f973b *Presets\Color Swatches\HKS E Process.aco
+aa8456955515a65f736b767eff588471 *Presets\Color Swatches\HKS E.aco
+e50b482449140dd6b08d5b0b5ba95048 *Presets\Color Swatches\HKS K Process.aco
+eced1b0a7d4cffc94d24a767397ed340 *Presets\Color Swatches\HKS K.aco
+07a377b2e9931a451c45721ef83f10ee *Presets\Color Swatches\HKS N Process.aco
+9a606de91d35dbe4eeaaad65bdd5c808 *Presets\Color Swatches\HKS N.aco
+189ca4109bb6e4a2824152f612f864f8 *Presets\Color Swatches\HKS Z Process.aco
+d8a559d08db5cdec7f36026d1bdd474a *Presets\Color Swatches\HKS Z.aco
+1e376f4ce18679c297a2bf81291c6899 *Presets\Color Swatches\Mac OS.aco
+da0b28dc03907b30d0c28885fb04e8b5 *Presets\Color Swatches\Paint Color Swatches.aco
+258c7b13f8b05431dbebc71134994205 *Presets\Color Swatches\PANTONE color bridge CMYK EC.aco
+f0446f4116ba4f922b9f8c155b98d37a *Presets\Color Swatches\PANTONE color bridge CMYK PC.aco
+1e409ac988c90d48da78be4a364080e8 *Presets\Color Swatches\PANTONE color bridge CMYK UP.aco
+8b04ea4b8f4a413f2113bca17fe7de7a *Presets\Color Swatches\PANTONE metallic coated.aco
+ac0e165fd2f6cf4592257de1cb7397ca *Presets\Color Swatches\PANTONE pastel coated.aco
+0c27a5ebc2f1d8df27a87de63e000156 *Presets\Color Swatches\PANTONE pastel uncoated.aco
+97b751ee0de7484e2365a8a3985ca691 *Presets\Color Swatches\PANTONE process coated.aco
+1c72766ed0a5b2900f8be88242cd5de5 *Presets\Color Swatches\PANTONE process uncoated.aco
+0c747a376668f46494b964f34bc8a73a *Presets\Color Swatches\PANTONE solid coated.aco
+30ddeca7b141f74210bc155a0609453f *Presets\Color Swatches\PANTONE solid matte.aco
+1e1b2631f90e291c0bae5bea2a980fb5 *Presets\Color Swatches\PANTONE solid to process EURO.aco
+cf01d597abb5d2f6869a8f51a80fb6b1 *Presets\Color Swatches\PANTONE solid to process.aco
+10875ae7777a2381c04e6c645a619d85 *Presets\Color Swatches\PANTONE solid uncoated.aco
+c655b29df18857a68320d3ae5716fbe7 *Presets\Color Swatches\Photo Filter Colors.aco
+75a4e518ab1c8c24a24784b802cf5ad8 *Presets\Color Swatches\TOYO 94 COLOR FINDER.aco
+6defc46c99bb76820d65539e7c151b89 *Presets\Color Swatches\TOYO COLOR FINDER.aco
+730844a95510f85f2b6c8fe1f41d32fb *Presets\Color Swatches\TRUMATCH Colors.aco
+8ac68c46cc9c811ce77ca80b48e4c1da *Presets\Color Swatches\Visi Bone ReadMe.pdf
+5d33493f93b4e143457c6c09d769cc20 *Presets\Color Swatches\VisiBone.aco
+58873186a0031ea1dad75a61c30bdea5 *Presets\Color Swatches\VisiBone2.aco
+81aaee8cf136b1d4dc2cfcbf1bf52456 *Presets\Color Swatches\Web Hues.aco
+575d7dc94930c7f236d84161d050c315 *Presets\Color Swatches\Web Safe Colors.aco
+ad0d58df2d4cd2add8ff85f5f45fa45d *Presets\Color Swatches\Web Spectrum.aco
+a8c000d654b0e921fddc4dac37556347 *Presets\Color Swatches\Windows.aco
+03a52d82e1b0f2784658bd21823fbd8c *Presets\Contours\Contours.shc
+b5a594f37b0eb18d980d71e9e5c4c400 *Presets\Curves\Color Negative (RGB).acv
+42c2db84ae07a6e2756c4d0c56d74742 *Presets\Curves\Cross Process (RGB).acv
+135dec9547ea8479ff5a2a688b75014b *Presets\Curves\Darker (RGB).acv
+868f214ef3bccbbf82a51cbfd6586992 *Presets\Curves\Increase Contrast (RGB).acv
+83fc85d50abf88e076d4c0f059cc07f2 *Presets\Curves\Lighter (RGB).acv
+1f9c1c0b1e656ce2ae6b869d000acfeb *Presets\Curves\Linear Contrast (RGB).acv
+293283ee6c671d3536c3991f663d237d *Presets\Curves\Medium Contrast (RGB).acv
+1b3577dc74f777b03d4cf2e1f37244cc *Presets\Curves\Negative (RGB).acv
+4f283740969d24b2670cc4ff5f1a4d81 *Presets\Curves\Strong Contrast (RGB).acv
+b7b0f4e6e60f805dc28a831c241a4824 *Presets\Custom Shapes\All.csh
+85d33555864f265e107b6d085eefa750 *Presets\Custom Shapes\Animals.csh
+1c28d2a9a463214ac01eb2e367698555 *Presets\Custom Shapes\Arrows.csh
+e6dc57fc0d0e9c4ff2a2842614bd0437 *Presets\Custom Shapes\Artistic Textures.csh
+ded30dc72ed1c2c9f6a68e092b30cc20 *Presets\Custom Shapes\Banners and Awards.csh
+4ace892188e3733b52a27060df526c33 *Presets\Custom Shapes\Film.csh
+ac46fac20260b8a22c3675afd6ae6d42 *Presets\Custom Shapes\Frames.csh
+77f6a1aced7580cf7baf8f2b19ccf5a2 *Presets\Custom Shapes\Grime Vector Pack.csh
+ea0ff3bf7dcbf549825c3adc369b7f28 *Presets\Custom Shapes\LightBulb.csh
+239e7817d596914f1c0c7ae63afbb3f7 *Presets\Custom Shapes\Music.csh
+ee7ae874a95bc6aa6616ada109333f1f *Presets\Custom Shapes\Nature.csh
+4c1c3721d9595a723121750badf213d5 *Presets\Custom Shapes\Objects.csh
+a81018cb60fc86637dff640e30564bc9 *Presets\Custom Shapes\Ornaments.csh
+c5159100f3e40272fcc74de46ccecbc9 *Presets\Custom Shapes\Shapes.csh
+95d5646e228f1509469e1a8498a7fcfb *Presets\Custom Shapes\Symbols.csh
+f7a0ab3cf0ac5c5910e62cc4c5f072ca *Presets\Custom Shapes\Talk Bubbles.csh
+b618b4dd4c817ad350381f88c0154be7 *Presets\Custom Shapes\Tiles.csh
+6987b72b38947adab6ee645bfdd1075d *Presets\Custom Shapes\Web.csh
+ea7ca4c10eb40a710fe532c651feb7ae *Presets\Duotones\Duotones\Gray-Black Duotones\424 bl 1.ADO
+6a39a66fed5b67e0b4a7f11c71c08989 *Presets\Duotones\Duotones\Gray-Black Duotones\424 bl 2.ADO
+4121e8d21f41488b3dde298a32bbea29 *Presets\Duotones\Duotones\Gray-Black Duotones\424 bl 3.ADO
+f180e85af9eea2a1d42807a6ebcb7a36 *Presets\Duotones\Duotones\Gray-Black Duotones\424 bl 4.ADO
+d29eb91cf4abb3c8cbc19e559eb993ad *Presets\Duotones\Duotones\Gray-Black Duotones\Cool Gray 7 bl 1.ADO
+fd9fa312c8475de7622811d31c1aab50 *Presets\Duotones\Duotones\Gray-Black Duotones\Cool Gray 7 bl 2.ADO
+6c55602d113c4ae021a2f9d39e31b91c *Presets\Duotones\Duotones\Gray-Black Duotones\Cool Gray 7 bl 3.ADO
+3871d04f07dab73ef841d6f520b71e1f *Presets\Duotones\Duotones\Gray-Black Duotones\Cool Gray 7 bl 4.ADO
+343fade8717bcdb7b67a5f910900451e *Presets\Duotones\Duotones\Gray-Black Duotones\Cool Gray 9 bl 1.ADO
+dfe6e74f05b8ff16826347fa039525af *Presets\Duotones\Duotones\Gray-Black Duotones\Cool Gray 9 bl 2.ADO
+48e0fb6b8052f1ab8b71b3f18e4c1a43 *Presets\Duotones\Duotones\Gray-Black Duotones\Cool Gray 9 bl 3.ADO
+3afffe896e60eadf0cba2a7b6b410636 *Presets\Duotones\Duotones\Gray-Black Duotones\Cool Gray 9 bl 4.ADO
+f80c22abdede870a48b813be86f1dfc4 *Presets\Duotones\Duotones\Gray-Black Duotones\gray 423 bl soft.ADO
+8bcac734d9e8c2752796785aa44f5cc3 *Presets\Duotones\Duotones\Gray-Black Duotones\gray 423 bl very soft.ADO
+71b0428a6dc459fd172a66bfbc24b623 *Presets\Duotones\Duotones\Gray-Black Duotones\gray 423 bl.ADO
+37f74f9a11db617aa89f88267b5b8f40 *Presets\Duotones\Duotones\Gray-Black Duotones\Warm Gray 11 bl 1.ADO
+a48dde7b328749caba14e77360ef85a9 *Presets\Duotones\Duotones\Gray-Black Duotones\Warm Gray 11 bl 2.ADO
+3cfe31d5eaedf4bd40092fc02106d6a4 *Presets\Duotones\Duotones\Gray-Black Duotones\Warm Gray 11 bl 3.ADO
+e70f1c63088af3c8f394f22da1d7aa3c *Presets\Duotones\Duotones\Gray-Black Duotones\Warm Gray 11 bl 4.ADO
+5a7fd6d480351cb51401b62445ec3af8 *Presets\Duotones\Duotones\Gray-Black Duotones\Warm Gray 8 bl 1.ADO
+5c134be6896221497c0716b581adca09 *Presets\Duotones\Duotones\Gray-Black Duotones\Warm Gray 8 bl 2.ADO
+22deca3922c8efa071bd93bda6203e0e *Presets\Duotones\Duotones\Gray-Black Duotones\Warm Gray 8 bl 3.ADO
+d04c35bc9434ad1fbd9eb73ebb863483 *Presets\Duotones\Duotones\Gray-Black Duotones\Warm Gray 8 bl 4.ADO
+53a6720e78315340fde2d28115336def *Presets\Duotones\Duotones\PANTONE(R) Duotones\144 orange (25%) bl 1.ADO
+a43768100b2629ab58f758502736585d *Presets\Duotones\Duotones\PANTONE(R) Duotones\144 orange (25%) bl 2.ADO
+e2b72de1ad0a20fef6d27faa0f57dd08 *Presets\Duotones\Duotones\PANTONE(R) Duotones\144 orange (25%) bl 3.ADO
+c65b3712eeb4114c6336b204e03f14fd *Presets\Duotones\Duotones\PANTONE(R) Duotones\144 orange (25%) bl 4.ADO
+8d4dd6ae8a0be687b90be4ed2415272b *Presets\Duotones\Duotones\PANTONE(R) Duotones\144 orange bl 80% shad.ADO
+c1499bab3b267f3cae9da5c2bb1d0852 *Presets\Duotones\Duotones\PANTONE(R) Duotones\159 dk orange bl 1.ADO
+210a6c7ab2190a09ec6861359ed97632 *Presets\Duotones\Duotones\PANTONE(R) Duotones\159 dk orange bl 2.ADO
+c5a2a670ba201fc6797c9d6303777f85 *Presets\Duotones\Duotones\PANTONE(R) Duotones\159 dk orange bl 3.ADO
+25791d512ffa8ac0ac709ab6e5eeeffa *Presets\Duotones\Duotones\PANTONE(R) Duotones\159 dk orange bl 4.ADO
+c9b2964ed77af9e7af98610e60ee54f4 *Presets\Duotones\Duotones\PANTONE(R) Duotones\327 aqua (50%) bl 1.ADO
+def04d06fa15352010ac0c8b27b6f6df *Presets\Duotones\Duotones\PANTONE(R) Duotones\327 aqua (50%) bl 2.ADO
+0122b6c8af8688ca677676d2457ec6c3 *Presets\Duotones\Duotones\PANTONE(R) Duotones\327 aqua (50%) bl 3.ADO
+e5ba6747b60e2f48e6bf30cd19652541 *Presets\Duotones\Duotones\PANTONE(R) Duotones\327 aqua (50%) bl 4.ADO
+d0f42effd96cf0e08617d0597f9a2790 *Presets\Duotones\Duotones\PANTONE(R) Duotones\478 brown (100%) bl 1.ADO
+3ce7ab91835f14fc5abb25152eb1c52a *Presets\Duotones\Duotones\PANTONE(R) Duotones\478 brown (100%) bl 2.ADO
+cb4c445e0193e60aae459884e244cb7d *Presets\Duotones\Duotones\PANTONE(R) Duotones\478 brown (100%) bl 3.ADO
+43911c582e02843f1d341f04729be214 *Presets\Duotones\Duotones\PANTONE(R) Duotones\478 brown (100%) bl 4.ADO
+97fe7d6d6a82a66195fb55120fc469bf *Presets\Duotones\Duotones\PANTONE(R) Duotones\506 burgundy (75%) bl 1.ADO
+4482ae3e05e1edca7d27f8149dc6b342 *Presets\Duotones\Duotones\PANTONE(R) Duotones\506 burgundy (75%) bl 2.ADO
+92e8b33635d632515aec2b0a7d7a6ab5 *Presets\Duotones\Duotones\PANTONE(R) Duotones\506 burgundy (75%) bl 3.ADO
+2a6d022b41e8e957577ec0886df3feb5 *Presets\Duotones\Duotones\PANTONE(R) Duotones\506 burgundy (75%) bl 4.ADO
+3427d4c998b38f09266d4314e94d1795 *Presets\Duotones\Duotones\PANTONE(R) Duotones\527 purple (100%) bl 1.ADO
+03cd804699f6d8e62151b86d6e950797 *Presets\Duotones\Duotones\PANTONE(R) Duotones\527 purple (100%) bl 2.ADO
+d69a6a0a29ab666c7310dc8576c7d258 *Presets\Duotones\Duotones\PANTONE(R) Duotones\527 purple (100%) bl 3.ADO
+f198b016b3222eb18c066f5c4bd9d0fc *Presets\Duotones\Duotones\PANTONE(R) Duotones\527 purple (100%) bl 4.ADO
+f149b2ba2027e4023f5c77af4c3a87a0 *Presets\Duotones\Duotones\PANTONE(R) Duotones\blue 072 bl 1.ADO
+889b2a39ef7c43a34d8cf63f9d3ee3b6 *Presets\Duotones\Duotones\PANTONE(R) Duotones\blue 072 bl 2.ADO
+c2301530f85798dffb9eb7823835c4fb *Presets\Duotones\Duotones\PANTONE(R) Duotones\blue 072 bl 3.ADO
+9d11422e7805d225a12e1d56d0645f56 *Presets\Duotones\Duotones\PANTONE(R) Duotones\blue 072 bl 4.ADO
+3dff1a43f34c5101199619e79aaeb63d *Presets\Duotones\Duotones\PANTONE(R) Duotones\blue 286 bl 1.ADO
+a4c0299e39c677afd7a7517d2980bf15 *Presets\Duotones\Duotones\PANTONE(R) Duotones\blue 286 bl 2.ADO
+5f24f63bab50f02bf71645653cbb8104 *Presets\Duotones\Duotones\PANTONE(R) Duotones\blue 286 bl 3.ADO
+b5653570dc0116540c1e5635cd51fcb3 *Presets\Duotones\Duotones\PANTONE(R) Duotones\blue 286 bl 4.ADO
+ee9ad3bbd0cb436bb84696afca495619 *Presets\Duotones\Duotones\PANTONE(R) Duotones\brown 464 bl 1.ADO
+df628a4bff8e954f5921e10bfb125c89 *Presets\Duotones\Duotones\PANTONE(R) Duotones\brown 464 bl 2.ADO
+a6c3373439422b04a5d543674e57df50 *Presets\Duotones\Duotones\PANTONE(R) Duotones\brown 464 bl 3.ADO
+47fa54391a31b691cb4ff5ea603fada2 *Presets\Duotones\Duotones\PANTONE(R) Duotones\brown 464 bl 4.ADO
+b1ea2833a0181477a5659657b59be351 *Presets\Duotones\Duotones\PANTONE(R) Duotones\green 3405 bl 1.ADO
+4b1c595e700285952a36325b0349e365 *Presets\Duotones\Duotones\PANTONE(R) Duotones\green 3405 bl 2.ADO
+b98395dc0f4525214dbc96efe40b54f5 *Presets\Duotones\Duotones\PANTONE(R) Duotones\green 3405 bl 3.ADO
+8c4915fd9ae4038a89aae7907e27b841 *Presets\Duotones\Duotones\PANTONE(R) Duotones\green 3405 bl 4.ADO
+1289782651c9af159c54bd25c344a26e *Presets\Duotones\Duotones\PANTONE(R) Duotones\green 349 bl 1.ADO
+3aa186c985b906a6ec8cda0091ff2f54 *Presets\Duotones\Duotones\PANTONE(R) Duotones\green 349 bl 2.ADO
+65c2625844c1cd86517dd609460fefd7 *Presets\Duotones\Duotones\PANTONE(R) Duotones\green 349 bl 3.ADO
+60fd5c52916e6692ca2246e1b0e463d3 *Presets\Duotones\Duotones\PANTONE(R) Duotones\green 349 bl 4.ADO
+a99b98d05c3bf08cf0fcabbf7148b38f *Presets\Duotones\Duotones\PANTONE(R) Duotones\mauve 4655 bl 1.ADO
+2b3f271061cc70e85635de162e6c9235 *Presets\Duotones\Duotones\PANTONE(R) Duotones\mauve 4655 bl 2.ADO
+b8bdf7781d4829dcf7a991572e4312bb *Presets\Duotones\Duotones\PANTONE(R) Duotones\mauve 4655 bl 3.ADO
+e7a33abc4017ccf6ac374efca4eeaa43 *Presets\Duotones\Duotones\PANTONE(R) Duotones\mauve 4655 bl 4.ADO
+6655d0c7b0dc3187663bc8dc95402f2e *Presets\Duotones\Duotones\PANTONE(R) Duotones\red 485 bl 1.ADO
+d0b897b1b0c071b54b91de61da76ae5d *Presets\Duotones\Duotones\PANTONE(R) Duotones\red 485 bl 2.ADO
+06f713aa884c6cf1ad685627f3f25196 *Presets\Duotones\Duotones\PANTONE(R) Duotones\red 485 bl 3.ADO
+c052040bc7d99b59a2d908df9ceaa057 *Presets\Duotones\Duotones\PANTONE(R) Duotones\red 485 bl 4.ADO
+0fdf7597b0e2e5d20c01e7f1e030bc57 *Presets\Duotones\Duotones\Process Duotones\cyan bl 1.ADO
+cdfc7394ea469c6f70da03f31c378c2d *Presets\Duotones\Duotones\Process Duotones\cyan bl 2.ADO
+a299ca07dff9587563913572e922f2d2 *Presets\Duotones\Duotones\Process Duotones\cyan bl 3.ADO
+6b80535edccb2506b4253ca9c4b9df69 *Presets\Duotones\Duotones\Process Duotones\cyan bl 4.ADO
+14265c117d70f8e7ab7ebc96197e92f9 *Presets\Duotones\Duotones\Process Duotones\magenta bl 1.ADO
+0ebb339ed47f8559bd63ab09938ab739 *Presets\Duotones\Duotones\Process Duotones\magenta bl 2.ADO
+39d5d12d1e98c38a542b9039be9647c3 *Presets\Duotones\Duotones\Process Duotones\magenta bl 3.ADO
+dc3496b6ff033b37935e38db969f605b *Presets\Duotones\Duotones\Process Duotones\magenta bl 4.ADO
+38a0c3bc2a34cd60c77d8ab8f5459902 *Presets\Duotones\Duotones\Process Duotones\yellow bl 1.ADO
+0c18b97b27bcbf89b05f552ebac18db5 *Presets\Duotones\Duotones\Process Duotones\yellow bl 2.ADO
+c57feeab319bd81f3dcd7b89562c919d *Presets\Duotones\Duotones\Process Duotones\yellow bl 3.ADO
+9f92ff064f3910a5199c60109ab20d42 *Presets\Duotones\Duotones\Process Duotones\yellow bl 4.ADO
+7ba87a243374953b36bdbbdb6d21574a *Presets\Duotones\Quadtones\Gray Quadtones\Bl CG10 CG4 WmG3.ADO
+4528cad9437424d5d8f653b54a0ffd20 *Presets\Duotones\Quadtones\Gray Quadtones\Bl CG10 WmG3 CG1.ADO
+02710317e2ed8cff32667d51f5b66075 *Presets\Duotones\Quadtones\Gray Quadtones\Bl CG10 WmG4 CG3.ADO
+01530c78ad082b812f0666d1be154bb7 *Presets\Duotones\Quadtones\Gray Quadtones\Bl WmG9 CG6 CG3.ADO
+c71b0a6d9dff3f02cff6d346595c70df *Presets\Duotones\Quadtones\PANTONE(R) Quadtones\Bl 430 493 557.ADO
+594eb3a02ee8b65bc24267a0cf51a84b *Presets\Duotones\Quadtones\PANTONE(R) Quadtones\Bl 431 492 556.ADO
+588c66b9ddad96677a697575b308d4b5 *Presets\Duotones\Quadtones\PANTONE(R) Quadtones\Bl 541 513 5773.ADO
+fee37426601719bb8d4dc1e2155dff89 *Presets\Duotones\Quadtones\PANTONE(R) Quadtones\Bl 75% 50% 25%.ADO
+b274038f05c95134310ce53f790781ba *Presets\Duotones\Quadtones\Process Quadtones\CMYK cool.ADO
+7ed2d494151e326cefd666b6ec7a8d5f *Presets\Duotones\Quadtones\Process Quadtones\CMYK ext wm.ADO
+a519307367225cdf4f11d012158867d6 *Presets\Duotones\Quadtones\Process Quadtones\CMYK neutral.ADO
+f4c42aaf38232ca3e7047113845d54e7 *Presets\Duotones\Quadtones\Process Quadtones\CMYK very cool.ADO
+8219487fcd43106515806168c161602f *Presets\Duotones\Quadtones\Process Quadtones\CMYK very wm.ADO
+ca6338ce720c9dc0cbb180e881c93bb8 *Presets\Duotones\Quadtones\Process Quadtones\CMYK wm.ADO
+255e5936c32d802b479e852523e72c9e *Presets\Duotones\Tritones\Gray Tritones\Bl 404 WmGray 401 WmGray.ADO
+9886e9f9f852a838ba4b676ba1433d6c *Presets\Duotones\Tritones\Gray Tritones\Bl 409 WmGray 407 WmGray.ADO
+757d23b5c1c11653ab4eedb3570cf9ae *Presets\Duotones\Tritones\Gray Tritones\Bl Cool Gray 10 WmGray 1.ADO
+8219a136a0e9eacd2fa9691cc4bf19b3 *Presets\Duotones\Tritones\Gray Tritones\Bl for dark CG9 CG2.ADO
+b6f1143c8ce84da8edc3a21da8dc18b6 *Presets\Duotones\Tritones\Gray Tritones\Bl for low con CG9 CG2.ADO
+78a7847d2199fe20f20b9f74bc0da3e6 *Presets\Duotones\Tritones\Gray Tritones\Bl normal CG9 CG2.ADO
+4965e28a04e6047d390e8798dce77eb6 *Presets\Duotones\Tritones\Gray Tritones\Bl soft CG9 CG2.ADO
+b020573ef337d27a99addcbd2a64c3ef *Presets\Duotones\Tritones\Gray Tritones\Bl WmGray 7 WmGray 2.ADO
+b3b3d18bf7bc2a1641b47a297c4e9c0e *Presets\Duotones\Tritones\PANTONE(R) Tritones\Bl 165 red orange 457 brown.ADO
+6c05bebe56d97b191289ecd08843c7d4 *Presets\Duotones\Tritones\PANTONE(R) Tritones\Bl 172 orange 423 gray.ADO
+06ba869c3f1926284a624f806c7acfd2 *Presets\Duotones\Tritones\PANTONE(R) Tritones\Bl 313 aqua 127 gold.ADO
+294665abeb751fa6f13f2ce04b6192c9 *Presets\Duotones\Tritones\PANTONE(R) Tritones\Bl 334 green 437 mauve.ADO
+addff08028e3f4a5041eb92d7e44102d *Presets\Duotones\Tritones\PANTONE(R) Tritones\Bl 340 green 423 gray.ADO
+de5e4a9e68c58a5fcab573d36e48b63d *Presets\Duotones\Tritones\PANTONE(R) Tritones\Bl 437 burgundy 127 gold.ADO
+0a1af0a5618bb8d0f12341fece26705e *Presets\Duotones\Tritones\PANTONE(R) Tritones\Bl 50% 25%.ADO
+0e8a98e6bb6fb3ad5448e3d38bafdca1 *Presets\Duotones\Tritones\Process Tritones\BCY green 1.ADO
+c5db28a2e96c21437f165c6383197907 *Presets\Duotones\Tritones\Process Tritones\BCY green 2.ADO
+9a26cb6467c4c9ebb9113925df963ccd *Presets\Duotones\Tritones\Process Tritones\BCY green 3.ADO
+2d9cd2960c268bfacbace0cf3fa18b54 *Presets\Duotones\Tritones\Process Tritones\BCY green 4.ADO
+7ab6ea98087eba1b634a3b4e629d9744 *Presets\Duotones\Tritones\Process Tritones\BMC blue 1.ADO
+b0c341f0215eacbdb02a1d26667c7d9b *Presets\Duotones\Tritones\Process Tritones\BMC blue 2.ADO
+b69b3adad4d6eb984ab4b597486038ee *Presets\Duotones\Tritones\Process Tritones\BMC blue 3.ADO
+ba33d2bfd57aece451457903f693adda *Presets\Duotones\Tritones\Process Tritones\BMC blue 4.ADO
+faaf57a4b6e80d228b09a98192f2e65e *Presets\Duotones\Tritones\Process Tritones\BMY brown 1.ADO
+8d63f0f3af0cd205c4051221f3fbbe3e *Presets\Duotones\Tritones\Process Tritones\BMY brown 2.ADO
+ff2314012d7665038d93560f21e61171 *Presets\Duotones\Tritones\Process Tritones\BMY brown 3.ADO
+3663d9ec99643fa2696f6410365d2743 *Presets\Duotones\Tritones\Process Tritones\BMY brown 4.ADO
+8ca76e86eac313eaabdcdce20bea3831 *Presets\Duotones\Tritones\Process Tritones\BMY red 1.ADO
+35f62b8eb95ec116179704744ce39969 *Presets\Duotones\Tritones\Process Tritones\BMY red 2.ADO
+f603a2c217b5b63995d8c39730d35491 *Presets\Duotones\Tritones\Process Tritones\BMY red 3.ADO
+195de8dd457aa3ec39194ac5c7f45c58 *Presets\Duotones\Tritones\Process Tritones\BMY red 4.ADO
+17b79ea0753c3ec356f0bfd869a45c1c *Presets\Duotones\Tritones\Process Tritones\BMY sepia 1.ADO
+79124a47a2af1e07a991f779efc7d461 *Presets\Duotones\Tritones\Process Tritones\BMY sepia 2.ADO
+c90e98ed2f0c69c6feb22f9aca783650 *Presets\Duotones\Tritones\Process Tritones\BMY sepia 3.ADO
+b7d52af4e4d97f2b910016cacd3b88a2 *Presets\Duotones\Tritones\Process Tritones\BMY sepia 4.ADO
+10c2142c5fb588ff36e25243c9c2621e *Presets\Exposure\Minus 1.0.eap
+b6f11975e550c2b92f6fa9c163b9ce31 *Presets\Exposure\Minus 2.0.eap
+9ce737717eb6f5608172cebff5b6876d *Presets\Exposure\Plus 1.0.eap
+7bf1d6a8251bd7d47cd1f38aa697c3b1 *Presets\Exposure\Plus 2.0.eap
+35efe241c5b5ff173d41a1c8480d6c7b *Presets\Gradients\Color Harmonies 1.grd
+5e6cf9a38d76036cc1a7c7bb42b86860 *Presets\Gradients\Color Harmonies 2.grd
+dac249be4764a070a63894a383c6bdf6 *Presets\Gradients\Metals.grd
+c4ff6a7518f27f71a6cc31ebf10df4f6 *Presets\Gradients\Neutral Density.grd
+f6d1bf3a142590c58de2a66aeed90900 *Presets\Gradients\Noise Samples.grd
+dd6134075c740ba410d99e5c6b2455bc *Presets\Gradients\Pastels.grd
+c7ca9cd60afc5acdf4de53b5b50b5c36 *Presets\Gradients\Simple.grd
+c830cd1fce94aed62a5c9bff41ddb057 *Presets\Gradients\Special Effects.grd
+f1140f91eae1926fae51d5ea86c80ebf *Presets\Gradients\Spectrums.grd
+279a2aea35c02e3bfa03458920b09185 *Presets\HDR Toning\Flat.hdt
+a7083a1006c7d7fa41dd67dca98384d3 *Presets\HDR Toning\Monochromatic artistic.hdt
+25a339f321dc06b2c78180ecb8a9d82b *Presets\HDR Toning\Monochromatic high contrast.hdt
+53ca81c9d2f8bde4285415e29568f19b *Presets\HDR Toning\Monochromatic low contrast.hdt
+b2ed67c1bb15fef4547a642b531ad2bd *Presets\HDR Toning\Monochromatic.hdt
+e335ca8b66605b826f756255f4bf35c9 *Presets\HDR Toning\More Saturated.hdt
+827fa36d3de5f33f337e78b599e67d9f *Presets\HDR Toning\Photorealistic high contrast.hdt
+75acd05218623868e2544b2bbc2c6293 *Presets\HDR Toning\Photorealistic low contrast.hdt
+be806bf1c1726d6ea3425dc12a2f317c *Presets\HDR Toning\Photorealistic.hdt
+dbc37bee707064bd790283ace494fdda *Presets\HDR Toning\Saturated.hdt
+a26808201da97822ae328b2a671ac320 *Presets\HDR Toning\Surrealistic high contrast.hdt
+5b3b24954dd30c1e56a9a79db07115b5 *Presets\HDR Toning\Surrealistic low contrast.hdt
+ec8f37f2e227f3d2b8038edb50d86f82 *Presets\HDR Toning\Surrealistic.hdt
+48d5dff58272563763841b8331e1f3a9 *Presets\Hue and Saturation\Cyanotype.ahu
+42db4688798c72aff2ffd23567749856 *Presets\Hue and Saturation\Increase Saturation More.ahu
+0b875306652ebe1027ab538993504d6b *Presets\Hue and Saturation\Increase Saturation.ahu
+67e7789a77733b64cdc1009e072c099d *Presets\Hue and Saturation\Old Style.ahu
+564576c7e32ad714ad3eeb4411493b69 *Presets\Hue and Saturation\Red Boost.ahu
+e0ede78f9dc8d73e797e209468b73161 *Presets\Hue and Saturation\Sepia.ahu
+9f1d6535a4974e19f13f2737406cb74b *Presets\Hue and Saturation\Strong Saturation.ahu
+2b99fca8f5e4f697ca574cdbaa17eb77 *Presets\Hue and Saturation\Yellow Boost.ahu
+7f2d29a5e3ded93d9a3bdadf45ccec15 *Presets\Levels\Darker.alv
+1cb0b29647c9db69ba53043104cd7fb0 *Presets\Levels\Increase Contrast 1.alv
+7b22546d989e86ba69fb3a94ce96fc4d *Presets\Levels\Increase Contrast 2.alv
+c042cdd1ef2db2ffa36591caa7c1b0c2 *Presets\Levels\Increase Contrast 3.alv
+d9eebef34b3f769d763883b740642037 *Presets\Levels\Lighten Shadows.alv
+df69e82033dc5cf9bf51addad9f042d0 *Presets\Levels\Lighter.alv
+b1c731c9003446c6715e7818efa93c09 *Presets\Levels\Midtones Brighter.alv
+285965bbdff06575a7995f56a16d99e0 *Presets\Levels\Midtones Darker.alv
+21a6d7ce4cee3c3c7cbaeb25994a7c45 *Presets\Lights\Blue Lights.p3l
+4a6e382ffe339c3e4412198e9fe94dbc *Presets\Lights\CAD Optimized.p3l
+d2647a5bcdcddde723aca9c95792d414 *Presets\Lights\Cold.p3l
+f5918941c60b37944f476e470e000d76 *Presets\Lights\Dawn.p3l
+3868318bc683819cbae98dc916f21208 *Presets\Lights\Day Lights.p3l
+c52e6bd52326eb08f3449ff816b8786a *Presets\Lights\Default Lights.p3l
+18ab5225c8b719b9a03250218c591cdf *Presets\Lights\Fire.p3l
+fceedc8e5e6e523a958880e355a3a9a5 *Presets\Lights\Hard Lights.p3l
+63f4ee33e375df13eab2334d5dfc781a *Presets\Lights\Lush.p3l
+d0204fe47f7fc3a5b54d514eb9858353 *Presets\Lights\Mardi Gras.p3l
+0683b47e02f1519f4df0976460013790 *Presets\Lights\Night Lights.p3l
+410ed1bea400be99ec15b72d991757b1 *Presets\Lights\Primary Colors.p3l
+711e1c5e0662256750d8406b893f9533 *Presets\Lights\Purple Faze.p3l
+850b3f52ff64500d9ac8a51468fe6182 *Presets\Lights\Red Lights.p3l
+6f7460a3a351b9961c314fe6895dec41 *Presets\Lights\White Lights.p3l
+cf71485bd4e425f8791bb2b4fc33e8fe *Presets\Materials\Default (for Ray Tracer).p3m
+7ee2f35d4a96e176cb836900e4557377 *Presets\Materials\Default.p3m
+eeee68568cd91912aae7f9355a860ab2 *Presets\Materials\MaterialPreview.dae
+28c2947d86c2387350329064a675787d *Presets\Meshes\Cone.dae
+ba4934b0bc8b06d84b6eff973409edb7 *Presets\Meshes\Cube.dae
+5256dbd822ba7e149655ece5bcec75c7 *Presets\Meshes\CubeWrap.dae
+ecb7c89b4db7591ee0bf26b1bb13738d *Presets\Meshes\Cylinder.dae
+4252d61eff7839f2fac250c3cadf9615 *Presets\Meshes\Donut.dae
+82aef3cedf5e8ae65c65d83ce42b60d2 *Presets\Meshes\Hat.dae
+4b1abb7933bc34ce663f4665e15f78c2 *Presets\Meshes\Pyramid.dae
+45c89d147421ed8a0ea4cb2cebfd2c58 *Presets\Meshes\Ring.dae
+01d93d0a5e65df88263b5414b55fb8c4 *Presets\Meshes\Soda.dae
+3025ed5450bbf76bcc713ed3795697a2 *Presets\Meshes\Sphere.dae
+6bed5d82ecae7519380403a9f7c53ae6 *Presets\Meshes\SphericalPanorama.dae
+6eeeedcf67e7a97af749fdb67da753fa *Presets\Meshes\Wine.dae
+4a3288f6cbd807aff229b4f79072462e *Presets\Optimized Colors\Black - White.act
+2ce81a3cc84b5269c1ac1fa076fd3810 *Presets\Optimized Colors\Grayscale.act
+7bb7a37a1af9e3b447628ea5a7fa1184 *Presets\Optimized Colors\Mac OS.act
+bdf11c39dd33b0f1ae86357ceae6843a *Presets\Optimized Colors\Windows.act
+48efe0dcc3d3876c964b77ca45a493e2 *Presets\Optimized Output Settings\Background Image.iros
+67adb52b2c9081dcf9630c8a665b42c3 *Presets\Optimized Output Settings\Default Settings.iros
+adaea929c752976e654856979ce65226 *Presets\Optimized Output Settings\XHTML.iros
+9af05d7519c786cf157c0698c0ff9f66 *Presets\Optimized Settings\GIF 128 Dithered.irs
+1cce87ca891f858873df3581d53080db *Presets\Optimized Settings\GIF 128 No Dither.irs
+ad7857a8abf9bde686b7507079b9bc75 *Presets\Optimized Settings\GIF 32 Dithered.irs
+b37db354d10a73ba88288164bb13182c *Presets\Optimized Settings\GIF 32 No Dither.irs
+ef627124721490d26fecd2a106eb6862 *Presets\Optimized Settings\GIF 64 Dithered.irs
+93492f31a35fde6cf46abccebe02f0a8 *Presets\Optimized Settings\GIF 64 No Dither.irs
+0ac14e93b376485426d89e1a8c45b550 *Presets\Optimized Settings\GIF Restrictive.irs
+31136ad10e4a6ddfbbdb0e43450ee807 *Presets\Optimized Settings\JPEG High.irs
+fc1006b3bbee65db068e678791b21bb5 *Presets\Optimized Settings\JPEG Low.irs
+0dab5f6093cf873d00fd862e81707001 *Presets\Optimized Settings\JPEG Medium.irs
+87097b17b1172758411e6cf4a2f8675f *Presets\Optimized Settings\PNG-24.irs
+168a9f065272fb22e6eb9eb71fd48ad3 *Presets\Optimized Settings\PNG-8 128 Dithered.irs
+06b218432bc5f0e36995e3bfc7ead427 *Presets\Patterns\Artist Surfaces.pat
+bb93631e9aca53ae75263803254d2d67 *Presets\Patterns\Color Paper.pat
+05ce879f056fe174f671d856293b0c5a *Presets\Patterns\Grayscale Paper.pat
+435b20083703457773c46badc75b4277 *Presets\Patterns\Nature Patterns.pat
+9650857a0b21b9eabc31df95847e74c9 *Presets\Patterns\Patterns 2.pat
+0758fcf98ca9bb85815cc4f855bef27d *Presets\Patterns\Patterns.pat
+a699e112285c4df20076f94640f4cc82 *Presets\Patterns\Rock Patterns.pat
+2d22f23bc3b59037bb2a8316d09f6f07 *Presets\Patterns\Texture Fill 2.pat
+318c9c06b272760f19f85b07bfbe0b45 *Presets\Patterns\Texture Fill.pat
+4be489e2c155cd839609c2c0748b92d6 *Presets\Render Settings\Bounding Box.p3r
+1f689db8e494c30de7f4c9e62741e39f *Presets\Render Settings\Default.p3r
+97bed9e3dbc229437eb3955f83540aa1 *Presets\Render Settings\Depth Map.p3r
+a90cee28840c255e86a687bc5e9a3951 *Presets\Render Settings\Hidden Wireframe.p3r
+7836a858290effc8423707065019195c *Presets\Render Settings\Line Illustration.p3r
+4a34309abeac80344215513a3c30f6da *Presets\Render Settings\Normals.p3r
+b8b725358c0dcc6e5bdd5af41d66866e *Presets\Render Settings\Paint Mask.p3r
+9cc991597d7d208823f4c5f1d950dabe *Presets\Render Settings\Shaded Illustration.p3r
+f19ee996c55562a5c1e522198909e8ac *Presets\Render Settings\Shaded Vertices.p3r
+4ecb4da6e77051860a24dfb59f50b4d0 *Presets\Render Settings\Shaded Wireframe.p3r
+61414257c2ba53c80187ff48b7f0956d *Presets\Render Settings\Solid Wireframe.p3r
+8927b1002ba645c7b328c09ffe36965d *Presets\Render Settings\Transparent Bounding Box Outline.p3r
+e7fd7a12c7d4ca8c3568420d077715be *Presets\Render Settings\Transparent Bounding Box.p3r
+3a8969df8a101a92cb4e1febbc50748f *Presets\Render Settings\Two-Sided.p3r
+203d3273a92abd6aa32581e145f02f32 *Presets\Render Settings\Vertices.p3r
+85751fe8a9120572a6a8303389936215 *Presets\Render Settings\Wireframe.p3r
+2eb5c150861d8872f3a915f36d6dd56d *Presets\Repousse\Default Repousse Presets.p3e
+da49b8d66b99f280392e65f72a9ec2b7 *Presets\Scripts\Conditional Mode Change.jsx
+cad6516b7a63dabc8e078f8703e885e2 *Presets\Scripts\Delete All Empty Layers.jsx
+d4eb0599bf808518e1c608adfcc64557 *Presets\Scripts\Event Scripts Only\Clean Listener.jsx
+17d418c1673f76fa832e962b52b359a0 *Presets\Scripts\Event Scripts Only\Display Camera Maker.jsx
+7ee84bd5761a2aeaa79cbf2884557f9f *Presets\Scripts\Event Scripts Only\Open As Layer.jsx
+3d21d7bc69246f5a3b5587ddd4a9f087 *Presets\Scripts\Event Scripts Only\Resize.jsx
+ae47d22e05ebbf3875a503d53693d3c1 *Presets\Scripts\Event Scripts Only\Save Extra JPEG.jsx
+3df994906c21a874ae7bda91fdd29452 *Presets\Scripts\Event Scripts Only\Update File Info.jsx
+ae91301a596819d2abe479e3d5bcf3f7 *Presets\Scripts\Event Scripts Only\Warn If RGB.jsx
+caf6a23b59b39b8d3a8d99de765664f1 *Presets\Scripts\Event Scripts Only\Welcome.jsx
+1cd9d064b4e60b06423b3e62bd39501b *Presets\Scripts\Export Layers To Files.jsx
+0f0fe061142bb1a9b0c4d14d020ae3fb *Presets\Scripts\Fit Image.jsx
+ef78a93b35b47bc7d23ae46379bd3c1d *Presets\Scripts\Flatten All Layer Effects.jsx
+633f2745497cd1b7e56e9d022eaec1ab *Presets\Scripts\Flatten All Masks.jsx
+a2544fb2f489fb0d68818e1c7cd4fe28 *Presets\Scripts\Image Processor.jsx
+a89339f4ed42c8108fd201e6aa35af51 *Presets\Scripts\Layer Comps To Files.jsx
+91816b3eeb85d2df130bb5362c2fa61b *Presets\Scripts\Layer Comps To WPG.jsx
+ba369b908e3670113e4912e4e22188a6 *Presets\Scripts\Lens Correct.jsx
+67cdd17abc2d0683bee50b08c846c597 *Presets\Scripts\Load DICOM.jsx
+3f4fd103a51ac4bd28845aedf73a443b *Presets\Scripts\Load Files into Stack.jsx
+3b233c85076da5b6a053ab7b1d75bf85 *Presets\Scripts\Merge To HDR.jsx
+78a65bc759987e95ffffcc1245697afe *Presets\Scripts\Photomerge.jsx
+0f543f580bc702c8680508fd09bb9c47 *Presets\Scripts\Script Events Manager.jsx
+1e9fcb5dddbdf1c7cc14e8c09ae8850d *Presets\Scripts\Stack Scripts Only\CreateImageStack.jsx
+3e99dfbff0c42e2739acdc849de0e6a6 *Presets\Scripts\Stack Scripts Only\Geometry.jsx
+2b0cb52df5bf6ab529ee1c61bcdcaf5f *Presets\Scripts\Stack Scripts Only\LatteUI.jsx
+92935cb98ff1ddb521bb2abd5b34f52b *Presets\Scripts\Stack Scripts Only\LensCorrect.exv
+d90c5a1ad9ce483d781210199d7a7f88 *Presets\Scripts\Stack Scripts Only\LoadLayers.exv
+6dcb5379188befd2a2eb8d86a9a191e8 *Presets\Scripts\Stack Scripts Only\M2HDR.exv
+e2364dda1d6505d9924896bd857ba223 *Presets\Scripts\Stack Scripts Only\PMBlendingProgress.exv
+26f275f781aa4dd80a5092e0a5ae8ffb *Presets\Scripts\Stack Scripts Only\PMDialog.exv
+67678e8638ed797c87143aec25cd2500 *Presets\Scripts\Stack Scripts Only\PolyClip.jsx
+8e594956742c03576bcb25c21a54b978 *Presets\Scripts\Stack Scripts Only\P_AutoAlign_Automatic_87x38.png
+1c4c34c6111ea7e05593b93615102db6 *Presets\Scripts\Stack Scripts Only\P_AutoAlign_Collage_87x38.png
+efce0d085e236f32cef7fc6ad25b78c4 *Presets\Scripts\Stack Scripts Only\P_AutoAlign_Cylindrical_87x38.png
+295fcfb5c30022f388804aeed50a3c41 *Presets\Scripts\Stack Scripts Only\P_AutoAlign_Interactive_87x38.png
+9cf241043133fb89eb87157aea4db6e7 *Presets\Scripts\Stack Scripts Only\P_AutoAlign_Perspective_87x38.png
+541d4c6fc2ec1919c79163925a404be7 *Presets\Scripts\Stack Scripts Only\P_AutoAlign_Reposition_87x38.png
+29bc3818f4b5531d5d8c8d3b684e9527 *Presets\Scripts\Stack Scripts Only\P_AutoAlign_Spherical_87x38.png
+44a83b88457be7809b3438dc3ff974f6 *Presets\Scripts\Stack Scripts Only\StackSupport.jsx
+01e664c40bef239b04bf4cf25b48d4e2 *Presets\Scripts\Stack Scripts Only\Statistics.exv
+56518b031d4e7665626c280249fc28ee *Presets\Scripts\Stack Scripts Only\Terminology.jsx
+c0f5a60abb81fb4f4540faaabd50e5aa *Presets\Scripts\Statistics.jsx
+52825e77f4210e9fc2b94bd7da1c4a0f *Presets\Styles\Abstract Styles.asl
+4891f58a6b423d5cfabea9f05b42b4ea *Presets\Styles\Buttons.asl
+4b05a021e6e89ec3872d729e09097e25 *Presets\Styles\Dotted Strokes.asl
+137b69731705deeeb74bc0be072abd57 *Presets\Styles\DP Styles.asl
+e54c830766a30470e020b4d58f8e056e *Presets\Styles\Glass Buttons.asl
+0ce887cbdb4dd79fceb8ad9b55c7930e *Presets\Styles\Image Effects.asl
+976eaec3ccf74184ec7646a1e1856a1a *Presets\Styles\KS Styles.asl
+7e4cf3702238c52b6433ce5b05939cf9 *Presets\Styles\Photographic Effects.asl
+14f10506acf5fcaaeb4c2c520f8fa6c2 *Presets\Styles\Text Effects 2.asl
+1dbc41ee769e2906b6dd763f5424a78a *Presets\Styles\Text Effects.asl
+d0fb9e807421ea9c229099bc0f5a5009 *Presets\Styles\Textures.asl
+4f1c8ebab0ad4764aab8049fdbfcd7bc *Presets\Styles\Web Styles.asl
+452bab6db1765c179fca6e24e6a126ab *Presets\Tools\Art History.tpl
+376dc930d0ccb6dec312fb2f1803f170 *Presets\Tools\Brushes.tpl
+51671b42156c794cac4e48040c449c6a *Presets\Tools\Crop and Marquee.tpl
+2e5994734bc81758309f7bf532e47edc *Presets\Tools\DP Presets.tpl
+566bfb55fd6bf7c13cf7fd1976f2e1c5 *Presets\Tools\M Tool Presets.tpl
+43fa16fa7ac85c772dd8f0e571134a7d *Presets\Tools\Mixer Brush Tool.tpl
+fccf526a464865fa386a45edb97b8021 *Presets\Tools\Splatter Brush Tool Presets.tpl
+77ce4cec7b9b108d50883ec60db97afc *Presets\Tools\Text.tpl
+d2de7ba90187d7c0e11ae90238d4851a *Presets\Volumes\Enhanced Boundaries-Default.p3r
+588c13ecc9b7a0b299824105d7678e4f *Presets\Volumes\Full Range Color Scale.p3r
+f40933c17c0a784c61f2c432ac561302 *Presets\Volumes\High Range Highlights.p3r
+de52d1d684320ef05abb098060c14301 *Presets\Volumes\High-Low.p3r
+0fba03b0329dbf8db2c1eead6653378d *Presets\Volumes\Low Range Highlights.p3r
+b8ebbe88a3c4a6ff25a45f52c68d6a16 *Presets\Volumes\Maximum Intensity Projection (MIP).p3r
+fd6722b251e11394feeb1add98029ae9 *Presets\Volumes\MIP-X-Ray.p3r
+d0aa8b7447ad9dbb017efd76d6ad5ae7 *Presets\Volumes\Red-Blue Color Scale.p3r
+9e4376bf37b4edb3883d36e1f89553f1 *Presets\Volumes\Thin Isolines.p3r
+7a78b3f60d38377d1bc9eea6f2ee9055 *Presets\Volumes\White-Black Color Scale.p3r
+d034f6d4ef49765e4fc80e1564fb2bec *Presets\Volumes\X-Ray with Boundaries.p3r
+e1db03e868e519b27a77a791538ddad2 *Presets\Volumes\X-Ray.p3r
+b8b3d29da712d3cece7472a76af67e53 *Presets\Widgets\AxisWidget.dae
+af536af661981c605553ea31813ab121 *Presets\Widgets\InfiniteLightWidget.dae
+e5721ae3503deda15b6487a2952a8364 *Presets\Widgets\PointLightWidget.dae
+2c3071b7049ddec5c9323223b1f1b9c9 *Presets\Widgets\SpotLightWidget.dae
+75536b618c27689c4b3fa3e9c5045942 *Presets\Zoomify\Zoomify Viewer (Black Background).zvt
+baf49dc7b4c0155bfb932c3b38af46d0 *Presets\Zoomify\Zoomify Viewer (Gray Background).zvt
+b790bae8752e6317c3523c9af213faed *Presets\Zoomify\Zoomify Viewer (White Background).zvt
+e497ed8ab54e37670b170eef92b5d9ee *Presets\Zoomify\Zoomify Viewer with Navigator (Black Background).zvt
+deb491bd12a3005ec18017003094e845 *Presets\Zoomify\Zoomify Viewer with Navigator (Gray Background).zvt
+bab11d256a2cba22f7cd3ba4e72cae16 *Presets\Zoomify\Zoomify Viewer with Navigator (White Background).zvt
+848a9d097ed913e94dc21596e861ba69 *Presets\Zoomify\zoomifyViewer.swf
+41f0afcf36058ba7de5f8b4d8127cec1 *Required\ADMUI3.fon
+3def2040feca81f3cc253b0cfd29b67e *Required\CgShaders\brushPreview.cg
+d994c54f4be64a676469074f4b34ac14 *Required\CgShaders\constantcolor_shaders.cg
+bc71334ae25041bbea1481cd93b5bc05 *Required\CgShaders\dof_shaders.cg
+171afcb54a9b944f07f526d2d838c73d *Required\CgShaders\environment_shaders.cg
+7629cb7e6bbcd5715bdeddd40bcf8a6f *Required\CgShaders\surface_shaders.cg
+37ce1c87e13d0615dcfee9559e8bfa98 *Required\CgShaders\uv_shaders.cg
+b1066b8371fe71d636fae5f26fdb4e8e *Required\CgShaders\volume_shaders.cg
+42c12d5fa1afdef9d631a199711970b0 *Required\DBrush\BristleBrushCollection_CS5.dbrsb
+0f631e2fc729d80e9cfaa0ac9202d872 *Required\DBrush\BristleBrushCollection_CS5.dbrush
+bcbd83834d329f3a99aa337d87b424f0 *Required\Default Actions.atn
+99abc5000819e3e04550c943ea87a0e5 *Required\Default Brushes.abr
+ac63368c230ef8084481787a5e81abfb *Required\Default Contours.shc
+57c54a1bb272e23fcc89cc95739f7a2b *Required\Default Custom Shapes.csh
+0c06493b2c2f45f6287c9cd95e9c4c97 *Required\Default Filter Colors.aco
+9a6e9c43c56ad9865878cb805f52b7f1 *Required\Default Gradients.grd
+7ee2f35d4a96e176cb836900e4557377 *Required\Default Materials.p3m
+31296c038e3154364571e61b99f8579e *Required\Default Menus.mnu
+afa45a0250a726b6dc6dee53f5804725 *Required\Default Patterns.pat
+2eb5c150861d8872f3a915f36d6dd56d *Required\Default Repousse Presets.p3e
+dcc456a28973eb765cd1a3ba39969578 *Required\Default Styles.asl
+0c4f93b7b9afd6180131bfe1b33e4344 *Required\Default Swatches.aco
+61fcf354116f75389176b41112a41377 *Required\Default Tool Presets.tpl
+1ff2a9cfc928429d987c82a3d242d56c *Required\Droplet Template
+72b49e87cc763354f72c28b3a820fbfd *Required\Droplet Template.exe
+2fd53e7d89791c88506cc60ce5371a74 *Required\GlobalResources
+965fee6d5f510ae3b420c101e57039fd *Required\HDRToning.jsx
+dfaeb71a8c11ca2818d06bdab6ee27f5 *Required\MeasurementScaleMarker.jsx
+a4a2a13ea1bd0341ad67bf1c1d5c63f0 *Required\OWL\appbar.adm
+411d6db1d5d113a3a67180a4c397744b *Required\OWL\appbar.eve
+05a45308cc7ad5a22fd953fd457885ac *Required\OWL\grid.eve
+aa03f1208b575457d1cbf729f487bda8 *Required\OWL\screenmode.eve
+9d68334f41537698285abfec13ee0721 *Required\OWL\searchbar.adm
+d1fa187aa16e7b211a88fd521f23ee8d *Required\OWL\searchbar.eve
+87ab825b90dc4e597e357a5416851248 *Required\OWL\viewoptions.eve
+22a729ba7cdcadce831fc696b2842da4 *Required\Straighten.jsx
+cb1ee7bad5c789a467b42979866ddd9a *Samples\CheeziPuffs.mov
+66ed9c7fb5cc160a7857c03450a073ed *Samples\Doors.dng
+3d3aa546ed21e108377f1cc54dec43e4 *Samples\Ducky.tif
+be902d2cd1c055819aace9592f5413bb *Samples\Fish.psd
+8b29af047c6c23d3e1c0da34927e938f *Samples\Layer Comps.psd
+fcaa4b5121893a0db9bbe927f979cc0f *Samples\Merge to HDR\1.jpg
+4d312078d87f4da5117a3441afb6c41b *Samples\Merge to HDR\2.jpg
+1d49ef0ad20c8958e322af0c8e4190dc *Samples\Merge to HDR\3.jpg
+99e5664e8ba7734e043ffab7e11fdb02 *Samples\Merge to HDR\4.jpg
+f72882b07c2d47ae1f8200a12bbce0c0 *Samples\Merge to HDR\Result\HDR.psd
+4855e53ca72bbc4ba80a0614aa5eaf76 *Samples\Photomerge\photo1.jpg
+6ed31cba3ef3085f193bd8f6f441b0f5 *Samples\Photomerge\photo2.jpg
+94fbe35fd1d584d983686c71e455bf21 *Samples\Photomerge\photo3.jpg
+90c758475e5fd96ab65d140d1173c232 *Samples\Photomerge\Result\Panorama.jpg
+b761e456c23c85cf1af13b0db3963db5 *Samples\Smart Objects.psd
+01814ab3890a2e532bc0f70850f34cbf *Samples\Vanishing Point.psd
+3e76d1ffe25b32465f81af54d7ab0283 *Scripting\Documents\Photoshop CS5 AppleScript Ref.pdf
+804a6ae80b4a54bc0620aad718144bc0 *Scripting\Documents\Photoshop CS5 JavaScript Ref.pdf
+9767f24c98e874f9e104365dcf1898db *Scripting\Documents\Photoshop CS5 Scripting Guide.pdf
+f0892e4e2f8fecb32d560ea7267c758f *Scripting\Documents\Photoshop CS5 VBScript Ref.pdf
+37739b1bda361384b0ac3c6795c4aa62 *Scripting\Sample Scripts\AppleScript\Alpha Channel From Text
+09b8e1c46636731a5c209185ecf8d7c6 *Scripting\Sample Scripts\AppleScript\Apply Text Style
+d54436e54e7348cc09027ca2e610f5e0 *Scripting\Sample Scripts\AppleScript\Batch Convert
+82725bf6a52768d8f70abecad9344a36 *Scripting\Sample Scripts\AppleScript\Convert Colors
+673b4fa136c78e872e85f29f8e41bfa3 *Scripting\Sample Scripts\AppleScript\Create New Text Item
+13944e64905670ecf72470c3aa045718 *Scripting\Sample Scripts\AppleScript\Crop
+58a98406cae42acbeeb49464fe247cfd *Scripting\Sample Scripts\AppleScript\Crop and Rotate ArtLayers
+dc6d6b30fa897717bc3953353fc0c4cd *Scripting\Sample Scripts\AppleScript\Get Document By Name
+c9519454bda86e45fc0aa5142ccaabff *Scripting\Sample Scripts\AppleScript\Get Text Item Center
+64e314a8117d89ea607f7942357f4526 *Scripting\Sample Scripts\AppleScript\Layer Style
+c22fc9c3978fae1b3c912384d60b727b *Scripting\Sample Scripts\AppleScript\Make Selection
+9ce7d1a6c34d6e14b9020b994ba9d491 *Scripting\Sample Scripts\AppleScript\Make Warp Text
+0fea65ed82f795315094253819ef594b *Scripting\Sample Scripts\AppleScript\New Document
+d5a1cb75e12b3a507c51e0578ecab1eb *Scripting\Sample Scripts\AppleScript\Run JavaScript
+bc3c0187104ff48beee6e9cec9bce59c *Scripting\Sample Scripts\AppleScript\Save As TIFF
+9854afe00645f21cf8bf87f8cfab596b *Scripting\Sample Scripts\AppleScript\Trim
+0e509e2e5c2452fdaaf7730da11b5f28 *Scripting\Sample Scripts\AppleScript\Trim Document
+bdc621f0024b2e06d6e9207ba82cdf6a *Scripting\Sample Scripts\AppleScript\Unit Types
+6bef5bd1b642d70aab6f7c71d98893f7 *Scripting\Sample Scripts\JavaScript\ActiveLayer.jsx
+b4b72546d9c6b1538c00322956e47b42 *Scripting\Sample Scripts\JavaScript\ApplyFilters.jsx
+cfee5776a0af4aca2828116c3ab60faa *Scripting\Sample Scripts\JavaScript\ApplyLayerStyle.jsx
+3a720e80f7c22f3e90c050971bf8a729 *Scripting\Sample Scripts\JavaScript\CompareColors.jsx
+898449369ea7997a3a795cd9d5641a32 *Scripting\Sample Scripts\JavaScript\ConvertColors.jsx
+c1a915d9ab6ff8d3279f630ac9b54e2c *Scripting\Sample Scripts\JavaScript\CopyAndPaste.jsx
+4f95c1c68d53e611df01c208abacd6a0 *Scripting\Sample Scripts\JavaScript\CropAndRotate.jsx
+80b62bb0bc510083dcbb0f73a9f7087f *Scripting\Sample Scripts\JavaScript\Debugger.jsx
+0668b7752ac56ea660486fd13c332801 *Scripting\Sample Scripts\JavaScript\Emboss.jsx
+06af8705a341e316a18d13af995ddb83 *Scripting\Sample Scripts\JavaScript\EnableAllPluginsForSmartFilters.jsx
+71684dc4ec6de76eafeab91a9380350f *Scripting\Sample Scripts\JavaScript\ExecuteMoltenLead.jsx
+1e31efe72bbd06d9519779f71749188c *Scripting\Sample Scripts\JavaScript\FileInclude.jsx
+686ca7522c2ffbd25b958b91b02f41b3 *Scripting\Sample Scripts\JavaScript\FileIncludeIncluded.jsx
+69f26a6eab7d0f157ea426228ddbb5c0 *Scripting\Sample Scripts\JavaScript\FillSelection.jsx
+a2fba0098dde1bf7dbb66a037e976545 *Scripting\Sample Scripts\JavaScript\FlashUISample.jsx
+cc2a701302e6d7793702461ac2cee633 *Scripting\Sample Scripts\JavaScript\FlashUISample.mxml
+4678eb3095717a8ebd039396f880388f *Scripting\Sample Scripts\JavaScript\FlashUISample.swf
+b4ab4b6e0cf738e61b84371ccfe208d3 *Scripting\Sample Scripts\JavaScript\LayerKind.jsx
+b0954944b95ca37b48db86d65295aca5 *Scripting\Sample Scripts\JavaScript\LinkLayers.jsx
+ab0db08b228b83e6d7c2f78b38b54561 *Scripting\Sample Scripts\JavaScript\LoadSelection.jsx
+af969c740d4e9da9782b3528846d87c5 *Scripting\Sample Scripts\JavaScript\MakeSelection.jsx
+1c1dc745e4057596916076673a877e3f *Scripting\Sample Scripts\JavaScript\MosaicTiles.jsx
+38a017ae21ba4dada0d46048bdce615a *Scripting\Sample Scripts\JavaScript\MoveToLayerSet.jsx
+08f8318f54a6256b3296486b9897c6f7 *Scripting\Sample Scripts\JavaScript\NewDocument.jsx
+6519c74bd5609387103efdafc62cd841 *Scripting\Sample Scripts\JavaScript\ObjectTree.jsx
+04c94a967683e6a423b965356e650834 *Scripting\Sample Scripts\JavaScript\OpenDocument.jsx
+f9a580fafd8175d8939909eb20a9c83f *Scripting\Sample Scripts\JavaScript\RotateLayer.jsx
+5fc47da9e32f1a56215786aed52bd088 *Scripting\Sample Scripts\JavaScript\RulerUnits.jsx
+3c8b679e9662dbcb03c57ae1e40d93ad *Scripting\Sample Scripts\JavaScript\ScriptUICheckBox.jsx
+f1a141b86027a833bd55d2ebebdc2a66 *Scripting\Sample Scripts\JavaScript\SelectionStroke.jsx
+a1ff905d696e2ec74d4d5216bc731ad2 *Scripting\Sample Scripts\JavaScript\SetChannels.jsx
+bda965e5d11e27f1062fb81f79fb0b92 *Scripting\Sample Scripts\JavaScript\Socket.jsx
+4109f39adbd66f9895467819459f2f36 *Scripting\Sample Scripts\JavaScript\WorkingWithText.jsx
+0abacee243ca73d54f53ab211ca2dbce *Scripting\Sample Scripts\VBScript\ApplyStyle.vbs
+a5ebe2f603e0894076186acad0812cca *Scripting\Sample Scripts\VBScript\BatchProcess.vbs
+0ed7fa78c4e9fe61d5e426f84d1fd5eb *Scripting\Sample Scripts\VBScript\ClipboardInteraction.vbs
+a44fd8abff5464f6fbe5e722ddf72172 *Scripting\Sample Scripts\VBScript\CreateAndExecuteAction.vbs
+8505cb22d7922061c1cdd5db27cef765 *Scripting\Sample Scripts\VBScript\CreateNewTextArt.vbs
+778920cb78a7bf67a1098cd5c3ef4a2a *Scripting\Sample Scripts\VBScript\Crop.vbs
+6768c75485f42353b9fb01be9edc1eff *Scripting\Sample Scripts\VBScript\DocumentByName.vbs
+a84fbfa97c68f6b9b746c499178d0243 *Scripting\Sample Scripts\VBScript\DuplicateLayers.vbs
+10dc10dda663b68dc6c9d008186e66b8 *Scripting\Sample Scripts\VBScript\ExecuteAction.vbs
+56c295265092f72115f4dada8b4368e2 *Scripting\Sample Scripts\VBScript\ExecuteJavaScript.vbs
+9ef8e81837f7b41d344f09b7360081f6 *Scripting\Sample Scripts\VBScript\Filters.vbs
+56f8be46cc87ee4ead2675aee34bfed0 *Scripting\Sample Scripts\VBScript\HistoryState.vbs
+5910e7af77e55df918cb9bb8e30598fa *Scripting\Sample Scripts\VBScript\localize.jsx
+8c51c888ac3d69e62c00e2244a335e07 *Scripting\Sample Scripts\VBScript\OpenDocument.vbs
+219b984189ba1cb8e73fb73920cc18e3 *Scripting\Sample Scripts\VBScript\SaveAsFormats.vbs
+a9f07be6fc8347fdbf85fe07ca26a4bd *Scripting\Sample Scripts\VBScript\Selection.vbs
+b1dd30013c8d5a96f52e7cb70825ba10 *Scripting\Sample Scripts\VBScript\SelectionEffects.vbs
+ec643319bf4149e1d5b990ea04e9143d *Scripting\Sample Scripts\VBScript\TextArt.vbs
+e6e61daad4e6faa83c55cf9cfacc089e *Scripting\Sample Scripts\VBScript\TextArtCenter.vbs
+d7e1dcc4797c67ea4882d048e404defe *Scripting\Sample Scripts\VBScript\Trim.vbs
+14c14c15cb41161a41b7ca8798a6351b *Scripting\Utilities\ScriptListener.8li
+669c5c7fff99e8348ad18b613a59d4a3 *amtservices.dll.bak
+302ae5b2fd1deccb8e62e14b71624bc7 *Photoshop.exp
+2823492950ffe1f5666a71fad523f695 *LegalNotices.pdf
+1c272d313c8d211172e1374d891e08e1 *Photoshop CS5 Read Me.pdf
+292ece00ee2d79bf7fea676f41c7e903 *Photoshop.lib
+541423a06efdcd4e4554c719061f82cf *Microsoft.VC80.CRT.manifest
+c1eda860810e6299f690459006e4c655 *Microsoft.VC90.CRT.manifest
+ec897e2e96ca231c00aaa23081db225a *TypeLibrary.tlb
+ff4f229bc63a0e9a7583b39663d9c59b *arh.exe
+84cca7b4118d27787529ac1fed81608d *LogTransport2.exe
+ed4d8ded89b133ba11bf526e11b5b843 *Photoshop.exe
+51985b3cb0e01fb39db92f0316261ee0 *A3DLIBS.dll
+30eaed1639d737c3828ea8be941d4a6b *ACE.dll
+cf9a2a91690a18b2a62332d3f4c34a32 *adbeape.dll
+a0e3c740426bcae1a9e0a1e2d137cc58 *adobe_caps.dll
+0306cc64ba4b817d476cac53e05921e9 *adobe_OOBE_Launcher.dll

@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+   // BEGIN__HARVEST_EXCEPTION_ZSTRING 
+    <title>"$$$/Preset/3DFrom2D/Pyramid=Pyramid"</title> 
+// END__HARVEST_EXCEPTION_ZSTRING 
+    <contributor>
+      <author>Daniel Presedo for Photoshop 3D</author> 
+    </contributor>
+    <unit meter="0.0254" name="inch"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="Right_Material" name="Right_Material">
+      <instance_effect url="#Right_Material-fx"/>
+    </material>
+	<material id="Back_Material" name="Back_Material">
+      <instance_effect url="#Back_Material-fx"/>
+    </material>
+   <material id="Left_Material" name="Left_Material">
+      <instance_effect url="#Left_Material-fx"/>
+    </material>
+    <material id="Front_Material" name="Front_Material">
+      <instance_effect url="#Front_Material-fx"/>
+    </material>
+    <material id="Bottom_Material" name="Bottom_Material">
+      <instance_effect url="#Bottom_Material-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Back_Material-fx" name="Back_Material">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.588235 0.647059 0.894118 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Right_Material-fx" name="Right_Material">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.972549 0.678431 0.588235 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Left_Material-fx" name="Left_Material">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.980392 0.756863 0.972549 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Front_Material-fx" name="Front_Material">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.87451 0.87451 0.87451 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="Bottom_Material-fx" name="Bottom_Material">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.741176 0.929412 0.588235 1</color>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Front-mesh" name="Front">
+      <mesh>
+        <source id="Front-mesh-positions">
+          <float_array id="Front-mesh-positions-array" count="9">0 0 40 25 25 0 -25 25 0</float_array>
+          <technique_common>
+            <accessor source="#Front-mesh-positions-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Front-mesh-normals">
+          <float_array id="Front-mesh-normals-array" count="9">0 0.847998 0.529999 0 0.847998 0.529999 0 0.847998 0.529999</float_array>
+          <technique_common>
+            <accessor source="#Front-mesh-normals-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Front-mesh-map-channel1">
+          <float_array id="Front-mesh-map-channel1-array" count="9">0.499994 0.999499 0.9995 0.0005 0.000495 0.000499 0.999502 0.000502 0.000499</float_array>
+          <technique_common>
+            <accessor source="#Front-mesh-map-channel1-array" count="3" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Front-mesh-map-channel1-tangents">
+          <float_array id="Front-mesh-map-channel1-tangents-array" count="3">1 -0.000003 0.000005</float_array>
+          <technique_common>
+            <accessor source="#Front-mesh-map-channel1-tangents-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Front-mesh-map-channel1-binormals">
+          <float_array id="Front-mesh-map-channel1-binormals-array" count="3">0.000006 0.529999 -0.847998</float_array>
+          <technique_common>
+            <accessor source="#Front-mesh-map-channel1-binormals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Front-mesh-vertices">
+          <input semantic="POSITION" source="#Front-mesh-positions"/>
+        </vertices>
+        <triangles material="Front_Material" count="1">
+          <input semantic="VERTEX" source="#Front-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Front-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Front-mesh-map-channel1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#Front-mesh-map-channel1-tangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#Front-mesh-map-channel1-binormals" offset="4" set="1"/>
+          <p>0 0 0 0 0 1 1 1 0 0 2 2 2 0 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Bottom-mesh" name="Bottom">
+      <mesh>
+        <source id="Bottom-mesh-positions">
+          <float_array id="Bottom-mesh-positions-array" count="15">-25 -25 0 25 -25 0 25 25 0 -25 25 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#Bottom-mesh-positions-array" count="5" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bottom-mesh-normals">
+          <float_array id="Bottom-mesh-normals-array" count="15">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#Bottom-mesh-normals-array" count="5" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bottom-mesh-map-channel1">
+          <float_array id="Bottom-mesh-map-channel1-array" count="15">0.000499 0.000499 0.5 0.9995 0.000499 0.5 0.999501 0.9995 0.5 0.000499 0.999501 0.5 0.5 0.5 0.5</float_array>
+          <technique_common>
+            <accessor source="#Bottom-mesh-map-channel1-array" count="5" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bottom-mesh-map-channel1-tangents">
+          <float_array id="Bottom-mesh-map-channel1-tangents-array" count="3">-1 -0.000000 0</float_array>
+          <technique_common>
+            <accessor source="#Bottom-mesh-map-channel1-tangents-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bottom-mesh-map-channel1-binormals">
+          <float_array id="Bottom-mesh-map-channel1-binormals-array" count="3">-0.000000 1 0</float_array>
+          <technique_common>
+            <accessor source="#Bottom-mesh-map-channel1-binormals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Bottom-mesh-vertices">
+          <input semantic="POSITION" source="#Bottom-mesh-positions"/>
+        </vertices>
+        <triangles material="Bottom_Material" count="4">
+          <input semantic="VERTEX" source="#Bottom-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Bottom-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Bottom-mesh-map-channel1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#Bottom-mesh-map-channel1-tangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#Bottom-mesh-map-channel1-binormals" offset="4" set="1"/>
+          <p>0 0 0 0 0 4 1 4 0 0 1 2 1 0 0 1 2 1 0 0 4 1 4 0 0 2 3 2 0 0 2 3 2 0 0 4 1 4 0 0 3 4 3 0 0 3 4 3 0 0 4 1 4 0 0 0 0 0 0 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Back-mesh" name="Back">
+      <mesh>
+        <source id="Back-mesh-positions">
+          <float_array id="Back-mesh-positions-array" count="9">0 0 40 -25 -25 0 25 -25 0</float_array>
+          <technique_common>
+            <accessor source="#Back-mesh-positions-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Back-mesh-normals">
+          <float_array id="Back-mesh-normals-array" count="9">0 -0.847998 0.529999 0 -0.847998 0.529999 0 -0.847998 0.529999</float_array>
+          <technique_common>
+            <accessor source="#Back-mesh-normals-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Back-mesh-map-channel1">
+          <float_array id="Back-mesh-map-channel1-array" count="9">0.5 0.9995 0.9995 0.000499 0.0005 0.000499 0.999501 0.000499 0.000499</float_array>
+          <technique_common>
+            <accessor source="#Back-mesh-map-channel1-array" count="3" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Back-mesh-map-channel1-tangents">
+          <float_array id="Back-mesh-map-channel1-tangents-array" count="3">-1 -0.000000 -0.000000</float_array>
+          <technique_common>
+            <accessor source="#Back-mesh-map-channel1-tangents-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Back-mesh-map-channel1-binormals">
+          <float_array id="Back-mesh-map-channel1-binormals-array" count="3">0.000000 -0.529999 -0.847998</float_array>
+          <technique_common>
+            <accessor source="#Back-mesh-map-channel1-binormals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Back-mesh-vertices">
+          <input semantic="POSITION" source="#Back-mesh-positions"/>
+        </vertices>
+        <triangles material="Back_Material" count="1">
+          <input semantic="VERTEX" source="#Back-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Back-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Back-mesh-map-channel1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#Back-mesh-map-channel1-tangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#Back-mesh-map-channel1-binormals" offset="4" set="1"/>
+          <p>0 0 0 0 0 1 1 1 0 0 2 2 2 0 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Left-mesh" name="Left">
+      <mesh>
+        <source id="Left-mesh-positions">
+          <float_array id="Left-mesh-positions-array" count="9">0 0 40 25 -25 0 25 25 0</float_array>
+          <technique_common>
+            <accessor source="#Left-mesh-positions-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Left-mesh-normals">
+          <float_array id="Left-mesh-normals-array" count="9">0.847998 0 0.529999 0.847998 0 0.529999 0.847998 0 0.529999</float_array>
+          <technique_common>
+            <accessor source="#Left-mesh-normals-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Left-mesh-map-channel1">
+          <float_array id="Left-mesh-map-channel1-array" count="9">0.499988 0.999501 0.999501 0.000498 0.000494 0.000499 0.9995 0.000505 0.000499</float_array>
+          <technique_common>
+            <accessor source="#Left-mesh-map-channel1-array" count="3" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Left-mesh-map-channel1-tangents">
+          <float_array id="Left-mesh-map-channel1-tangents-array" count="3">-0.000005 -1 0.000008</float_array>
+          <technique_common>
+            <accessor source="#Left-mesh-map-channel1-tangents-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Left-mesh-map-channel1-binormals">
+          <float_array id="Left-mesh-map-channel1-binormals-array" count="3">0.529999 -0.000009 -0.847998</float_array>
+          <technique_common>
+            <accessor source="#Left-mesh-map-channel1-binormals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Left-mesh-vertices">
+          <input semantic="POSITION" source="#Left-mesh-positions"/>
+        </vertices>
+        <triangles material="Left_Material" count="1">
+          <input semantic="VERTEX" source="#Left-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Left-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Left-mesh-map-channel1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#Left-mesh-map-channel1-tangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#Left-mesh-map-channel1-binormals" offset="4" set="1"/>
+          <p>0 0 0 0 0 1 1 1 0 0 2 2 2 0 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Right-mesh" name="Right">
+      <mesh>
+        <source id="Right-mesh-positions">
+          <float_array id="Right-mesh-positions-array" count="9">0 0 40 -25 -25 0 -25 25 0</float_array>
+          <technique_common>
+            <accessor source="#Right-mesh-positions-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Right-mesh-normals">
+          <float_array id="Right-mesh-normals-array" count="9">-0.847998 0 0.529999 -0.847998 0 0.529999 -0.847998 0 0.529999</float_array>
+          <technique_common>
+            <accessor source="#Right-mesh-normals-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Right-mesh-map-channel1">
+          <float_array id="Right-mesh-map-channel1-array" count="9">0.499998 0.999501 0.999501 0.000501 0.000498 0.000499 0.999502 0.000501 0.000499</float_array>
+          <technique_common>
+            <accessor source="#Right-mesh-map-channel1-array" count="3" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Right-mesh-map-channel1-tangents">
+          <float_array id="Right-mesh-map-channel1-tangents-array" count="3">0.000001 1 0.000002</float_array>
+          <technique_common>
+            <accessor source="#Right-mesh-map-channel1-tangents-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Right-mesh-map-channel1-binormals">
+          <float_array id="Right-mesh-map-channel1-binormals-array" count="3">-0.529999 0.000002 -0.847998</float_array>
+          <technique_common>
+            <accessor source="#Right-mesh-map-channel1-binormals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Right-mesh-vertices">
+          <input semantic="POSITION" source="#Right-mesh-positions"/>
+        </vertices>
+        <triangles material="Right_Material" count="1">
+          <input semantic="VERTEX" source="#Right-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Right-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Right-mesh-map-channel1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#Right-mesh-map-channel1-tangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#Right-mesh-map-channel1-binormals" offset="4" set="1"/>
+          <p>0 0 0 0 0 2 1 1 0 0 1 2 2 0 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="pyramid.max" name="pyramid_max">
+      <node id="Front-node" name="Front" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Front-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Front_Material" target="#Front_Material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Bottom-node" name="Bottom" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Bottom-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Bottom_Material" target="#Bottom_Material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Back-node" name="Back" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Back-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Back_Material" target="#Back_Material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Left-node" name="Left" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Left-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Left_Material" target="#Left_Material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Right-node" name="Right" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Right-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Right_Material" target="#Right_Material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0</start_time>
+          <end_time>3.33333</end_time>
+        </technique>
+      </extra>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30</frame_rate>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#pyramid.max"/>
+  </scene>
+</COLLADA>

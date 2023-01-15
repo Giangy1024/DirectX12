@@ -1,0 +1,68 @@
+
+struct a2v
+{
+	float4 vPosition : POSITION;
+	float4 vColor: COLOR;
+	float4 vNormal : NORMAL;
+	float4 vTexCoord0 : TEXCOORD0;
+};
+struct vertex2frag
+{
+	float4 HPosition : POSITION;
+	float4 fDiffuseColor : COLOR0;
+	float4 fSpecularColor : COLOR1;
+	float4 fTexCoord0 : TEXCOORD0;
+	float4 fClipPosition : TEXCOORD1;
+	float3 vNormal: TEXCOORD5;
+	float3 vEye: TEXCOORD6;
+	float3 vPosition: TEXCOORD7;
+};
+struct vertex2fragX
+{
+	float4 HPosition : POSITION;
+	float4 fDiffuseColor : COLOR0;
+	float4 fSpecularColor : COLOR1;
+	float4 fBackDiffuseColor : BCOL0;
+	float4 fBackSpecularColor : BCOL1;
+	float4 fTexCoord0 : TEXCOORD0;
+	float4 fClipPosition : TEXCOORD1;
+	float3 vNormal: TEXCOORD5;
+	float3 vEye: TEXCOORD6;
+	float3 vPosition: TEXCOORD7;
+};
+struct frag2buffer
+{
+	float4 color: COLOR0;
+	float  depth: DEPTH;
+};
+/***********************************************************************/
+vertex2fragX vertConstantColor(in a2v app,
+							   uniform float4x4 modelViewProj,
+							   uniform float4x4 modelView)
+{
+	vertex2fragX vertOut;
+	vertOut.HPosition = mul(modelViewProj, app.vPosition);
+	vertOut.vPosition = mul(modelView,app.vPosition).xyz;
+	//#ifdef ENABLE_DEPTH_PEELING
+	vertOut.fClipPosition = mul(modelViewProj, app.vPosition);
+	//#endif
+	vertOut.fDiffuseColor =		app.vColor;
+	vertOut.fBackDiffuseColor = app.vColor;
+	return vertOut;
+}
+/***********************************************************************/
+frag2buffer fragConstantColor(in vertex2frag interpolant, uniform float depth_offset, uniform float4 clippingPlane)
+{
+	frag2buffer fragOut;
+	//#ifdef	ENABLE_CLIPPING_PLANE
+	float clipSign = dot(clippingPlane.xyz, interpolant.vPosition.xyz)+clippingPlane.w;
+	if (clipSign < 0) discard;//{
+	//#endif
+	fragOut.color = interpolant.fDiffuseColor;
+	//#ifdef ENABLE_DEPTH_PEELING
+	float3 xyd = interpolant.fClipPosition.xyz/interpolant.fClipPosition.w;
+	xyd = (xyd + float3(1, 1, 1))*float3(0.5, 0.5, 0.5);
+	fragOut.depth = xyd.z+depth_offset;
+	//#endif
+	return fragOut;
+}
